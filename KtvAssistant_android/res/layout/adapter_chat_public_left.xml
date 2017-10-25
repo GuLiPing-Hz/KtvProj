@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="25dp"
+    >
+    
+    <!-- 用于别人的公聊，送礼物 -->
+    <assistant.view.RoundedImageView
+	     android:id="@+id/rimgViewPhoto"
+	     android:layout_width="40dp"
+	     android:layout_height="40dp"
+	     android:scaleType="fitXY"
+	     android:src="@drawable/ic_user"
+	     />
+
+   <TextView 
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rimgViewPhoto"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:textSize="@dimen/chat_text_size"
+        android:textColor="@color/chat_btn_text_pressed"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewName"
+        android:layout_below="@id/textViewName"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/talk_bubble0" >
+        
+        <LinearLayout 
+            android:id="@+id/llcontent_publicl"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+            >
+            <TextView 
+		        android:id="@+id/textViewContent"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text=""
+		        android:textSize="@dimen/chat_text_size"
+		        />
+            
+            <ImageView
+                android:id="@+id/imgViewGiftPic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gift_100001" 
+                android:contentDescription="@string/contentdes"
+                android:visibility="gone"
+                /> 
+        </LinearLayout>
+        
+        
+        <TextView 
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llcontent_publicl"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/chat_address_text_size"
+            android:textColor="@color/chat_horn_text_address"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp" >
+	    
+        <ImageView 
+            android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:src="@drawable/bg_songrecord"
+	        android:scaleType="fitXY"
+            />
+        
+	    <TextView 
+	        android:id="@+id/tvSongInfo"
+	        android:layout_marginLeft="25dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="111"
+	        android:textColor="@color/text_num_gray"
+	        android:textSize="18sp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tvRoom"
+	        android:layout_below="@id/tvSongInfo"
+	        android:layout_marginTop="5dp"
+	        android:layout_alignLeft="@id/tvSongInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="2222"
+	        android:textColor="@color/home_itemtitle"
+	        android:textSize="14sp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tvTime"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBottom="@id/tvRoom"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="5dp"
+	        android:text="3333"
+	        android:textColor="@color/home_itemtitle"
+	        android:textSize="12sp"
+	        />
+	
+	</RelativeLayout>
+</RelativeLayout>

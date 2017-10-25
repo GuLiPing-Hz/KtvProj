@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RankingsViewController">
+            <connections>
+                <outlet property="mUiRankingsCell" destination="ssF-ez-HPe" id="8Bd-6O-TqC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RankingsCell" id="ssF-ez-HPe" customClass="RankingsViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ssF-ez-HPe" id="8A2-NQ-4W2">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="情歌对唱热歌榜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWd-v7-KDh" userLabel="Label1">
+                        <rect key="frame" x="18" y="86" width="189" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新歌排行榜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekc-OC-3gA" userLabel="Label2">
+                        <rect key="frame" x="207" y="86" width="189" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAU-2e-dcv" userLabel="Button1">
+                        <rect key="frame" x="18" y="15" width="189" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ZXC-w9-NKj"/>
+                            <constraint firstAttribute="height" constant="95" id="yCd-OY-OfF"/>
+                        </constraints>
+                        <state key="normal" image="load_ic_0">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onTouch1:" destination="ssF-ez-HPe" eventType="touchUpInside" id="deR-vO-tFX"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tb5-HD-avL" userLabel="Button2">
+                        <rect key="frame" x="207" y="15" width="189" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="95" id="mgI-c5-GlF"/>
+                        </constraints>
+                        <state key="normal" image="load_ic_0">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onTouch2:" destination="ssF-ez-HPe" eventType="touchUpInside" id="hRH-U7-dbo"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Tb5-HD-avL" firstAttribute="trailing" secondItem="ekc-OC-3gA" secondAttribute="trailing" id="BRq-dZ-e5Z"/>
+                    <constraint firstItem="ZAU-2e-dcv" firstAttribute="leading" secondItem="8A2-NQ-4W2" secondAttribute="leadingMargin" constant="10" id="C6I-45-b4P"/>
+                    <constraint firstItem="ZAU-2e-dcv" firstAttribute="leading" secondItem="mWd-v7-KDh" secondAttribute="leading" id="Llg-qg-0bq"/>
+                    <constraint firstItem="ZAU-2e-dcv" firstAttribute="top" secondItem="Tb5-HD-avL" secondAttribute="top" id="VBS-7i-xIu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Tb5-HD-avL" secondAttribute="trailing" constant="10" id="cyB-Y4-2PL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mWd-v7-KDh" secondAttribute="bottom" constant="10" id="hix-ev-E9x"/>
+                    <constraint firstItem="mWd-v7-KDh" firstAttribute="width" secondItem="ZAU-2e-dcv" secondAttribute="width" id="p2a-hw-nuc"/>
+                    <constraint firstItem="Tb5-HD-avL" firstAttribute="width" secondItem="ZAU-2e-dcv" secondAttribute="width" id="qw0-Zb-hV0"/>
+                    <constraint firstItem="Tb5-HD-avL" firstAttribute="leading" secondItem="ZAU-2e-dcv" secondAttribute="trailing" id="r44-Td-hAa"/>
+                    <constraint firstItem="Tb5-HD-avL" firstAttribute="width" secondItem="ekc-OC-3gA" secondAttribute="width" id="rfw-bz-bLO"/>
+                    <constraint firstItem="ekc-OC-3gA" firstAttribute="top" secondItem="mWd-v7-KDh" secondAttribute="top" id="t6F-tn-55s"/>
+                    <constraint firstItem="ZAU-2e-dcv" firstAttribute="top" secondItem="8A2-NQ-4W2" secondAttribute="topMargin" constant="7" id="xAz-P0-lzR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="mUiBtn1" destination="ZAU-2e-dcv" id="yrj-rG-tpo"/>
+                <outlet property="mUiBtn2" destination="Tb5-HD-avL" id="90e-TT-dro"/>
+                <outlet property="mUiText1" destination="mWd-v7-KDh" id="eEx-zc-G0o"/>
+                <outlet property="mUiText2" destination="ekc-OC-3gA" id="rxr-Wv-BwW"/>
+            </connections>
+            <point key="canvasLocation" x="-333" y="308.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="load_ic_0" width="70" height="70"/>
+    </resources>
+</document>

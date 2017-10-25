@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/rl_interactive_chat_option_privatechat"
+        android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_marginLeft="10dp">
+	    <ImageButton
+	        android:id="@+id/interactive_chat_option_letter_pic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/selector_popup_chat"
+	        android:background="@color/transparent" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="12sp"
+	        android:text="@string/text_private_chat"
+	        android:textColor="@color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_interactive_chat_option_gift"
+        android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_toRightOf="@id/rimgViewPhoto"
+	    android:layout_below="@id/rl_interactive_chat_option_privatechat"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginLeft="50dp">
+	    <ImageButton
+	        android:id="@+id/interactive_chat_option_gift_pic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/selector_popup_gift"
+	        android:background="@color/transparent" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_sendgift"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="@color/white"
+	        android:textSize="12sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_interactive_chat_option_redpacket"
+        android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_toRightOf="@id/rimgViewPhoto"
+	    android:layout_below="@id/rl_interactive_chat_option_gift"
+	    android:layout_marginLeft="10dp">
+	    <ImageButton
+	        android:id="@+id/interactive_chat_option_redpacket_pic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/selector_popup_hb"
+	        android:background="@color/transparent" />
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_hb"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="12sp"
+	        android:textColor="@color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

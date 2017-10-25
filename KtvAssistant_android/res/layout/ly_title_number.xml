@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_itemtext" >
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+		>
+	
+        <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:id="@+id/tv_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/system_message"
+	            android:textColor="@color/white"
+	            android:textSize="20sp" />
+	
+	        <TextView
+	            android:id="@+id/tv_online"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:text="@string/chat_online"
+	            android:textColor="#ffffffff"
+	            android:textSize="12sp"
+	            android:visibility="gone" />
+	        
+	        <ImageView 
+		        android:id="@+id/imgview_loading"
+		        android:contentDescription="@string/contentdes"
+		        android:layout_width="25dp"
+		       	android:layout_height="25dp"
+		       	android:layout_marginLeft="5dp"
+		       	android:scaleType="fitXY"
+		       	android:src="@drawable/refresh"
+		       	android:visibility="gone"
+		        />
+	    </LinearLayout>
+	
+	    <ImageButton
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+        	android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:contentDescription="@string/text_back"
+            android:layout_marginLeft="4dp" 
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/btn_back_sel" />
+	    
+	    <ImageButton
+	        android:id="@+id/iv_ordermenu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:contentDescription="@string/txt_song_order_list"
+	        android:background="@color/transparent"
+	        android:src="@drawable/btn_order_sel" />
+	    
+	    <TextView
+	        android:id="@+id/tv_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="4dp"
+	        android:text="@string/txt_zero"
+	        android:textColor="#ffffffff"
+	        android:textSize="12sp"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:gravity="center"
+	        android:background="@drawable/btn_number" />
+	
+	</RelativeLayout>
+</RelativeLayout>

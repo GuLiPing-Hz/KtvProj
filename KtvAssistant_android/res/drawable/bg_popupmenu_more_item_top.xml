@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--按下状态 --> 
+    <item android:state_pressed="true" >
+		<shape >
+		    <solid android:color="@color/chat_menu_more_item_pressed" />
+			<corners
+		        android:topLeftRadius="7dp"
+		        android:topRightRadius="7dp" />
+		</shape>
+	</item>
+	<item android:drawable="@color/transparent" />
+</selector>

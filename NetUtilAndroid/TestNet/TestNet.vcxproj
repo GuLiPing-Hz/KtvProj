@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F45CFBA-80B2-4224-A7D0-3658E3BC1C4C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TestNet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;TEST_NET;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DEVELOP_SDK)\open_src\curl-7.45.0\include;../JniNetUtil/NetUtil/zlib;../JniNetUtil/NetUtil/wrap;../JniNetUtil;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(DEVELOP_SDK)\open_src\curl-7.45.0\build\Win32\VC11\DLL Debug - DLL OpenSSL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\JniNetUtil\NetUtil\charset\CharsetCodec.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\charset\Chinese.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\charset\Utf.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\ChatCompatibility.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\DataDecoderAuth.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\DataDecoderChannellist.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\DataDecoderLobby.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\DataDecoderRoom.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\DataDecodeUtilty.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\dbresult.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\HttpUniformCallBack.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\localstorage\DataMgr.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\localstorage\DataType.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\localstorage\LocalStorage.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\localstorage\NotifyMsg.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\localstorage\ServerData.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\localstorage\UserInfoData.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\localstorage\XmlFileDef.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\MessageFilter.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\NetApp.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\protocol.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\RequestBase.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\ReserveData.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\ResponseBase.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\ResultData.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\ThreadInformer.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\TMSeqMap.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\Tunnel.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\aes.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\CFileMgr.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\ClientSocket.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\config.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\httpcontent.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\Counter.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\crypt.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\DataBlock.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\DataDecoder.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\EventHandler.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\event_posix.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\event_win.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\event_wrapper.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\HttpDownload.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\HttpDownloadMgr.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\HttpDownloadType.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\md5.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\NonCopyable.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\NUtility.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\reactor.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\RWStream.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\SeqMap.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\set_thread_name_win.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\sleep.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\ThreadMgr.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\thread_posix.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\thread_win.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\thread_wrapper.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\Timer.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\wrap\typedefs.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\xingconfig.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\XingguangDef.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\xml\tinystr.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\xml\tinyxml.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zip\crypt.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zip\ioapi.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zip\unzip.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zip\zip.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\crc32.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\deflate.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\gzguts.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\inffast.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\inffixed.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\inflate.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\inftrees.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\trees.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\zconf.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\zlib.h" />
+    <ClInclude Include="..\JniNetUtil\NetUtil\zlib\zutil.h" />
+    <ClInclude Include="ResStrings.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestResponse.h" />
+    <ClInclude Include="xingguang.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\JniNetUtil\NetUtil\charset\CharsetCodec.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\charset\Chinese.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\charset\Utf.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\ChatCompatibility.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecoderAuth.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecoderChannellist.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecoderLobby.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecoderLobbyNew.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecoderLobbyOld.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecoderRoom.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecoderRoom1.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecoderRoom2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\DataDecodeUtilty.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\dbresult.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\HttpUniformCallBack.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\localstorage\DataMgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\localstorage\LocalStorage.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\localstorage\NotifyMsg.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\localstorage\ServerData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\localstorage\UserInfoData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\MessageFilter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\NetApp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\RequestBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\ReserveData.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\ThreadInformer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\TMSeqMap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\Tunnel.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\aes.cpp" />
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\CFileMgr.cpp" />
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\ClientSocket.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\httpcontent.cpp" />
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\Counter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\crypt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\DataBlock.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\DataDecoder.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\event.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\EventHandler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\HttpDownload.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\HttpDownloadMgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\md5.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\NonCopyable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\NUtility.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\reactor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\RWStream.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\SeqMap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\sleep.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\thread.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\ThreadMgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\wrap\Timer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\xml\tinystr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\xml\tinyxml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\xml\tinyxmlerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\xml\tinyxmlparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zip\ioapi.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zip\unzip.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zip\zip.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\adler32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\compress.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\crc32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\deflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\gzclose.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\gzlib.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\gzread.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\gzwrite.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\infback.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\inffast.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\inflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\inftrees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\trees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\uncompr.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\JniNetUtil\NetUtil\zlib\zutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestNet.cpp" />
+    <ClCompile Include="TestResponse.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+
+    <include
+        android:id="@+id/loginmodify_title"
+        layout="@layout/ly_title" />
+
+    <!-- 个人信息 -->
+
+    <LinearLayout
+        android:id="@+id/loginmodify_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginmodify_title"
+        android:orientation="vertical"
+        android:padding="10.0dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5.0dp"
+            android:text="个人信息" />
+
+        <RelativeLayout
+            android:id="@+id/loginmodify_nameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/loginmodify_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称：" />
+
+            <EditText
+                android:id="@+id/loginmodify_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/loginmodify_name_text"
+                android:background="@color/white"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:text="XXX" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/loginmodify_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/loginmodify_genderLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.67dp"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/loginmodify_gender_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别：" />
+
+            <TextView
+                android:id="@+id/loginmodify_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/loginmodify_gender_text"
+                android:text="XXX" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginmodify_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginmodify_info"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10.0dp"
+        android:gravity="center"
+        android:text="完成" />
+
+</RelativeLayout>

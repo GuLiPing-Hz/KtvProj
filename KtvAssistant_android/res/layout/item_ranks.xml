@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_ranks_first"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_ranks"
+        >
+        <TextView 
+            android:id="@+id/tv_ranks_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/home_itemtitle"
+            android:textSize="14sp"
+            android:text="情歌对唱热歌榜"
+            />
+        
+        <assistant.view.RoundedImageView 
+            android:id="@+id/imgbtn_ranks1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/contentdes"
+            android:scaleType="fitCenter"
+            android:src="@drawable/load_ic_1"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:id="@+id/rl_ranks_second"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_ranks"
+        >
+        
+        <TextView 
+            android:id="@+id/tv_ranks_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/home_itemtitle"
+            android:textSize="14sp"
+            android:text="新歌排行榜"
+            />
+        
+        <assistant.view.RoundedImageView 
+            android:id="@+id/imgbtn_ranks2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/contentdes"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_ranks"
+            android:src="@drawable/load_ic_1"
+            />
+    </RelativeLayout>
+    
+</LinearLayout>

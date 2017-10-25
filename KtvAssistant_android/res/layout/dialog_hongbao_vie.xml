@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_height="380dp" 
+    >
+
+    <ImageView 
+        android:contentDescription="@string/contentdes"
+        android:layout_width="match_parent"
+    	android:layout_height="380dp" 
+    	android:layout_alignParentBottom="true"
+    	android:src="@drawable/red_shell_0"
+        />
+
+    <ImageButton 
+        android:id="@+id/hb_btn_close"
+        android:contentDescription="@string/contentdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+  		android:layout_marginTop="2dp"
+  		android:layout_alignParentRight="true"
+        android:src="@drawable/selector_hbvie_close"
+        android:scaleType="fitXY" 
+        android:background="#00000000"
+        />
+        
+    <assistant.view.RoundedImageView
+        android:id="@+id/iv_userhead"
+        android:layout_width="67.33dp"
+        android:layout_height="67.33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_user"
+        />
+    
+    <TextView 
+        android:id="@+id/dialog_hb_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_userhead"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="外星球"
+        />
+      
+    <TextView 
+        android:id="@+id/dialog_hb_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dialog_hb_from"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/hb_introduction"
+        android:text="外星球给大家发红包啦"
+        />
+    
+    <FrameLayout 
+        android:id="@+id/fl_fail_catch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:visibility="gone"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginBottom="80dp"
+        	android:text="@string/hongbao_late"
+        	android:textColor="@color/white"
+        	android:textSize="13sp"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_look_detail"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:padding="10dp"
+        	android:text="@string/hongbao_detail"
+        	android:textColor="@color/hb_detail_text"
+        	android:layout_gravity="center_horizontal|bottom"
+            />
+    </FrameLayout>
+    <FrameLayout 
+        android:id="@+id/rl_catch_hb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:visibility="visible"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/hbvie_loading"
+            />
+        
+        <FrameLayout 
+            android:id="@+id/fl_catch_hb_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="visible"
+            >
+            <ImageButton
+	            android:id="@+id/img_effect_hb"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/selector_catch_hb"
+	        	android:background="@color/transparent"
+	            />
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:text="@string/hongbao_catch"
+	        	android:layout_gravity="center"
+	        	android:textSize="16sp"
+	        	android:textColor="@color/white"
+	            />
+        </FrameLayout>
+    </FrameLayout>
+    
+</RelativeLayout>

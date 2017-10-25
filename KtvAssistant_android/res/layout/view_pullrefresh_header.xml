@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- List View的头部 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pullrefresh_head_rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 内容 -->
+    <RelativeLayout
+        android:id="@+id/pullrefresh_head_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" >
+
+        <!-- 箭头图像、进度条 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <!-- 箭头 -->
+            <ImageView
+                android:id="@+id/pullrefresh_head_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_refresh_arrow" />
+
+            <!-- 进度条 -->
+            <!--  -->
+            <!-- style="?android:attr/progressBarStyleSmall"  -->
+            <!-- mce_style="?android:attr/progressBarStyleSmall" -->
+            <ProgressBar
+                android:id="@+id/pullrefresh_head_progressBar"
+                style="@android:style/Widget.ProgressBar.Small"
+          		android:indeterminateDrawable="@drawable/progressbar_animate"
+          		android:layout_width="20dip"   
+          		android:layout_height="20dip" 
+                android:layout_centerVertical="true"
+                /> 
+        </RelativeLayout>
+
+        <!-- 提示、最近更新 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 提示 -->
+            <TextView
+                android:id="@+id/pullrefresh_head_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_refresh_pull_label"
+                android:textColor="#dd767c7f"
+                android:textSize="12sp" />
+
+            <!-- 最近更新 -->
+
+            <TextView
+                android:id="@+id/pullrefresh_head_lastUpdated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_refresh_time_text"
+                android:textColor="#dd767c7f"
+                android:textSize="12sp"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

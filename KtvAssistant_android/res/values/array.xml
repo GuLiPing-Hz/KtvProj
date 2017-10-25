@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<resources> 
+    <string-array name="set_head_sel"> 
+        <item>拍摄新照片</item> 
+        <item>选择手机中照片</item>
+        <item>编辑已上传照片</item>
+    </string-array>
+    
+     <string-array name="share_wx_item">
+        <item>分享到微信</item>
+        <item>分享到朋友圈</item>
+     </string-array>
+     
+     <string-array name="listen_photo_edit"> 
+        <item>好声音相册中选择</item> 
+        <item>手机相册中上传</item>
+    </string-array>
+    
+     <string-array name="sex_item"> 
+        <item>男</item> 
+        <item>女</item>
+    </string-array>
+    
+</resources>  

@@ -1,0 +1,1315 @@
+Compiled from "CJniUtil.java"
+public class com.jni.netutil.CJniUtil implements com.jni.netutil.JniNetUtil {
+  static final boolean $assertionsDisabled;
+    descriptor: Z
+  static {};
+    descriptor: ()V
+
+  public com.jni.netutil.CJniUtil();
+    descriptor: ()V
+
+  public void initJniUtil(android.os.Handler);
+    descriptor: (Landroid/os/Handler;)V
+
+  public native int StartClient();
+    descriptor: ()I
+
+  public native void StopClient();
+    descriptor: ()V
+
+  public native java.lang.String GetToken();
+    descriptor: ()Ljava/lang/String;
+
+  public native int GetTokenlen();
+    descriptor: ()I
+
+  public native boolean IsConnectAuth();
+    descriptor: ()Z
+
+  public native boolean IsConnectLobby();
+    descriptor: ()Z
+
+  public native boolean IsConnectRoom();
+    descriptor: ()Z
+
+  public native boolean IsTokenLoginLobby();
+    descriptor: ()Z
+
+  public native boolean IsTokenLoginRoom();
+    descriptor: ()Z
+
+  public native int ConnectAuth(java.lang.String, short, int);
+    descriptor: (Ljava/lang/String;SI)I
+
+  public native int DisConnectAuth();
+    descriptor: ()I
+
+  public native int ConnectLobby(java.lang.String, short, int);
+    descriptor: (Ljava/lang/String;SI)I
+
+  public native int DisConnectLobby();
+    descriptor: ()I
+
+  public native int ConnectRoom(java.lang.String, short, int, int);
+    descriptor: (Ljava/lang/String;SII)I
+
+  public native int DisConnectRoom();
+    descriptor: ()I
+
+  public native int IdPassAuth(java.lang.String, java.lang.String, int);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;I)I
+
+  public native int TouristAuth(int);
+    descriptor: (I)I
+
+  public native int ConfirmToken();
+    descriptor: ()I
+
+  public native int EnterRoom(int, int, java.lang.String, short);
+    descriptor: (IILjava/lang/String;S)I
+
+  public native int GetRoomAllInfomation(int);
+    descriptor: (I)I
+
+  public native int GetWaitMicList();
+    descriptor: ()I
+
+  public native int RoomWaitMic(int, short, char, java.lang.String, char);
+    descriptor: (ISCLjava/lang/String;C)I
+
+  public native int RoomCancleWaitMic(int);
+    descriptor: (I)I
+
+  public native int RoomUpWaitMic(char, int, char);
+    descriptor: (CIC)I
+
+  public native int RoomDownWaitMic(char, int, char);
+    descriptor: (CIC)I
+
+  public native int RoomKickSomeOne(int);
+    descriptor: (I)I
+
+  public native int RoomForbidenSomeOne(int, char);
+    descriptor: (IC)I
+
+  public native int RoomOnvjMic();
+    descriptor: ()I
+
+  public native int RoomOffvjMic();
+    descriptor: ()I
+
+  public native int RoomGivOnevjMic(int);
+    descriptor: (I)I
+
+  public native int ApplyGetVJmic(int, char);
+    descriptor: (IC)I
+
+  public native int RoomGiveOffvjMic(int);
+    descriptor: (I)I
+
+  public native int RoomGiveOffMic(int);
+    descriptor: (I)I
+
+  public native int RoomUpdateBlackList(int, int, char);
+    descriptor: (IIC)I
+
+  public native int RoomUpdateMgrList(int, char, char);
+    descriptor: (ICC)I
+
+  public native int LoginLobby(int, java.lang.String, int);
+    descriptor: (ILjava/lang/String;I)I
+
+  public native int LoginLobbyAuto(java.lang.String, int);
+    descriptor: (Ljava/lang/String;I)I
+
+  public native int GetUserInfo_AII(int[], int);
+    descriptor: ([II)I
+
+  public native int GetFriendListWithoutUserInfo();
+    descriptor: ()I
+
+  public native int GetBlackListWithoutUserInfo();
+    descriptor: ()I
+
+  public native int AddFriend(int);
+    descriptor: (I)I
+
+  public native int AddBlack(int, int);
+    descriptor: (II)I
+
+  public native int DelFriend(int, int);
+    descriptor: (II)I
+
+  public native int DelBlack(int, int);
+    descriptor: (II)I
+
+  public native int GetChannellist(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int GetRoomList(int);
+    descriptor: (I)I
+
+  public native int GetRoomListEx(int, int);
+    descriptor: (II)I
+
+  public native int GetRoomInfo(int, int, int[]);
+    descriptor: (II[I)I
+
+  public native int GetTmpRoomInfo(int);
+    descriptor: (I)I
+
+  public native int CreateAvatar(java.lang.String, com.jni.netutil.ResultData_Avatar_Updata);
+    descriptor: (Ljava/lang/String;Lcom/jni/netutil/ResultData_Avatar_Updata;)I
+
+  public native int ChangeAvatar(com.jni.netutil.ResultData_Avatar_Updata);
+    descriptor: (Lcom/jni/netutil/ResultData_Avatar_Updata;)I
+
+  public native int ChangeNickName(int, java.lang.String, int);
+    descriptor: (ILjava/lang/String;I)I
+
+  public native int SendFlower(int, int, int, int);
+    descriptor: (IIII)I
+
+  public native int BroadAll(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native int BroadLobby(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int SendRoomNotice(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native int GetLobbyInfo(int, int);
+    descriptor: (II)I
+
+  public native int InviteMic(int);
+    descriptor: (I)I
+
+  public native int SendChatToUser(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int SendChatToClub(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native int SendChatToRoom(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native int SendSpeakerToAll(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native int SendSpeakerToLobby(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int QueryFriendLocation(int, int);
+    descriptor: (II)I
+
+  public native int GetRoomApplyList(int);
+    descriptor: (I)I
+
+  public native int ApplyRoomMember(int);
+    descriptor: (I)I
+
+  public native int AuditAddApply(int, int, char);
+    descriptor: (IIC)I
+
+  public native int GetRoomMemberList(int);
+    descriptor: (I)I
+
+  public native int UnchainMember(int, int);
+    descriptor: (II)I
+
+  public native int SetRoomPesideAssistant(int, int);
+    descriptor: (II)I
+
+  public native int SetRoomPeside(int, int);
+    descriptor: (II)I
+
+  public native int SetRoomSubHost(int, int);
+    descriptor: (II)I
+
+  public native int SetRoomMember(int, int);
+    descriptor: (II)I
+
+  public native int GetBlackList(int);
+    descriptor: (I)I
+
+  public native int AddDelBlack(int, char);
+    descriptor: (IC)I
+
+  public native int GetRoomPanelInfo(int);
+    descriptor: (I)I
+
+  public native int SetRoomPassword(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int SetRoomSwitch(int, char);
+    descriptor: (IC)I
+
+  public native int SetRoomPrivate(int, char);
+    descriptor: (IC)I
+
+  public native int SetUserInOutSwitch(int, char);
+    descriptor: (IC)I
+
+  public native int SetGetMicSwitch(int, char);
+    descriptor: (IC)I
+
+  public native int SetOnMicSwitch(int, char);
+    descriptor: (IC)I
+
+  public native int ModifyRoomName(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int SetRoomAffiche(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int AllowRoomAllChat(int, char);
+    descriptor: (IC)I
+
+  public native int SetRoomSalutatory(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int SetRoomLogo(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int GetPartInfo(int, int);
+    descriptor: (II)I
+
+  public native int GetRoomList_II(int, int);
+    descriptor: (II)I
+
+  public native int LeaveRoom();
+    descriptor: ()I
+
+  public native int ApplyAddFriend(int, char);
+    descriptor: (IC)I
+
+  public native int GetRoomSimpleInfo();
+    descriptor: ()I
+
+  public native int GetRoomSimpleInfoEx(int);
+    descriptor: (I)I
+
+  public native int ExitRoomMember();
+    descriptor: ()I
+
+  public native int GetLobbyOnlineNum();
+    descriptor: ()I
+
+  public native int BuyPack(com.jni.netutil.ResultData_Buy[], int, int, int);
+    descriptor: ([Lcom/jni/netutil/ResultData_Buy;III)I
+
+  public native int GetPack();
+    descriptor: ()I
+
+  public native int DelPack(int, int[], int);
+    descriptor: (I[II)I
+
+  public native int UsePack(int);
+    descriptor: (I)I
+
+  public native int CreateRoom(com.jni.netutil.ResultData_CreateRoom);
+    descriptor: (Lcom/jni/netutil/ResultData_CreateRoom;)I
+
+  public native int SendFireworks(int, int);
+    descriptor: (II)I
+
+  public native int GetGiftTopList();
+    descriptor: ()I
+
+  public native int GetOnlineTime(int);
+    descriptor: (I)I
+
+  public native int GetNewUserTask();
+    descriptor: ()I
+
+  public native int TaskStep(short);
+    descriptor: (S)I
+
+  public native int TaskGift(short);
+    descriptor: (S)I
+
+  public native int GetGiftInfo();
+    descriptor: ()I
+
+  public native int GetSystemBroad();
+    descriptor: ()I
+
+  public native int GetUserSeel(int[]);
+    descriptor: ([I)I
+
+  public native int SendSysteInfo(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native int GetGroupInfo();
+    descriptor: ()I
+
+  public native int GetRoomListInGroup(int);
+    descriptor: (I)I
+
+  public native int GetRoomListInGroupBatch(short[]);
+    descriptor: ([S)I
+
+  public native int GetSongInfoList();
+    descriptor: ()I
+
+  public native int GetAvServerList(short);
+    descriptor: (S)I
+
+  public native int GetOffLineMsg();
+    descriptor: ()I
+
+  public native int GetRoomSortInGroup(short);
+    descriptor: (S)I
+
+  public native int GetUserSpeakerInfo();
+    descriptor: ()I
+
+  public native int GetFamilyInfo();
+    descriptor: ()I
+
+  public native int RoomScore(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native int ShowRoomIncome();
+    descriptor: ()I
+
+  public native int ShowRoomGetIncome();
+    descriptor: ()I
+
+  public native int GetRoomIncome();
+    descriptor: ()I
+
+  public native int SendPcData(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native int InviteJoinRoom(int, int);
+    descriptor: (II)I
+
+  public native int ReInviteJoinRoom(char);
+    descriptor: (C)I
+
+  public native int GetGiftSend();
+    descriptor: ()I
+
+  public native int GetGiftRecv();
+    descriptor: ()I
+
+  public native int KickUserByMac(int);
+    descriptor: (I)I
+
+  public native int KickUserByIp(int);
+    descriptor: (I)I
+
+  public native int SetOnMicTemainTime(int, int);
+    descriptor: (II)I
+
+  public native int SendSongRemnantsTime(short);
+    descriptor: (S)I
+
+  public native int OpenPrivateMic(short);
+    descriptor: (S)I
+
+  public native int ClosePrivateMic();
+    descriptor: ()I
+
+  public native int ClosedPrivateMic(int);
+    descriptor: (I)I
+
+  public native int RequestWatchPrivateMic(int);
+    descriptor: (I)I
+
+  public native int ResponseWatchPrivateMic(int, int);
+    descriptor: (II)I
+
+  public native int InviteWatchPrivateMic(int[]);
+    descriptor: ([I)I
+
+  public native int ResponseInviteWatchPrivateMic(int, int);
+    descriptor: (II)I
+
+  public native int OpenRoomPrivateMicFlag(char);
+    descriptor: (C)I
+
+  public native int CrownKickoutSomeOne(int);
+    descriptor: (I)I
+
+  public native int ForbidUserIp(int);
+    descriptor: (I)I
+
+  public native int SingerScores(int, short[]);
+    descriptor: (I[S)I
+
+  public native int UpdateSong(int);
+    descriptor: (I)I
+
+  public native int GetUserInfoForSpeaker(int[]);
+    descriptor: ([I)I
+
+  public native int GetUserInfoWithVersion(com.jni.netutil.RequestData_IdxWithVersion[]);
+    descriptor: ([Lcom/jni/netutil/RequestData_IdxWithVersion;)I
+
+  public native int InitDownLoadUrl(java.lang.String, int);
+    descriptor: (Ljava/lang/String;I)I
+
+  public native int InitLocalDatabaseDir(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+
+  public native com.jni.netutil.LocalData_UserInfo GetMyInfo();
+    descriptor: ()Lcom/jni/netutil/LocalData_UserInfo;
+
+  public native com.jni.netutil.ResultData_SelfData GetSelfData();
+    descriptor: ()Lcom/jni/netutil/ResultData_SelfData;
+
+  public native int GetMyIdx();
+    descriptor: ()I
+
+  public native int IsWangtong(java.lang.String, java.lang.String);
+    descriptor: (Ljava/lang/String;Ljava/lang/String;)I
+
+  public native com.jni.netutil.ResultData_RoomInfo GetRoomInfoFromLocal(int);
+    descriptor: (I)Lcom/jni/netutil/ResultData_RoomInfo;
+
+  public native com.jni.netutil.LocalData_UserInfo GetUserInfoFromLocal(int);
+    descriptor: (I)Lcom/jni/netutil/LocalData_UserInfo;
+
+  public native com.jni.netutil.GiftInfo GetGiftInfoFromLocal(int);
+    descriptor: (I)Lcom/jni/netutil/GiftInfo;
+
+  public native int[] GetAllGiftId();
+    descriptor: ()[I
+
+  public native int SendChatKTV(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)I
+
+  public native int SendGiftInLobby(int, int, int, int);
+    descriptor: (IIII)I
+
+  public native boolean MFInitFilter();
+    descriptor: ()Z
+
+  public native java.lang.String MFFilter(java.lang.String);
+    descriptor: (Ljava/lang/String;)Ljava/lang/String;
+
+  public native boolean MFFindSensWord(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+
+  public native boolean MFFindSensWord2(java.lang.String);
+    descriptor: (Ljava/lang/String;)Z
+
+  public native int RequestSendHB(byte, int, int, java.lang.String, int);
+    descriptor: (BIILjava/lang/String;I)I
+
+  public native int RequestVieHB(int);
+    descriptor: (I)I
+
+  public native int RequestHBDetail(int);
+    descriptor: (I)I
+
+  public void SendChatFromUser(int, int, java.lang.String, int);
+    descriptor: (IILjava/lang/String;I)V
+
+  public void RecvChatFromUser(int, int, java.lang.String, int);
+    descriptor: (IILjava/lang/String;I)V
+
+  public void RecvChatFromClub(int, int, java.lang.String);
+    descriptor: (IILjava/lang/String;)V
+
+  public void RecvChatFromRoom(int, int, int, java.lang.String, int);
+    descriptor: (IIILjava/lang/String;I)V
+
+  public void RecvSpeakerFromAll(int, int, int, java.lang.String);
+    descriptor: (IIILjava/lang/String;)V
+
+  public void RecvSpeakerFromLobby(int, int, java.lang.String, java.lang.String, int, int, boolean);
+    descriptor: (IILjava/lang/String;Ljava/lang/String;IIZ)V
+
+  public void RecvPresentBroad(int, com.jni.netutil.ResultData_GiftInfo, com.jni.netutil.ResultData_GiftInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_GiftInfo;Lcom/jni/netutil/ResultData_GiftInfo;)V
+
+  public void RecvSystemBroad(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+
+  public void RecvSystemBroad2(java.lang.String, int, int, int, int);
+    descriptor: (Ljava/lang/String;IIII)V
+
+  public void RecvSystemNotice(java.lang.String, boolean, int);
+    descriptor: (Ljava/lang/String;ZI)V
+
+  public void RecvSystemNotice2(java.lang.String, int, int, int, int);
+    descriptor: (Ljava/lang/String;IIII)V
+
+  public void RecvRoomNotice(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+
+  public void RecvFriendLocation(int, int, int, int, int, int);
+    descriptor: (IIIIII)V
+
+  public void RecvRoomApplyList(int, int, com.jni.netutil.ResultDate_RoomApplyList, int);
+    descriptor: (IILcom/jni/netutil/ResultDate_RoomApplyList;I)V
+
+  public void RecvApplyRoomMember(int, int, int);
+    descriptor: (III)V
+
+  public void RecvAuditAddApply(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomApplyRefuseMsg(int, int);
+    descriptor: (II)V
+
+  public void RecvRoomMemberList(int, int, com.jni.netutil.ResultDate_RoomMemList, int);
+    descriptor: (IILcom/jni/netutil/ResultDate_RoomMemList;I)V
+
+  public void RecvUnchainMember(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomPesideAssistant(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4PesideAssistant(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomPeside(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4Peside(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomSubHost(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4SubHost(int, int, int);
+    descriptor: (III)V
+
+  public void RecvBlackList(int, int, com.jni.netutil.ResultDate_RoomBlackList, int);
+    descriptor: (IILcom/jni/netutil/ResultDate_RoomBlackList;I)V
+
+  public void RecvAddDelBlack(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomPanelInfo(int, int, com.jni.netutil.ResultDate_RoomPanel);
+    descriptor: (IILcom/jni/netutil/ResultDate_RoomPanel;)V
+
+  public void RecvRoomPassword(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomNotice4Password(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomSwitch(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4RoomSwitch(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomPrivate(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4Private(int, int, int);
+    descriptor: (III)V
+
+  public void RecvUserInOutSwitch(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4UserSwitch(int, int, int);
+    descriptor: (III)V
+
+  public void RecvGetMicSwitch(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvOnMicSwitch(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4GetMicSwitch(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomNotice4OnMicSwitch(int, int, int);
+    descriptor: (III)V
+
+  public void RecvModifyRoomName(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomName(int, int, java.lang.String);
+    descriptor: (IILjava/lang/String;)V
+
+  public void RecvRoomAffiche(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomAfficheEvent(int);
+    descriptor: (I)V
+
+  public void RecvAllowRoomAllChat(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4AllChat(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomSalutatory(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomNotice4Salutatory(int, int);
+    descriptor: (II)V
+
+  public void RecvRoomLogo(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomNotice4Logo(int, int);
+    descriptor: (II)V
+
+  public void RecvRoomNotice4Lock(int);
+    descriptor: (I)V
+
+  public void RecvCreateRoom(int, int, com.jni.netutil.RoomListEx);
+    descriptor: (IILcom/jni/netutil/RoomListEx;)V
+
+  public void RecvTmpRoomInfo(int, int, com.jni.netutil.RoomListEx);
+    descriptor: (IILcom/jni/netutil/RoomListEx;)V
+
+  public void RecvRoomNotice4Add(com.jni.netutil.RoomListEx);
+    descriptor: (Lcom/jni/netutil/RoomListEx;)V
+
+  public void RecvRoomNotice4Add(int);
+    descriptor: (I)V
+
+  public void RecvRoomNotice4Del(int);
+    descriptor: (I)V
+
+  public void RecvRoomNotice4ChangeMaster(int);
+    descriptor: (I)V
+
+  public void RecvRoomNotice4ChangeInfo(int);
+    descriptor: (I)V
+
+  public void RecvPartInfo(int, int, com.jni.netutil.ResultData_PartInfo, int);
+    descriptor: (IILcom/jni/netutil/ResultData_PartInfo;I)V
+
+  public void OnLoginLobby(int, int, com.jni.netutil.LocalData_UserInfo);
+    descriptor: (IILcom/jni/netutil/LocalData_UserInfo;)V
+
+  public void RecvPartInfoBySelf(int, int, com.jni.netutil.ResultData_PartInfo, int);
+    descriptor: (IILcom/jni/netutil/ResultData_PartInfo;I)V
+
+  public void RecvRoomList(int, com.jni.netutil.ResultDate_RoomList);
+    descriptor: (ILcom/jni/netutil/ResultDate_RoomList;)V
+
+  public void RecvRoomListEx(int, com.jni.netutil.ResultDate_RoomListEx);
+    descriptor: (ILcom/jni/netutil/ResultDate_RoomListEx;)V
+
+  public void RecvNotice4OffMic(int, int, int, java.lang.String);
+    descriptor: (IIILjava/lang/String;)V
+
+  public void RecvRoomGivOnevjMic(int, int);
+    descriptor: (II)V
+
+  public void RecvRoomGivOnevjMicApply(int);
+    descriptor: (I)V
+
+  public void RecvAddFriendApply(int);
+    descriptor: (I)V
+
+  public void OnAuthTunnelConnectSuccess();
+    descriptor: ()V
+
+  public void OnLobbyTunnelConnectSuccess();
+    descriptor: ()V
+
+  public void OnRoomTunnelConnectSuccess();
+    descriptor: ()V
+
+  public void OnChannellistTunnelConnectSuccess();
+    descriptor: ()V
+
+  public void OnAuthTunnelConnectTimeout();
+    descriptor: ()V
+
+  public void OnLobbyTunnelConnectTimeout();
+    descriptor: ()V
+
+  public void OnRoomTunnelConnectTimeout();
+    descriptor: ()V
+
+  public void OnChannellistTunnelConnectTimeout();
+    descriptor: ()V
+
+  public void OnAuthTunnelConnectError(int);
+    descriptor: (I)V
+
+  public void OnLobbyTunnelConnectError(int);
+    descriptor: (I)V
+
+  public void OnRoomTunnelConnectError(int);
+    descriptor: (I)V
+
+  public void OnChannellistTunnelConnectError(int);
+    descriptor: (I)V
+
+  public void OnAuthTunnelClose();
+    descriptor: ()V
+
+  public void OnLobbyTunnelClose();
+    descriptor: ()V
+
+  public void OnRoomTunnelClose();
+    descriptor: ()V
+
+  public void OnChannellistTunnelClose();
+    descriptor: ()V
+
+  public void OnAuthTunnelError(int);
+    descriptor: (I)V
+
+  public void OnLobbyTunnelError(int);
+    descriptor: (I)V
+
+  public void OnRoomTunnelError(int);
+    descriptor: (I)V
+
+  public void OnChannellistTunnelError(int);
+    descriptor: (I)V
+
+  public void RecvAuth(int, int, int);
+    descriptor: (III)V
+
+  public void RecvNewToken(int, int);
+    descriptor: (II)V
+
+  public void RecvSectionList(int, int, com.jni.netutil.ResultData_GetChannellist, int);
+    descriptor: (IILcom/jni/netutil/ResultData_GetChannellist;I)V
+
+  public void RecvSectionList2(int, int, int, com.jni.netutil.ResultData_GetChannellist, int);
+    descriptor: (IIILcom/jni/netutil/ResultData_GetChannellist;I)V
+
+  public void RecvTokenAuth4Lobby(int, int, com.jni.netutil.ResultData_LobbyLogin, com.jni.netutil.ResultData_SelfData, int);
+    descriptor: (IILcom/jni/netutil/ResultData_LobbyLogin;Lcom/jni/netutil/ResultData_SelfData;I)V
+
+  public void RecvUserLoginLobbyNotice(int, int, char, int);
+    descriptor: (IICI)V
+
+  public void RecvUserLogoutLobbyNotice(int, int, char, int);
+    descriptor: (IICI)V
+
+  public void RecvUserInfo(int, int, com.jni.netutil.ResultData_UserFullInfo);
+    descriptor: (IILcom/jni/netutil/ResultData_UserFullInfo;)V
+
+  public void RecvFriendStatus(int, int, com.jni.netutil.ResultData_GetFriendlist);
+    descriptor: (IILcom/jni/netutil/ResultData_GetFriendlist;)V
+
+  public void RecvBlackStatus(int, int, com.jni.netutil.ResultData_GetFriendlist);
+    descriptor: (IILcom/jni/netutil/ResultData_GetFriendlist;)V
+
+  public void RecvClubStatus(int, int, com.jni.netutil.ResultData_GetClublist);
+    descriptor: (IILcom/jni/netutil/ResultData_GetClublist;)V
+
+  public void RecvAddFriend(int, int, int);
+    descriptor: (III)V
+
+  public void RecvAddBlack(int, int, int);
+    descriptor: (III)V
+
+  public void RecvDelFriend(int, int, int);
+    descriptor: (III)V
+
+  public void RecvDelBlack(int, int, int);
+    descriptor: (III)V
+
+  public void RecvApplyClub(int, int, int);
+    descriptor: (III)V
+
+  public void RecvExitClub(int, int, int);
+    descriptor: (III)V
+
+  public void RecvApplyListCount(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvApplyList(int, int, com.jni.netutil.ResultData_ClubApplyList, int);
+    descriptor: (IILcom/jni/netutil/ResultData_ClubApplyList;I)V
+
+  public void RecvAddClubOk(int, com.jni.netutil.ResultData_Approvelresult);
+    descriptor: (ILcom/jni/netutil/ResultData_Approvelresult;)V
+
+  public void RecvDelApplyList(int, com.jni.netutil.ResultData_Approvelresult);
+    descriptor: (ILcom/jni/netutil/ResultData_Approvelresult;)V
+
+  public void RecvAddClubNoticeByLobby(int, int, java.lang.String, int, int);
+    descriptor: (IILjava/lang/String;II)V
+
+  public void RecvAddClubNoticeByRoom(int, int);
+    descriptor: (II)V
+
+  public void RecvDenyClubNoticeByLobby(int, int, java.lang.String, int);
+    descriptor: (IILjava/lang/String;I)V
+
+  public void RecvExitClubNoticeByLobby(int, int, java.lang.String, int);
+    descriptor: (IILjava/lang/String;I)V
+
+  public void RecvExitClubNoticeByRoom(int);
+    descriptor: (I)V
+
+  public void RecvKickClubNoticeByLobby(int, int, java.lang.String, int, int);
+    descriptor: (IILjava/lang/String;II)V
+
+  public void RecvKickClubNoticeByRoom(int, int);
+    descriptor: (II)V
+
+  public void RecvCreateClub(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvDismissClub(int, int, int);
+    descriptor: (III)V
+
+  public void RecvClubInfo(int, int, com.jni.netutil.ResultData_ClubFullInfo, int);
+    descriptor: (IILcom/jni/netutil/ResultData_ClubFullInfo;I)V
+
+  public void RecvRoomInfo(int, com.jni.netutil.ResultData_RoomInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_RoomInfo;)V
+
+  public void RecvCreateAvatar(int, int);
+    descriptor: (II)V
+
+  public void RecvChangeAvatar(int, int);
+    descriptor: (II)V
+
+  public void RecvChangeNickName(int, int, java.lang.String);
+    descriptor: (IILjava/lang/String;)V
+
+  public void RecvLobbyEnterRoom(int, com.jni.netutil.ResultData_LobbyRoomEnter);
+    descriptor: (ILcom/jni/netutil/ResultData_LobbyRoomEnter;)V
+
+  public void RecvLobbyLeaveRoom(int, com.jni.netutil.ResultData_LobbyRoomEnter);
+    descriptor: (ILcom/jni/netutil/ResultData_LobbyRoomEnter;)V
+
+  public void RecvAddFriendNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvLobbyInfo(int, int, com.jni.netutil.ResultData_LobbyName, int);
+    descriptor: (IILcom/jni/netutil/ResultData_LobbyName;I)V
+
+  public void RecvChangePower(int, int);
+    descriptor: (II)V
+
+  public void RecvTokenAuth4Room(int, int);
+    descriptor: (II)V
+
+  public void RecvEnterRoom(int, int, byte, byte, int);
+    descriptor: (IIBBI)V
+
+  public void RecvEnterRoomNotice(int, com.jni.netutil.ResultData_UserInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_UserInfo;)V
+
+  public void RecvLeaveRoomNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvRoomAllInfo(int, int, com.jni.netutil.ResultData_RoomAllInfo, int);
+    descriptor: (IILcom/jni/netutil/ResultData_RoomAllInfo;I)V
+
+  public void RecvWaitMicNotice(int, com.jni.netutil.ResultData_MicInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_MicInfo;)V
+
+  public void RecvOnMicNotice(int, com.jni.netutil.ResultData_MicInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_MicInfo;)V
+
+  public void RecvCancelWaitMicNotice(int, int, int);
+    descriptor: (III)V
+
+  public void RecvWaitPKMicNotice(int, com.jni.netutil.ResultData_MicInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_MicInfo;)V
+
+  public void RecvCancelWaitPKMicNotice(int, int, int);
+    descriptor: (III)V
+
+  public void RecvUpWaitMicNotice(int, com.jni.netutil.ResultData_UDMicInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_UDMicInfo;)V
+
+  public void RecvDownWaitMicNotice(int, com.jni.netutil.ResultData_UDMicInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_UDMicInfo;)V
+
+  public void RecvKickOutNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvOnVJMicNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvOffVJMicNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvGiveOffMicNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvForbidenNotice(int, com.jni.netutil.ResultData_ForbidenInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_ForbidenInfo;)V
+
+  public void RecvUpdateBlackListNotice(int, com.jni.netutil.ResultData_UpBlackList);
+    descriptor: (ILcom/jni/netutil/ResultData_UpBlackList;)V
+
+  public void RecvUpdateMGRListNotice(int, com.jni.netutil.ResultData_UpMgrList);
+    descriptor: (ILcom/jni/netutil/ResultData_UpMgrList;)V
+
+  public void RecvSendFlowerNotice(int, com.jni.netutil.ResultData_SendFlowerInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_SendFlowerInfo;)V
+
+  public void RecvRoomKickUser();
+    descriptor: ()V
+
+  public void RecvLobbyKickUser();
+    descriptor: ()V
+
+  public void RecvRoomSimpleInfo(int, int, com.jni.netutil.ResultData_RoomSimpleInfoList);
+    descriptor: (IILcom/jni/netutil/ResultData_RoomSimpleInfoList;)V
+
+  public void RecvRoomSimpleInfoEx(int, int, com.jni.netutil.ResultData_RoomSimpleInfoList, int);
+    descriptor: (IILcom/jni/netutil/ResultData_RoomSimpleInfoList;I)V
+
+  public void RecvExitRoomMember(int, int);
+    descriptor: (II)V
+
+  public void RecvMailInfo(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+
+  public void RecvLobbyOnlineNum(int, int, com.jni.netutil.ResultData_LobbyOnlineList);
+    descriptor: (IILcom/jni/netutil/ResultData_LobbyOnlineList;)V
+
+  public void RecvSendFlower(int, int, int, int, int, int, int);
+    descriptor: (IIIIIII)V
+
+  public void RecvSpeakerToAll(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvSpeakerToLobby(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomMember(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvRoomNotice4Member(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRoomNotice4ChangeAvarat(int, int);
+    descriptor: (II)V
+
+  public void RecvOneError(short);
+    descriptor: (S)V
+
+  public void RecvBuyPack(int, int, int, int, short[], int[], int, java.lang.String);
+    descriptor: (IIII[S[IILjava/lang/String;)V
+
+  public void RecvBuyForSend(int, int, int, int, int);
+    descriptor: (IIIII)V
+
+  public void RecvGetPack(int, int, com.jni.netutil.ResultData_Pack[], int, int);
+    descriptor: (II[Lcom/jni/netutil/ResultData_Pack;II)V
+
+  public void RecvDelPack(int, int, int);
+    descriptor: (III)V
+
+  public void RecvTimeoutPack(int, int[]);
+    descriptor: (I[I)V
+
+  public void RecvSendPack(int, int, short, java.lang.String, java.lang.String);
+    descriptor: (IISLjava/lang/String;Ljava/lang/String;)V
+
+  public void RecvUsePack(int, int, int);
+    descriptor: (III)V
+
+  public void RecvNotice4LevelUp(int, int);
+    descriptor: (II)V
+
+  public void RecvExpChange(int, int);
+    descriptor: (II)V
+
+  public void RecvVipChange(int, int, int);
+    descriptor: (III)V
+
+  public void UpdataMoney(int, int);
+    descriptor: (II)V
+
+  public void RecvUpdataMyInfo();
+    descriptor: ()V
+
+  public void RecvFireworks(int, int, int, int, int, int);
+    descriptor: (IIIIII)V
+
+  public void RecvFireworksNotice(int, int, int);
+    descriptor: (III)V
+
+  public void RecvLucky(int, int, int);
+    descriptor: (III)V
+
+  public void RecvLucky(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvGiftTopList(com.jni.netutil.ResultData_GiftList);
+    descriptor: (Lcom/jni/netutil/ResultData_GiftList;)V
+
+  public void RecvOnlineTime(int, int, int);
+    descriptor: (III)V
+
+  public void RecvGetNewUserTask(short);
+    descriptor: (S)V
+
+  public void RecvTaskStep(int, int, int, int, int, int);
+    descriptor: (IIIIII)V
+
+  public void RecvTaskGift(int, int, int, int, java.lang.String);
+    descriptor: (IIIILjava/lang/String;)V
+
+  public void RecvNotice4ChangeGoods();
+    descriptor: ()V
+
+  public void RecvGetBagAgain();
+    descriptor: ()V
+
+  public void RecvUserSeel(int, int);
+    descriptor: (II)V
+
+  public void EnterAllMentState(int, short);
+    descriptor: (IS)V
+
+  public void RecvRoomLoge(int, java.lang.String, int);
+    descriptor: (ILjava/lang/String;I)V
+
+  public void RecvNewVersionId(int);
+    descriptor: (I)V
+
+  public void RecvGroupInfo(int, com.jni.netutil.ResultData_GroupInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_GroupInfo;)V
+
+  public void RecvRoomListInGroup(short, int, int[]);
+    descriptor: (SI[I)V
+
+  public void RecvRoomListInGroup(short, com.jni.netutil.ResultData_GroupRoomInfo[]);
+    descriptor: (S[Lcom/jni/netutil/ResultData_GroupRoomInfo;)V
+
+  public void RecvNotice4CollectData(java.lang.String, short);
+    descriptor: (Ljava/lang/String;S)V
+
+  public void RecvSongInfoList(short, short, com.jni.netutil.ResultData_SongInfo);
+    descriptor: (SSLcom/jni/netutil/ResultData_SongInfo;)V
+
+  public void RecvAvServerList(com.jni.netutil.ResultData_AvServer[], int);
+    descriptor: ([Lcom/jni/netutil/ResultData_AvServer;I)V
+
+  public void UpdataAvServerList();
+    descriptor: ()V
+
+  public void RecvCheckOutGame(int);
+    descriptor: (I)V
+
+  public void RecvOffLineMsg(int, com.jni.netutil.ResultData_OffLineMsg[]);
+    descriptor: (I[Lcom/jni/netutil/ResultData_OffLineMsg;)V
+
+  public void RecvRoomSortInGroup(int, int, com.jni.netutil.ResultData_RoomSort[]);
+    descriptor: (II[Lcom/jni/netutil/ResultData_RoomSort;)V
+
+  public void RecvRoomSortChange(int);
+    descriptor: (I)V
+
+  public void RecvSingerLevel(int, short, int);
+    descriptor: (ISI)V
+
+  public void RecvWealthLevel(int, short, int);
+    descriptor: (ISI)V
+
+  public void RecvGiftInvalid(int, int);
+    descriptor: (II)V
+
+  public void RecvGiftValid(int, int);
+    descriptor: (II)V
+
+  public void RecvShowRoomIncom(int);
+    descriptor: (I)V
+
+  public void RecvShowRoomGetIncom(com.jni.netutil.ResultData_IncomeDate[], int);
+    descriptor: ([Lcom/jni/netutil/ResultData_IncomeDate;I)V
+
+  public void RecvGetRoomIncom(int);
+    descriptor: (I)V
+
+  public void RecvNotice4ChangeFlower();
+    descriptor: ()V
+
+  public void RecvNotice4ChangePower();
+    descriptor: ()V
+
+  public void RecvNotice4AvserverChange(com.jni.netutil.ResultData_AvChange);
+    descriptor: (Lcom/jni/netutil/ResultData_AvChange;)V
+
+  public void RecvChangeGM(int, int);
+    descriptor: (II)V
+
+  public void RecvMicPcInfo(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+
+  public void RecvSendJoinRoomInvite(int, int, int);
+    descriptor: (III)V
+
+  public void RecvInviteJoinRoom(int);
+    descriptor: (I)V
+
+  public void RecvGiftSend(int, com.jni.netutil.ResultData_GiftCount[]);
+    descriptor: (I[Lcom/jni/netutil/ResultData_GiftCount;)V
+
+  public void RecvGiftRecv(int, com.jni.netutil.ResultData_GiftCount[]);
+    descriptor: (I[Lcom/jni/netutil/ResultData_GiftCount;)V
+
+  public void RecvKickUserByMac(int, int);
+    descriptor: (II)V
+
+  public void RecvKickUserByIp(int, int);
+    descriptor: (II)V
+
+  public void RecvSetMicTime(int, int);
+    descriptor: (II)V
+
+  public void RecvNotice4SetMicTime(int, int);
+    descriptor: (II)V
+
+  public void RecvWaitMicList(short, int[]);
+    descriptor: (S[I)V
+
+  public void RecvIndulgeTimeUp();
+    descriptor: ()V
+
+  public void RecvFamilyInfo(int, int, com.jni.netutil.ResultData_Family[]);
+    descriptor: (II[Lcom/jni/netutil/ResultData_Family;)V
+
+  public void RecvAVConfigInfo(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+
+  public void RecvOpenPrivateMicSuccess(int, short, int, int);
+    descriptor: (ISII)V
+
+  public void RecvOpenPrivateMicFailed(int, int, int);
+    descriptor: (III)V
+
+  public void RecvOpenPrivateMicNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvClosePrivateMicFailed(int, int, int);
+    descriptor: (III)V
+
+  public void RecvClosePriveteMicNotice(int);
+    descriptor: (I)V
+
+  public void RecvClosedPrivateMicFailed(int, int, int);
+    descriptor: (III)V
+
+  public void RecvClosedPriveteMicNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvWatchPrivateMicSuccess(int, short, int, int);
+    descriptor: (ISII)V
+
+  public void RecvWatchPrivateMicFailed(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRequestWatchedPrivateMic(int);
+    descriptor: (I)V
+
+  public void RecvWatchedPrivateMicFailed(int, int, int);
+    descriptor: (III)V
+
+  public void RecvWatchedPrivateMicReject(int);
+    descriptor: (I)V
+
+  public void RecvInviteWatchPrivateMicSuccess();
+    descriptor: ()V
+
+  public void RecvInviteWatchPrivateMicFailed(int, int, int);
+    descriptor: (III)V
+
+  public void RecvRequestInvitedWatchPrivateMic(int);
+    descriptor: (I)V
+
+  public void RecvInvitedWatchPrivateMicSuccess(int, short, int, int);
+    descriptor: (ISII)V
+
+  public void RecvInvitedWatchPrivateMicFailed(int, int, int);
+    descriptor: (III)V
+
+  public void RecvInvitedWatchPrivateMicReject(int);
+    descriptor: (I)V
+
+  public void RecvOpenRoomPrivateMicFlag(int, int);
+    descriptor: (II)V
+
+  public void RecvOpenRoomPrivateMicFlagNotice(int, int);
+    descriptor: (II)V
+
+  public void RecvPrivateMicWithLoginRoom(int, short, int, int);
+    descriptor: (ISII)V
+
+  public void RecvCrownKickoutSomeOne(int, int, int, int);
+    descriptor: (IIII)V
+
+  public void RecvForbidUserIp(int, int);
+    descriptor: (II)V
+
+  public void RecvUpdateSong();
+    descriptor: ()V
+
+  public void RecvGiftCount(int);
+    descriptor: (I)V
+
+  public void RecvTopSongInfo(int, int, java.lang.String);
+    descriptor: (IILjava/lang/String;)V
+
+  public void RecvKtvChatInfo(int, int, int, java.lang.String, java.lang.String, int, boolean, boolean);
+    descriptor: (IIILjava/lang/String;Ljava/lang/String;IZZ)V
+
+  public void RecvKtvSongList(com.jni.netutil.ResultData_SongList[], int);
+    descriptor: ([Lcom/jni/netutil/ResultData_SongList;I)V
+
+  public void RecvKtvRoomState(boolean);
+    descriptor: (Z)V
+
+  public void RecvKtvSongRanking();
+    descriptor: ()V
+
+  public void RecvKtvSongNormalEnd(int);
+    descriptor: (I)V
+
+  public void RecvKtvIdxList(int[], int);
+    descriptor: ([II)V
+
+  public void RecvUserPicChange(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+
+  public void RecvUserNameChange(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+
+  public void RecvUserInfoForSpeaker(int, com.jni.netutil.ResultData_UserSampleInfo);
+    descriptor: (ILcom/jni/netutil/ResultData_UserSampleInfo;)V
+
+  public void RecvUserInfoForSpeakerTimeOut(int[], int);
+    descriptor: ([II)V
+
+  public void RecvUserInfoTimeOut(int[], int);
+    descriptor: ([II)V
+
+  public void RecvNotifyMessage(int, java.lang.String);
+    descriptor: (ILjava/lang/String;)V
+
+  public void RecvImageDownladFinished(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+
+  public void RecvUserIdxAndType(com.jni.netutil.ResultData_UIdxWithType[]);
+    descriptor: ([Lcom/jni/netutil/ResultData_UIdxWithType;)V
+
+  public void RecvUserLoginLobbyNoticeNew(int, char);
+    descriptor: (IC)V
+
+  public void RecvSendHBResult(int);
+    descriptor: (I)V
+
+  public void RecvHongBao(int, int, java.lang.String);
+    descriptor: (IILjava/lang/String;)V
+
+  public void RecvVieHongBaoResult(int, int, int, char, java.lang.String, int);
+    descriptor: (IIICLjava/lang/String;I)V
+
+  public void RecvHongBaoDetail(int, int, char, java.lang.String, int, int, com.jni.netutil.ResultData_HBDetail[]);
+    descriptor: (IICLjava/lang/String;II[Lcom/jni/netutil/ResultData_HBDetail;)V
+
+  public void RecvLocalGiftDatabaseFinished();
+    descriptor: ()V
+}

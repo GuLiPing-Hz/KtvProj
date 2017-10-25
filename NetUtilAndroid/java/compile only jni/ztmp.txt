@@ -1,0 +1,32 @@
+Compiled from "StructInfo.java"
+class com.jni.netutil.LocalData_UserInfo extends com.jni.netutil.ResultData_UserFullInfo{
+public short is_adult;
+  Signature: S
+public boolean is_remind;
+  Signature: Z
+public int consume;
+  Signature: I
+public int family_idx;
+  Signature: I
+public boolean peri;
+  Signature: Z
+public int name_state;
+  Signature: I
+public int info_state;
+  Signature: I
+public int location_state;
+  Signature: I
+public int part_state;
+  Signature: I
+public int lobbyid;
+  Signature: I
+public int roomid;
+  Signature: I
+public int notify;
+  Signature: I
+public int relationship;
+  Signature: I
+com.jni.netutil.LocalData_UserInfo();
+  Signature: ()V
+}
+

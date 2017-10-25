@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_height="440dp" 
+    >
+
+    <ImageView 
+        android:contentDescription="@string/contentdes"
+        android:layout_width="match_parent"
+    	android:layout_height="380dp" 
+    	android:layout_alignParentBottom="true"
+    	android:src="@drawable/red_shell_1"
+        />
+
+    <ImageButton 
+        android:id="@+id/hb_btn_close"
+        android:contentDescription="@string/contentdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+  		android:layout_marginTop="10dp"
+  		android:layout_alignParentRight="true"
+        android:src="@drawable/hb_dialog_close"
+        android:scaleType="fitXY" 
+        android:background="#00000000"
+        />
+        
+    <assistant.view.RoundedImageView
+        android:id="@+id/iv_userhead"
+        android:layout_width="67.33dp"
+        android:layout_height="67.33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_user"
+        />
+    
+    <TextView 
+        android:id="@+id/dialog_hb_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_userhead"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/text_num_gray"
+        android:text="来自：外星球"
+        />
+    
+    <TextView 
+        android:id="@+id/dialog_hb_gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dialog_hb_mission"
+        android:layout_marginTop="30dp"
+        android:textSize="28sp"
+        android:textColor="@color/hb_gold"
+        android:text="1000000金币"
+        />
+      
+    
+</RelativeLayout>

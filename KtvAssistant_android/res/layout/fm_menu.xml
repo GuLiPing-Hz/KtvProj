@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/tiange.ktv.assistant"
+    xmlns:roundedImageView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fm_menu_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_cehua">
+
+    <LinearLayout 
+        android:id="@+id/userinfo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:padding="10dp"
+	        android:orientation="horizontal" >
+	
+	        <assistant.view.RoundedImageView
+	            android:id="@+id/iv_userhead"
+	            android:layout_width="67.33dp"
+	            android:layout_height="67.33dp"
+	            android:layout_marginLeft="18.67dp"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/ic_user"
+	            />
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="15dp"
+	            android:gravity="center_vertical"
+	            android:orientation="vertical" >
+	
+	
+	           <TextView
+		            android:id="@+id/tv_username"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:singleLine="true"
+		            android:drawableLeft="@drawable/icon_sex2_woman"
+		            android:drawablePadding="5dp"
+		            android:text="@string/home_nologin_tips"
+		            android:textColor="#ffffffff"
+		            android:textSize="16sp" />
+	            
+	
+	            <TextView
+	                android:id="@+id/tv_idx"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:singleLine="true"
+	                android:text="@string/account_status_noscore"
+	                android:textColor="#ff8d8d8d"
+	                android:textSize="12sp" />
+	
+	            <TextView
+	                android:id="@+id/tv_usercash"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:drawableLeft="@drawable/icon_money"
+	                android:drawablePadding="5dp"
+	                android:singleLine="true"
+	                android:text=""
+	                android:textColor="#ffcfac2c"
+	                android:textSize="12sp" />
+	        </LinearLayout>
+    	</LinearLayout>
+    	
+        <TextView
+		    android:id="@+id/tv_singInfo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="25dp"
+		    android:layout_marginTop="10dp"
+		    android:text="@string/singsong_no"
+		    android:textColor="@color/singsong"
+		    android:textSize="18sp" />
+        
+        <View 
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/singsong_line"
+            /> 
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/lv_menu"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userinfo_layout"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:overScrollMode="never"
+        >
+    </ListView>
+</RelativeLayout>

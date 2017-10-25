@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="gift_number">
+        <item >1</item>
+        <item >38</item>
+        <item >88</item>
+        <item >99</item>
+        <item >888</item>
+        <item >999</item>
+        <item >1314</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedImageView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_menu_switch_bg">
+
+    <include
+        android:id="@+id/pc_gift_dhuan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title" />
+
+    <ImageView
+        android:id="@+id/pc_gift_dhuan_bimg"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/pc_gift_dhuan_title"
+        android:contentDescription="@string/msg_load_ing"
+        android:src="@drawable/gift_photo_normal_b"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/pc_gift_dhuan_tv_giftname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pc_gift_dhuan_bimg"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/pc_giftitem_giftname"
+        android:textColor="@color/chat_user_id"
+        android:textSize="23sp" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+    	 android:layout_marginRight="15dp"
+        android:layout_below="@id/pc_gift_dhuan_tv_giftname"
+        android:layout_marginTop="10dp"
+        android:background="@color/chat_menu_switch_separate" />
+    
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/view_line"
+         android:layout_marginTop="30dp"
+         android:layout_marginLeft="15dp"
+    	 android:layout_marginRight="15dp"
+         android:orientation="horizontal" >
+         
+         <TextView
+             android:id="@+id/pc_gift_dhuan_tv_dhuannum"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/pc_giftd_tv_dhnum" 
+             android:textColor="@color/chat_user_id"
+             android:textSize="18sp" />
+
+         <TextView
+             android:id="@+id/pc_giftnum"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/pc_gift_dhuan_tv_dhuannum"
+             android:text="@string/pc_giftnum"
+             android:layout_marginLeft="5dp"
+             android:textColor="@color/chat_btn_text_pressed"
+             android:textSize="18sp" />
+
+         <TextView
+             android:id="@+id/pc_giftnedgold"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:text="@string/pc_giftnedgold"
+             android:textColor="@color/chat_btn_text_pressed"
+             android:textSize="18sp" />
+         
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toLeftOf="@id/pc_giftnedgold"
+             android:layout_marginRight="5dp"
+             android:text="@string/pc_giftd_tv_nedgold"
+             android:textColor="@color/chat_user_id"
+             android:textSize="18sp" />
+     </RelativeLayout>
+	
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="15dp"
+    	 android:layout_marginRight="15dp"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="20dp"
+         >
+         
+         <TextView
+		     android:id="@+id/pc_gift_btndhuan_qtai"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentLeft="true"
+		     android:layout_gravity="left"
+		     android:paddingLeft="20dp"
+		     android:paddingRight="20dp"
+		     android:paddingTop="5dp"
+		     android:paddingBottom="5dp"
+		     android:background="@drawable/btn_shape"
+		     android:text="@string/pc_gift_btndhuan_sure"
+		     android:textColor="@color/white"
+		     android:textSize="19sp" />
+	
+		 <TextView
+		     android:id="@+id/pc_gift_btndhuan_baox"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentRight="true"
+		     android:layout_gravity="right"
+		     android:paddingLeft="20dp"
+		     android:paddingRight="20dp" 
+		     android:paddingTop="5dp"
+		     android:paddingBottom="5dp"
+		     android:background="@drawable/btn_shape"
+		     android:text="@string/pc_gift_btndhuan_cancel"
+		     android:textColor="@color/white"
+		     android:textSize="19sp" />
+         
+     </RelativeLayout>
+     
+	 
+</RelativeLayout>

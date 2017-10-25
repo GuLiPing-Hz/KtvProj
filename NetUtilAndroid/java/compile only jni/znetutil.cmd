@@ -1,0 +1,1 @@
+javac -d class StructInfo.java ResultData_RoomInfo.java ResultData_GetChannellist.java GiftInfo.java ResultData_GroupInfo.java ResultData_LobbyLogin.java ResultData_SendFlowerInfo.java RoomList.java RoomListEx.java JniNetUtil.java LocalData_UserInfo.java RequestData_IdxWithVersion.java CJniUtil.java ResultData_UserSampleInfo.java ResultData_SongList.java ResultData_SelfData.java

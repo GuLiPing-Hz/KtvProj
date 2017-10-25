@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/user_center_btn_favorite1" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/user_center_btn_favorite0"></item>
+</selector>

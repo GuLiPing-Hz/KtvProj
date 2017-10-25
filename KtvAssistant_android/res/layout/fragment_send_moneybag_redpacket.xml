@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/chat_menu_switch_bg" >
+    
+    <include
+        android:id="@+id/moneybag_redpacket_titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title_hb" />   
+    
+    <RelativeLayout
+        android:id="@+id/rl_hb_number"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:layout_below="@id/moneybag_redpacket_titile"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:paddingLeft="8dp"
+	    android:paddingRight="8dp"
+	    android:visibility="visible"
+	    android:background="@drawable/redpacket_input_box_0" >
+	    
+	    <TextView
+	        android:id="@+id/tv_hbnumber"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:text="@string/moneybag_redpacket_num_content"
+	        android:textColor="@color/text_num_gray"
+	        android:textSize="18sp"
+	        />
+	    
+	    <EditText 
+	        android:id="@+id/MoneyBag_Redpacket_Num_TextEdit"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@id/tv_hbnumber"
+	        android:layout_toLeftOf="@+id/tv_hbunit"
+	        android:gravity="right"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:paddingRight="10dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="10dp"
+	        android:minLines="1"
+	        android:maxLength="3" 
+	        android:background="@color/transparent"
+	        android:hint="@string/moneybag_redpacket_num_tip"
+	        android:textSize="18sp"
+	        android:inputType="number"
+	        />
+	
+	    <TextView
+	        android:id="@+id/tv_hbunit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/text_hb_unit"
+	        android:textColor="@color/text_num_gray"
+	        android:textSize="18sp"
+	        android:gravity="center"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_hb_gold"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:layout_below="@id/rl_hb_number"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="20dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:paddingLeft="8dp"
+	    android:paddingRight="8dp"
+	    android:background="@drawable/redpacket_input_box_0" >
+	    
+	    <TextView
+	        android:id="@+id/tv_goldtotal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:text="@string/moneybag_redpacket_total_coin"
+	        android:textColor="@color/text_num_gray"
+	        android:textSize="18sp"
+	        />
+	    
+	    <EditText 
+	        android:id="@+id/MoneyBag_Redpacket_Coin_Num"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@id/tv_goldtotal"
+	        android:gravity="right"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:paddingRight="10dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="28dp"
+	        android:minLines="1"
+	        android:maxLength="9"
+	        android:background="@color/transparent"
+	        android:hint="@string/edittext_gold_hint"
+	        android:textSize="18sp"
+	        android:inputType="number"
+	        />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv_hb_system_tip"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_hb_gold"
+        android:text="@string/moneybag_redpacket_Consume_Coin"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/hb_miss_tip"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/moneybag_redpacket_message_edittext" 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_hb_system_tip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:hint="@string/moneybag_redpacket_Send_Message"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:background="@drawable/redpacket_input_box_0" />
+
+    <Button
+        android:id="@+id/moneybag_redpacket_send"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/moneybag_redpacket_message_edittext"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/moneybag_redpacket_Send_Text"
+        android:gravity="center"
+        android:background="@drawable/bg_redpacket_send"
+        android:textColor="@color/white" 
+        />
+     
+    <TextView 
+        android:id="@+id/tv_hongbao_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moneybag_redpacket_send"
+        android:layout_marginTop="40dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp" 
+        android:text="@string/moneybag_redpacket_tips"
+        android:textColor="@color/hb_miss_tip"
+        android:textSize="15sp"
+        />
+	
+    <TextView 
+        android:id="@+id/tv_error_tip"
+        android:layout_below="@id/moneybag_redpacket_titile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:gravity="center"
+        android:textColor="@color/hb_error_tip_text"
+        android:textSize="14sp"
+        android:text=""
+        android:background="@color/hb_error_tip_bg"
+        android:visibility="gone"
+        />
+</RelativeLayout>

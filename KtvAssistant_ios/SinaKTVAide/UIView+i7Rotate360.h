@@ -1,0 +1,24 @@
+//
+//  UIView+i7Rotate360.h
+//  include7 AG
+//
+//  Created by Jonas Schnelli on 01.12.10.
+//  Copyright 2010 include7 AG. All rights reserved.
+//
+
+
+
+enum i7Rotate360TimingMode {
+	i7Rotate360TimingModeEaseInEaseOut,
+	i7Rotate360TimingModeLinear
+};
+
+@interface UIView (i7Rotate360)
+- (void)rotate360WithDuration:(CGFloat)aDuration repeatCount:(CGFloat)aRepeatCount timingMode:(enum i7Rotate360TimingMode)aMode;
+- (void)rotate360WithDuration:(CGFloat)aDuration timingMode:(enum i7Rotate360TimingMode)aMode;
+- (void)rotate360WithDuration:(CGFloat)aDuration;
+
+// add by liric 2014.1.13
+- (void)removeRotate360;
+@end
+

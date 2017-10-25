@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_hongbao_section"
+    >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="30dp" 
+	    android:gravity="center_vertical"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    >
+	    
+	    <ImageView 
+	        android:id="@+id/img_flag"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:contentDescription="@string/contentdes"
+	        android:src="@drawable/phone_show_online_user_pushdown_1"
+	        />
+	
+	    <TextView 
+	        android:id="@+id/tv_section"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/img_flag"
+	        android:layout_marginLeft="10dp"
+	        android:textColor="@color/online_section_title"
+	        android:textSize="16sp"
+	        android:text="在线娱乐天使"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:textColor="@color/online_section_title"
+	        android:textSize="14sp"
+	        android:text="26人"
+	        />
+	</RelativeLayout>
+</RelativeLayout>

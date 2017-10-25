@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:orientation="vertical"
+	android:background="@drawable/bg_dialog_failure" >
+	
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/btn_rank_dialog_close" />
+	
+    <LinearLayout
+        android:id="@+id/msglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_title_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/get_rank_failure"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    	
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#ff6c6c6c"
+        android:text="啊哦，被你好友抢先一步，这首歌已经被抢先上榜了"
+        android:textSize="12sp" />
+	
+</LinearLayout>

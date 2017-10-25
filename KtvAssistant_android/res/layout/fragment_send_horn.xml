@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/chat_menu_switch_bg">
+
+    <include
+        android:id="@+id/horn_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title" />  
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/chat_horn_content"
+        android:textColor="@color/chat_user_id"
+        android:textSize="18sp"
+        />
+    
+    <EditText 
+        android:id="@+id/editTextHorn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="left|top" 
+        android:minLines="4"
+        android:maxLength="40"
+        android:hint="@string/chat_horn_tip"
+        android:background="@drawable/bg_exit_change_nickname"
+        />
+    
+    <TextView 
+        android:id="@+id/textViewSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/chat_send_horn"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/btn_send_horn"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:text="@string/chat_horn_warning"
+        android:textColor="@color/chat_user_id"
+        />
+    
+</LinearLayout>

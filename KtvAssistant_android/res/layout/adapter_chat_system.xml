@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    > 
+    
+    <TextView 
+        android:id="@+id/textViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bg_system"
+        android:text="恭喜 北京上海广州同学在小和山演唱爱获得高分"
+        android:textSize="@dimen/chat_text_size"
+        android:textColor="@color/chat_switch_normal"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="56dp" >
+	    
+	    <assistant.view.RoundedImageView
+	       android:id="@+id/iv_userhead"
+	       android:layout_width="40dp"
+	       android:layout_height="40dp"
+	       android:layout_marginLeft="10dp"
+	       android:layout_centerVertical="true"
+	       android:scaleType="fitXY"
+	       android:src="@drawable/ic_user"
+	       />
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@id/iv_userhead"
+	        android:layout_marginLeft="10dp"
+	        android:orientation="vertical"
+	        >
+	        
+	        <TextView 
+		        android:id="@+id/tv_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="6dp"
+		        android:textColor="@color/text_num_gray"
+		        android:textSize="16sp"
+		        android:text="@string/text_unknow"
+		        />
+		    
+		    <TextView 
+		        android:id="@+id/tv_time"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/hb_miss_tip"
+		        android:textSize="12sp"
+		        android:text="@string/text_untime"
+		        />
+	    
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:orientation="vertical"
+	        >
+	        
+	        <TextView 
+		        android:id="@+id/tv_gold"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="6dp"
+		        android:textColor="@color/text_num_gray"
+		        android:textSize="16sp"
+		        android:text="100金币"
+		        />
+		    
+		    <TextView 
+		        android:id="@+id/tv_lucky"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:drawableLeft="@drawable/star_ic_0"
+		        android:text="@string/hongbao_lucky"
+		        android:textSize="12sp"
+		        android:textColor="@color/total_score"
+		        />
+	    </LinearLayout>
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/bg_gift_item_pressed"
+	        />
+	</RelativeLayout>
+</RelativeLayout>

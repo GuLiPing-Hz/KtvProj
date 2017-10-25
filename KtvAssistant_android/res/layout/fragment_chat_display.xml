@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/chat_menu_switch_bg"
+        >
+        
+        <!-- android:overScrollMode="never" 防止魅族手机的默认事件 -->
+        <ListView 
+	        android:id="@+id/listViewChat"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="@null"
+	        android:cacheColorHint="@color/transparent"
+	        android:listSelector="@color/transparent"
+	        android:overScrollMode="never"
+	        />
+
+        <TextView 
+            android:id="@+id/textViewTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/chat_no_msg"
+            android:textColor="@color/chat_user_separate"
+            android:textSize="18sp"
+            android:drawableTop="@drawable/chat_pic_no_msg"
+            android:drawablePadding="40dp"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+    
+</LinearLayout>

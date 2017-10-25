@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include 
+        android:id="@+id/include_title"
+        layout="@layout/ly_title" />
+    
+    
+    <RelativeLayout 
+        android:id="@+id/rl_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@id/include_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        
+        <assistant.view.RoundedImageView
+	       android:id="@+id/iv_userhead"
+	       android:layout_width="68dp"
+	       android:layout_height="68dp"
+	       android:scaleType="fitXY"
+	       android:src="@drawable/ic_user"
+	       />
+        
+        <TextView 
+            android:id="@+id/tvName"
+            android:layout_toRightOf="@id/iv_userhead"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/umeng_fb_color_btn_normal"
+            android:text=""
+            android:textSize="18sp"
+            />
+        
+        <TextView 
+            android:id="@+id/tvTotalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tvName"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/total_score"
+            android:text="0"
+            android:textSize="24sp"
+            />
+        
+        <TextView 
+            android:id="@+id/tvIdx"
+            android:layout_alignLeft="@id/tvName"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/home_itemtitle"
+            android:text=""
+            android:textSize="14sp"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tvTotalScore"
+            android:layout_alignBottom="@id/tvIdx"
+            android:textColor="@color/home_itemtitle"
+            android:text="@string/song_totalscore"
+            android:textSize="14sp"
+            />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="34dp"
+            android:background="@color/chat_face_pressed"
+            />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="34dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/chat_face_pressed"
+            />
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/chat_face_pressed"
+            />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/singsong_line"
+        android:layout_below="@id/rl_userinfo"
+        android:layout_marginTop="1dp"
+        android:layout_width="1dp"
+        android:layout_marginLeft="48dp"
+        android:layout_height="match_parent"
+        android:background="@color/chat_face_pressed"
+        android:visibility="gone"
+        />
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_userinfo"
+        android:layout_marginTop="10dp"
+        >
+        
+        <ListView 
+	        android:id="@+id/lv_songrecord"
+	        android:layout_marginLeft="35dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="@null"
+	        android:dividerHeight="10dp"
+	        android:listSelector="@color/transparent"
+	        android:cacheColorHint="@color/transparent"
+	        android:visibility="visible"
+	        android:overScrollMode="never"
+	        />
+        
+        <assistant.view.PngAnimView 
+            android:id="@+id/ly_waiting"
+	        android:layout_width="140dp"
+	        android:layout_height="140dp"
+	        android:layout_gravity="center"
+	        />
+
+	    <TextView
+	        android:id="@+id/tv_emptytip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center|center_vertical"
+	        android:gravity="center"
+	        android:drawablePadding="40dp"
+	        android:drawableTop="@drawable/pic_sorry"
+	        android:text="@string/chat_pc_nodata_msg"
+	        android:textColor="@color/chat_user_separate"
+	        android:textSize="18sp"
+	        android:visibility="gone" 
+	        />
+    </FrameLayout>
+    
+</RelativeLayout>

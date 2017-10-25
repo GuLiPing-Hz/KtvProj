@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem"
+    >
+
+    <LinearLayout
+        android:id="@+id/arrowlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+    	android:paddingTop="20dp"
+    	android:paddingBottom="20dp"
+    	android:paddingRight="10dp" >
+
+        <ImageButton
+            android:id="@+id/imageButtonDG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+            android:contentDescription="@string/contentdes"
+            android:src="@drawable/btn_songlist_select"
+	        android:background="@color/transparent"/>
+        
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="5dp"
+	        android:contentDescription="@string/contentdes"
+            android:src="@drawable/btn_arrow_bottom" />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/namelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/arrowlayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:paddingRight="0dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"
+            android:gravity="left"
+            android:textColor="@color/songlist_name"
+            android:text="你是我心中的一首歌skdfjwejflkwejf"
+            android:textSize="16sp" />
+        
+        <ImageView
+            android:id="@+id/iv_pingfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_name"
+            android:layout_toRightOf="@id/tv_name"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/contentdes"
+            android:src="@drawable/ic_pingfen"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/songlist_singer"
+            android:text="王力宏"
+            android:textSize="12sp" />
+
+        <assistant.view.RoundedImageView
+            android:id="@+id/iv_head_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_artist"
+            android:src="@drawable/ic_user" />
+        
+        <TextView
+            android:id="@+id/tv_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_head_img"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@id/iv_head_img"
+            android:maxWidth="50dp"
+            android:text="匿名"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/songlist_custom_singer"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_zai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_singer"
+            android:layout_alignBottom="@id/iv_head_img"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text=" - "
+            android:textColor="@color/songlist_singer"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_zai"
+            android:layout_alignBottom="@id/iv_head_img"
+            android:gravity="left"
+            android:singleLine="true"
+            android:maxWidth="50dp"
+            android:text="包厢"
+            android:textColor="@color/songlist_custom_singer"
+            android:textSize="12sp" />
+
+        <TextView
+	        android:id="@+id/tv_score"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/tv_room"
+	        android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@id/iv_head_img"
+	        android:singleLine="true"
+	        android:text="88.9"
+	        android:textColor="@color/songlist_score"
+	        android:textSize="18sp" />
+        
+        <TextView
+	        android:id="@+id/tv_score_fen"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/tv_score"
+            android:layout_alignBottom="@id/iv_head_img"
+            android:layout_marginBottom="2dp"
+	        android:text="@string/text_fen"
+	        android:textColor="@color/songlist_score"
+	        android:textSize="10sp" />
+	    
+	    <ImageView
+            android:id="@+id/iv_yidian"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:contentDescription="@string/contentdes"
+            android:src="@drawable/song_list_tag_selected"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrowlayout"
+        android:background="@drawable/list_black"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ly_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_diange_sel"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btn_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contentdes"
+                android:src="@drawable/btn_shoucang" />
+
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly_top"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_diange_sel"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btn_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contentdes"
+                android:src="@drawable/btn_zhiding" />
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/top"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/btnLayout"
+        android:background="@color/chat_face_pressed"
+        />
+
+</RelativeLayout>

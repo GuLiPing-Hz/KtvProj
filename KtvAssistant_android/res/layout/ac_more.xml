@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ly_title" />"
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_default_color"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/list_view_corner_selector"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="1dp" >
+
+                <RelativeLayout
+                    android:id="@+id/more_menu_about_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_view_top_selector" >
+
+                    <ImageView
+                        android:id="@+id/more_menu_about_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@string/contentdes"
+                        android:src="@drawable/ic_more_about" />
+
+                    <TextView
+                        android:id="@+id/btn_more_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/more_menu_about_icon"
+                        android:text="@string/more_about_text"
+                        android:textColor="#444444"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:contentDescription="@string/contentdes"
+                        android:src="@drawable/btn_arrow_next" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#c8c9cc" />
+
+                
+
+                <RelativeLayout
+                    android:id="@+id/more_menu_recommend_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_view_bottom_selector" >
+
+                    <ImageView
+                    android:id="@+id/more_menu_recommend_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/contentdes"
+                    android:src="@drawable/ic_more_recommend" />
+
+                <TextView
+                    android:id="@+id/btn_more_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/more_menu_recommend_icon"
+                    android:text="@string/app_tj"
+                    android:textColor="#444444"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/contentdes"
+                    android:src="@drawable/btn_arrow_next" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include
+	            android:id="@+id/ly_waiting"
+	            layout="@layout/load_progress_round"
+	            android:visibility="gone" />
+            
+            <TextView
+        		android:id="@+id/iv_logout"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:paddingTop="8dp"
+        		android:paddingBottom="8dp"
+        		android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="50dp"
+        		android:textColor="@color/login_btn_text"
+        		android:text="@string/more_login_text"
+        		android:textSize="20sp"
+        		android:gravity="center"
+        		android:background="@drawable/btn_logout" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

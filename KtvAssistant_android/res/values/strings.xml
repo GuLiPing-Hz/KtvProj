@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 1.0版 -->
+    <string name="app_dir">KtvAssistant</string>
+    <string name="app_name">新浪KTV助手</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="soft_error">抱歉,程序出错啦!</string>
+    <string name="exit_tips">再按一次退出程序</string>
+    <string name="no_networking">无法连接到网络,请检查网络设置</string>
+    <string name="scan_nonsupport_tips">无法正常扫描？还可以手动输入密码喔!</string>
+    <string name="scan_tips">请将二维码放入框内，即可自动扫描</string>
+    <string name="scan_error">扫描结果错误，请重新扫描或联系服务人员</string>
+    <string name="msg_load_ing">加载中....</string>
+    <string name="msg_login_ing">登录中....</string>
+    <string name="msg_logout_ing">正在退出....</string>
+    <string name="app_update_title">更新</string>
+    <string name="app_update_btntext1">马上更新</string>
+    <string name="app_update_btntext2">以后再说</string>
+    <string name="app_update_latest_message">您目前的版本是最新的,无需更新</string>
+    <string name="app_update_forced_message">您目前的版本已过时,需要更新版本后才能继续使用!</string>
+    <string name="title_room">包厢点歌</string>
+    <string name="search">搜索</string>
+    <string name="search_hint">输入歌名、歌手进行搜索</string>
+    <string name="search_input_empty_tips">搜索内容不能为空</string>
+    <string name="title_pre">歌曲预点</string>
+    <string name="title_daoru">导入预点歌曲</string>
+    <string name="title_prelist">预点歌列表</string>
+    <string name="input_command">请输入包厢密码</string>
+    <string name="into_box">进入包厢</string>
+    <string name="into_box_text">请填写收款单上的包厢密码,或在包厢点歌台中也可找到密码哦!</string>
+    <string name="empty_tips">没有数据哟~~</string>
+    <string name="empty_collect_tips">您暂时没有收藏歌曲</string>
+    <string name="empty_ordered_tips">您还未点歌哟，快去点歌吧!</string>
+    <string name="empty_ordered_tips2">包厢里只有一首歌正在播放哟,请您继续点歌吧</string>
+    <string name="app_update_dialog_title">更新</string>
+    <string name="app_update_dialog_ok_message">已是最新版本!</string>
+    <string name="app_update_dialog_new_found">发现新版本</string>
+    <string name="app_update_dialog_update_button">下载并安装</string>
+    <string name="app_update_dialog_mistake_message">对不起,更新失败!请检查您的网络!</string>
+    <string name="view_refresh_pull_label">下拉可以刷新</string>
+    <string name="view_refresh_time_text">更新于：</string>
+    <string name="view_refresh_release_label">松开可以刷新</string>
+    <string name="view_refresh_pull_up">上拉可以刷新</string>
+    <string name="view_refresh_refreshing_label">加载中...</string>
+    <string name="more_about_text">关于</string>
+    <string name="loading_text">正在进入请稍后...</string>
+    <string name="command_qualified_text">密码为空或格式错误,请重新输入!</string>
+    <string name="FeedbackText">感谢您对新浪KTV助手的关注与支持！欢迎您提交任何与新浪KTV助手相关的意见或建议,我们将会在第一时间处理问题。</string>
+    <string name="net_none">网络不好啦</string>
+    <string name="click_quickly">矮油,太快了啦!</string>
+    <string name="msg_login_room">请登录包厢</string>
+    <string name="msg_login_system">请登录</string>
+    <string name="title_scan_enterroom">扫描进入包厢</string>
+    <string name="title_scan_getgold">扫取包厢金币</string>
+    <string name="title_scan_code">二维码/条码</string>
+     <!-- 1.1版 -->
+    <string name="home_nologin_tips">立即登录</string>
+    <string name="game">游戏互动</string>
+    <string name="enter_room">进入包厢</string>
+    <string name="room_info">所在包厢：%1$s</string>
+    <string name="order">点歌</string>
+    <string name="ordered">已点</string>
+    <string name="collect">收藏</string>
+    <string name="scan">扫一扫</string>
+    <string name="top">置顶</string>
+    <string name="top_success">置顶成功</string>
+    <string name="top_fail">置顶失败</string>
+    <string name="order_success">点歌成功</string>
+    <string name="order_fail">点歌失败</string>
+    <string name="collect_success">收藏成功</string>
+    <string name="collect_fail">收藏失败</string>
+    <string name="delete_collect_success">删除收藏成功</string>
+    <string name="delete_collect_fail">删除收藏失败</string>
+    <string name="please_order">请点歌</string>
+    <string name="sut_song_fail">切歌失败</string>
+    <string name="delete">删除</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="exit_room_success">退出包厢成功!</string>
+    <string name="exit_room_fail">退出包厢失败!</string>
+    <string name="txt_account">账号：</string>
+    <string name="txt_pwd">密码：</string>
+    
+    <!-- 积分领取界面 -->
+    <string name="account">我的账户</string>
+    <string name="account_username">用户昵称</string>
+    <string name="account_score">积分:</string>
+    <string name="account_get_score">积分获取</string>
+    <string name="account_quit">退出登录</string>
+    <string name="account_quit_hint">您确定退出当前账号吗?</string>
+    <string name="account_quit_message">您已退出当前登录</string>
+    <string name="account_change_score">去兑换</string>
+    <string name="account_status_score">您有积分可领取！</string>
+    <string name="account_status_noscore">idx</string>
+    <string name="account_all_score">0</string>
+    <string name="waiting">等待中...</string>
+    <string name="bind_repeating_qq">该QQ账号已被其他用户绑定,请使用其他QQ账号</string>
+    <string name="bind_repeating_sina">该新浪微博账号已被其他用户绑定,请使用其他新浪微博账号</string>
+    <string name="unbind_success">解绑成功</string>
+    <string name="unbind_fail">解绑失败</string>
+    <string name="unbind_waiting_msg">正在解除绑定...</string>
+    <string name="tip">提示</string>
+    <string name="operation_failed">操作失败:</string>
+    <string name="nologin">登录账户后才能继续操作,请登录</string>
+    <string name="screenName_modify_tips">此昵称太受欢迎,已有人抢咯!</string>
+    <string name="cant_get_score">对不起你已经不在包厢了,不能领取该积分</string>
+    <string name="login_out_room">请先退出包厢</string>
+    <string name="no_score_toGet">该积分已经领取过了</string>
+    <string name="empty_score_tips">当前没有可领取的积分哦!</string>
+    <string name="empty_score_tips_2">演唱歌曲并抢榜或包厢签到都可获得积分</string>
+    <string name="sex_dialog_title">请选择</string>
+    <string name="screenName_modify_empty">请填写昵称</string>
+    <string name="screenName_modify_limit">昵称不能少于2个汉字或4个英文字符</string>
+    <string name="screenName_modify_blank">您的昵称中含有空格,请去除空格</string>
+    <string name="bind_success">绑定成功</string>
+    <string name="bind_cancel">绑定取消</string>
+    <string name="bind_fail">绑定失败</string>
+    <string name="more_waitingDialog_msg">正在登陆</string>
+    <string name="login_fail">登录失败</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_cancel">登录取消</string>
+    <string name="login_text">其他方式登录</string>
+    <string name="set_head_img">设置头像</string>
+    <string name="notfind_sdcard">未找到存储卡</string>
+    <string name="third_login">用户登录</string>
+    <string name="third_login_sina">微博登录</string>
+    <string name="third_login_qq">QQ登录</string>
+    <string name="third_login_weixin">微信登陆</string>
+    <string name="fealure_upload_headimg">网络不好,头像上传失败</string>
+    <string name="room_password_time_out">包厢密码过期,请重新登录包厢!</string>
+    <string name="room_time_out">包厢已到期</string>
+    <string name="score_already_get">积分已经领取过了</string>
+    <string name="score_time_out">积分已过期</string>
+    <string name="score_get_success">领取成功</string>
+
+    <!-- 用户昵称修改 -->
+    <string name="change_nickname">修改昵称</string>
+    <string name="illegal_username_length">长度有误，请输入2-10位字符</string>
+    <string name="illegal_username_value">对不起,请勿使用敏感字或特殊符号</string>
+    <string name="change_username_success">修改昵称成功</string>
+    <string name="username_empty">长度有误，请输入2-10位字符</string>
+    <string name="username_blank">不能包含空格，请重新命名</string>
+    <string name="username_has_specil">仅支持中英文，数字和"_"</string>
+    <string name="illegal_username">输入的昵称不合法，请重新输入</string>
+
+    <!-- 系统消息 -->
+    <string name="system_message">系统消息</string>
+    <string name="system_message_hint">您确定删除当前消息吗?</string>
+    <string name="system_message_detail">系统消息详情</string>
+
+    <!-- 高分抢榜 -->
+    <string name="fail_get_rank_score">已经被人抢了</string>
+    <string name="get_rank_success">抢榜成功!</string>
+    <string name="get_rank_failure">抢榜失败!</string>
+    <string name="get_rank_failure2">抢榜失败</string>
+    <string name="get_rank_success_tips">快去“我的账户”领取积分吧!</string>
+    <string name="get_rank_failure_tips">啊哦,被你好友抢先一步,这首歌</string>
+    <string name="get_rank_failure_tips1">已经被抢先上榜了</string>
+    <string name="rank_song_name">歌曲：</string>
+    <string name="rank_singer">演唱：</string>
+    <string name="rank_score">得分：</string>
+    <string name="rank_first">抢先上榜</string>
+    <string name="message_detail">系统消息详情</string>
+    <string name="rank_success">抢榜成功</string>
+    <!-- 用户头像上传 -->
+    <string name="upload_head_img_success">头像上传成功</string>
+    
+    <!-- 礼物兑换 -->
+    
+    <!-- 更多页面登陆与退出入口 -->
+    <string name="more_login_text">退出当前账号</string>
+    <string name="more_login_empty_text">登录</string>
+
+    <!-- 侧边菜单栏 -->
+    <string name="menuitem_home">首页</string>
+    <string name="menuitem_rank">排行榜</string>
+    <string name="menuitem_chat">互动聊天</string>
+    <string name="menuitem_giftexchange">礼物兑换</string>
+    <string name="menuitem_consume">消费记录</string>
+    <string name="menuitem_buymoney">账户充值</string>
+    <string name="menuitem_songrecord">唱过的歌</string>
+    <string name="menuitem_bookroom">包厢预定</string>
+    <string name="menuitem_my">个人中心</string>
+    <string name="menuitem_favourite">歌曲收藏</string>
+    <string name="menuitem_message">消息</string>
+    <string name="menuitem_setting">系统设置</string>
+    
+    <!-- ImageButton contentDescription -->
+    <string name="text_back">回退</string>
+    <string name="txt_more">更多操作</string>
+    <string name="txt_song_order_list">点歌列表</string>
+    
+    <string name="txt_zero">0</string>
+    <!-- 聊天界面字符串资源 -->
+    <string name="chat_title">弹幕互动</string>
+    <string name="hongbao_get">领取红包</string>
+    <string name="hongbao_record">红包记录</string>
+    <string name="room_order">包厢预订</string>
+    <string name="day_hongbao_tip">(请及时领取,每天2:00清零)</string>
+    <!-- 只有一个自己 -->
+    <string name="chat_online">(1人)</string>
+    <string name="chat_gift">礼物</string>
+    <string name="chat_face">表情</string>
+    <string name="chat_chat">聊天</string>
+    <string name="chat_horn">喇叭</string>
+    <string name="chat_edittext_tip">给当前绑定包厢发弹幕</string>
+    <string name="chat_online_user">在线用户</string>
+    <string name="chat_send_horn">发送喇叭</string>
+    <string name="moneybag_redpacket_title">大款红包</string>
+    <string name="room_redpacket_title">包厢红包</string>
+    <string name="personal_redpacket_title">个人红包</string>
+    <string name="chat_public">所有</string>
+    <string name="chat_private">私聊</string>
+    <string name="chat_system">系统</string>
+    <string name="chat_around">身边</string>
+    
+    <!-- 个人中心字符串资源 -->
+    <string name="pc_title">个人中心</string>
+     <string name="pc_sysaward">系统奖励</string>
+    <string name="pc_getgift">收到的礼物</string>
+    <string name="pc_sendgift">送出的礼物</string>
+    <string name="pc_giftlog">兑换记录</string>
+    <string name="pc_giftunget">未领取</string>
+    <string name="pc_giftgeted">已领取</string>
+    <string name="pc_giftguoqi">已过期</string>
+    <string name="sex">男女性别</string>
+    <string name="nickname">  昵称名字</string>
+    <string name="pc_mysong">我收藏的歌曲</string>
+    <string name="pc_msg_date">00/00</string>
+    <string name="pc_msg_time">00:00</string>
+    <string name="pc_msg_nickname">用户昵称</string>
+    <string name="pc_msg_tv1">在  </string>
+    <string name="pc_msg_ktvaddr">KTV门店包厢</string>
+    <string name="pc_msg_tstype">送给您</string>
+    <string name="pc_msg_tstype2">您得到</string>
+    <string name="pc_msg_gold"> 69999999  </string>
+    <string name="pc_msg_gold2"> 99999  </string>
+    <string name="pc_msg_giftinfo">朵超级玫瑰</string>
+    <string name="pc_goldinfo">金币</string>
+    <string name="pc_giftitem_giftname">礼物名称</string>
+    <string name="pc_giftitem_gold">888</string>
+    <string name="pc_giftitem_duihuan">兑换</string>
+    <string name="pc_ktvid">0</string>
+    <string name="pc_detail">明细</string>
+    <string name="pc_ts_ktvxz">请选择所在的KTV</string>
+    <string name="pc_giftd_tv_dhnum">兑换数量为:</string>
+    <string name="pc_giftnum">1</string>
+    <string name="pc_gift_dh">兑换</string>
+    <string name="pc_giftd_tv_nedgold">所需金币:</string>
+    <string name="pc_giftnedgold">8888</string>
+    <string name="pc_gift_roomname">包厢:</string>
+    <string name="pc_gift_rmlist">包厢列表</string>
+    <string name="pc_gift_btndhuan_sure">确认兑换</string>
+    <string name="pc_gift_btndhuan_cancel">取消兑换</string>
+    <string name="pc_giftcount"> 1</string>
+    <string name="pc_giftinfo1"> 个    价值</string>
+    <string name="pc_giftgold">8888</string>
+    <string name="pc_giftinfo2"> 金币</string>
+    <string name="pc_gift_dhcode2">兑换码:    </string>
+    <string name="pc_gift_dhcode">1652-2589-8888-888</string>
+    <string name="pc_gift_imgdh">兑换状态</string>
+    <string name="pc_gift_validdate2">有效期: </string>
+    <string name="pc_gift_validdate_s">2015/04/16</string>
+    <string name="pc_gift_info3">  -  </string>
+    <string name="pc_gift_validdate_e">2015/05/16  </string>
+    <string name="pc_duihuan_seccess">兑换成功</string>
+    <string name="pc_duihuan_error">兑换失败</string>
+    <string name="chat_pc_nodata_msg">没有数据哦~</string>
+    
+    <string name="contentdes">图片</string>
+    <!-- 进入包厢 -->
+    <string name="enterroom_by_code">扫描包厢二维码</string>
+    <string name="enterroom_by_pwd">输入包厢密码</string>
+    <string name="scan_exchange_gift">扫描二维码兑换</string>
+    <!-- 充值 -->
+    <string name="gold_have">拥有金币</string>
+    <string name="topup_tip">账户金币不足诶~要充值了哦</string>
+    <string name="topup">充 值</string>
+    <string name="topup_cancel">取 消</string>
+    <string name="gold_number">请选择金币数量</string>
+    <string name="gold_1">7000</string>
+    <string name="money_1">10元</string>
+    <string name="gold_2">14000</string>
+    <string name="money_2">20元</string>
+    <string name="gold_3">35000</string>
+    <string name="money_3">50元</string>
+    <string name="gold_4">70000</string>
+    <string name="money_4">100元</string>
+    <string name="money_first">首次 充值100元,即可额外获赠10000金币</string>
+    <string name="pay_way">请选择支付方式</string>
+    <string name="payway_only_alipay">目前仅支持支付宝充值</string>
+    <string name="payway_alipay">支付宝快捷支付</string>
+    <string name="payway_alipay_tip">无需安装支付宝客户端也可使用</string>
+    <string name="pay_sure">确认支付</string>
+    <string name="pay_noselect_tip">请先选择金币数量</string>
+    <string name="remote_call_failed">请求支付失败</string>
+    <!-- 播放控制 -->
+    <string name="playc_noorder_songlist">当前未点歌曲,请点歌~</string>
+    <string name="playc_singmode">原/伴唱</string>
+    <string name="playc_scorestat">评分模式</string>
+    <string name="playc_pauseoo">播放/暂停</string>
+    <string name="playc_resing">重唱</string>
+    <string name="playc_music">音乐</string>
+    <string name="playc_mic">话筒</string>
+    <string name="playc_mute">静音</string>
+    <string name="playc_tone">音调</string>
+    <string name="playc_effect">K歌效果</string>
+    
+    <!-- NetUitl 模块字符串资源 -->
+    <!-- 界面元素 -->
+    <string name="user">用户名:</string>
+    <string name="password">密码:</string>
+    <string name="btnLogin">登录</string>
+    <string name="searchtip">请输入房间名或ID</string>
+    <string name="exit">退出</string>
+    <string name="title_activity_lobby">大厅</string>
+    <string name="init">启动</string>
+    <!-- auth -->
+    <string name="initfailed">启动失败</string>
+    <string name="pleaselogin">请登录</string>
+    <string name="fail">登录失败</string>
+    <string name="authcon_ing">连接认证。。</string>
+    <string name="authcon_timeout">认证连接超时</string>
+    <string name="authcon_close">认证断开连接</string>
+    <string name="authcon_error">认证连接发生网络错误</string>
+    <string name="authcon_failed">连接认证失败</string>
+    <string name="auth_ing">认证。。</string>
+    <string name="authing_failed">认证失败</string>
+    <string name="auth_success">认证成功</string>
+    <string name="AUTH_NOTEXIST">帐号不存在</string>
+    <string name="AUTH_PWDERROR">登陆密码错误</string>
+    <string name="AUTH_TOURISTERROR">游客登录失败</string>
+    <string name="AUTH_CACHEERROR">登录不成功</string>
+    <string name="AUTH_TOKENERROR">取得token失败</string>
+    <!-- lobby -->
+    <string name="lobbyconnect_ing">大厅连接中。。</string>
+    <string name="lobbyconnect_success">大厅连接成功</string>
+    <string name="lobbyconnect_failed">大厅连接失败</string>
+    <string name="lobbyconnect_timeout">大厅连接超时</string>
+    <!-- 大厅断开连接 -->
+    <string name="lobby_mac_forbidden">设备被禁止使用</string>
+    <string name="lobby_idx_forbidden">ID被禁止使用</string>
+    <string name="lobbyconnect_close">账号在其他地方登录或协议异常</string>
+    <string name="lobbyconnect_error">大厅连接发生网络错误</string>
+    <string name="lgetchannellist_ing">获取大厅列表。。</string>
+    <string name="lgetchannellist_failed">获取大厅列表失败</string>
+    <string name="getchannellist_error">获取大厅列表异常</string>
+    <string name="lobby_entering">正在进入大厅。。</string>
+    <string name="lobby_login_success">大厅登陆成功</string>
+    <string name="lobby_login_failed">大厅登陆失败</string>
+    <string name="LOBBY_NORMAL">获取大厅列表成功</string>
+    <string name="LOBBY_LOGIN_IDLOCK">账号被冻结</string>
+    <string name="LOBBY_LOGIN_TOOOLD">版本错误</string>
+    <string name="LOBBY_LOGIN_NOTEXIST">用户不存在</string>
+    <string name="LOBBY_LOGIN_NOAVATAR">还未创建avatar信息</string>
+    <string name="LOBBY_USERINFO_NOTEXIST">用户信息不存在</string>
+    <string name="LOBBY_USERINFO_INDULGE">用户防沉迷</string>
+    <string name="lobby_token_timeout">大厅请求超时</string>
+    <!-- room -->
+    <string name="roomconnect_ing">房间连接中</string>
+    <string name="roomconnect_success">房间连接成功</string>
+    <string name="roomconnect_failed">房间连接失败</string>
+    <string name="roomconnect_timeout">房间服务器连接超时</string>
+    <!-- 房间断开连接 -->
+    <string name="roomconnect_close">请重新进入包厢</string>
+    <string name="roomconnect_error">房间连接发生网络错误</string>
+    <string name="roomauth_success">房间认证成功</string>
+    <string name="roomauth_failed">房间认证失败</string>
+    <string name="roomauth_timeout">房间服务器认证超时</string>
+    <string name="roomenter_ing">进入房间。。</string>
+    <string name="roomenter_success">房间进入成功</string>
+    <string name="roomenter_failed">房间进入失败</string>
+    <string name="roomenter_timeout">房间进入超时</string>
+    <string name="ROOM_LOGIN_NONE">未登录</string>
+    <string name="ROOM_LOGIN_AGAIN">重复登录</string>
+    <string name="ROOM_LOGIN_NOUIN">非法用户</string>
+    <string name="ROOM_LOGIN_FULL">房间人数满</string>
+    <string name="ROOM_LOGIN_IFULL">房间已经达到允许人数,用户身份无法登陆</string>
+    <string name="ROOM_LOGIN_EPWD">房间密码错误</string>
+    <string name="ROOM_LOGIN_CLOSE">房间关闭</string>
+    <string name="ROOM_LOGIN_INBLACK">在黑名单中</string>
+    <string name="ROOM_LOGIN_INTBLACK">在临时黑名单中</string>
+    <string name="ROOM_LOGIN_NOTHIS">房间不存在或被删除</string>
+    <string name="ROOM_LOGIN_LOCK">房间冻结</string>
+    <string name="ROOM_LOGIN_IP_INVALIED">该IP在房间内被禁</string>
+    <!-- User -->
+    <string name="user_request_failed">"用户信息请求失败"</string>
+    <string name="user_no_exist">"用户信息不存在"</string>
+    <!-- 失败 -->
+    <string name="local_init_failed">本地初始化失败</string>
+    <string name="filter_failed">字符过滤初始化失败</string>
+    <string name="start_net_noconnetc">请先检查网络设置,再重新登陆</string>
+    <string name="playc_notify">请勿频繁操作</string>
+    <string name="please_login">请先登陆</string>
+    <string name="version_relogin">版本升级,请重新登陆</string>
+    <!--聊天界面UI -->
+    <string name="text_where">于 </string>
+    <string name="text_room">包厢</string>
+    <string name="text_room_recv">包厢收到</string>
+    <string name="text_room_send">包厢送出</string>
+    <string name="chat_user_topscore">最高分:</string>
+    <string name="text_send">送</string>
+    <string name="text_le">了</string>
+    <string name="chat_user_sendgift">送ta礼物</string>
+    <string name="chat_user_talk">和ta私信</string>
+    <string name="chat_user_sendredpacket">送ta红包</string>
+    <string name="chat_horn_content">喇叭内容(免费):</string>
+    <string name="moneybag_redpacket_num_content">红包个数</string>
+    <string name="chat_horn_tip">最多输入40个字符</string>
+    <string name="moneybag_redpacket_num_tip">填写个数</string>
+    <string name="edittext_gold_hint">填写金额</string>
+    <string name="moneybag_redpacket_total_coin">金币总值</string>
+    <string name="moneybag_redpacket_Consume_Coin">系统吞掉金币: </string>
+    <string name="moneybag_redpacket_Send_Type">发送方式</string>
+    <string name="moneybag_redpacket_Send_With_Lucy">拼手气</string>
+    <string name="moneybag_redpacket_Send_With_Average">均分</string>
+    <string name="moneybag_redpacket_Leave_Message">留言</string>
+    <string name="moneybag_redpacket_Send_Message">今天心情好,打赏红包!</string>
+    <string name="moneybag_redpacket_Send_Text">发红包</string>
+    <string name="chat_horn_warning">*请勿输入任何反动及人身攻击信息,一旦发现封停账号,情节严重者移交公安机关处理</string>
+    <string name="gift_goldcur">当前金币:</string>
+    <string name="gift_charge">去充值</string>
+    <string name="gift_number">数量:</string>
+    <string name="gift_give1">赠</string>
+    <string name="gift_give">赠 送</string>
+    <string name="gift_class_normal">普通</string>
+    <string name="gift_class_luck">幸运</string>
+    <string name="gift_class_luxury">奢侈</string>
+    <string name="gift_price">金币:</string>
+    <string name="gift_name_example">玫瑰</string>
+    <string name="gift_number_100">100</string>
+    <string name="chat_no_msg">暂时没有新消息</string>
+    <!-- 金币提示 -->
+    <string name="gold_not_enough">金币不足</string>
+    <string name="gift_gold_0">交易金额为0</string>
+    <string name="gift_no_business">无此交易类型</string>
+    <string name="gift_send_offline">礼物接收者不在线</string>
+    <!-- 发送喇叭提示 no_networking-->
+    <string name="horn_send_ok">喇叭发送成功</string>
+    <string name="horn_send_failed">喇叭发送失败</string>
+    <string name="horn_send_empty">输入内容为空</string>
+    <string name="horn_send_timeout">发送喇叭超时</string>
+    <!-- 发送聊天提示 no_networking-->
+    <string name="chat_send_timeout">发送聊天信息超时</string>
+    <string name="chat_send_failed">聊天发送失败</string>
+    <string name="chat_no_input">聊天内容不能为空</string>
+    <string name="chat_privatetomy">无法跟自己私聊哦</string>
+    <string name="char_privateobject_ilegal">聊天对象不在线或非法哦</string>
+    <string name="chat_privatenoobject">请选择私聊对象哦</string>
+    <string name="chat_hongbao_my">无法给自己赠送哦</string>
+    <!-- 送礼物提示 no_networking-->
+    <string name="gift_not_exist">礼物信息不存在</string>
+    <string name="gift_send_ok">送礼成功</string>
+    <string name="gift_send_timeout">送礼超时</string>
+    <string name="gift_send_null">请选择礼物</string>
+    <string name="gift_send_tonull">请选择送礼对象</string>
+    
+    <!-- app 更新 -->
+    <string name="app_newversion_begin">新浪KTV助手新版本:v</string>
+    <string name="check_version">检查更新</string>
+    <string name="newversion_tip">新版本更新</string>
+    <string name="newversion_force">*不更新将无法正常使用</string>
+    <string name="app_upgrade">立即更新</string>
+    <string name="app_upgrade_nexttime">稍后更新</string>
+    <string name="app_upgrade_download_sucess">新浪KTV助手下载成功</string>
+    <string name="app_upgrade_download_fail">新浪KTV助手下载失败</string>
+    
+    <!-- Umen -->
+    <string name="umeng_fb_back">返回</string>
+    <string name="umeng_fb_contact_info">联系方式</string>
+    <string name="umeng_fb_contact_info_hint">QQ, 电话等我们能联系您的联系方式</string>
+    <string name="umeng_fb_contact_title">填写联系信息</string>
+    <string name="umeng_fb_contact_update_at">更新于 </string>
+    <string name="umeng_fb_notification_content_formatter_multiple_msg">收到来自开发者的 %d 条回复。</string>
+    <string name="umeng_fb_notification_content_formatter_single_msg">新回复: %s</string>
+    <string name="umeng_fb_notification_ticker_text">有新的回复</string>
+    <string name="umeng_fb_reply_content_default">你好,欢迎您反馈使用产品的感受和建议</string>
+    <string name="umeng_fb_reply_content_hint">我想说</string>
+    <string name="umeng_fb_reply_date_default">2013年3月12日 13:24:00</string>
+    <string name="umeng_fb_send">发送</string>
+    <string name="umeng_fb_title">用户反馈</string>
+    <string name="fb_welcome">欢迎来信反馈意见</string>
+    
+    <!-- 扫码金币 -->
+    <string name="scangold_nogold">房间金币为0,赶紧唱歌哟</string>
+    <string name="scangold_success">扫描获取金币成功</string>
+    <string name="scangold_failed">扫描获取金币失败</string>
+    <string name="scangold_cancel">扫描金币取消</string>
+    
+    <!-- 礼品 -->
+    <string name="gift_select">选择礼品</string>
+    <string name="text_me">我</string>
+    
+    <!-- 关于 -->
+    <string name="about_grade">去评分</string>
+    <string name="fun_introduce">功能介绍</string>
+    <string name="app_tj">应用推荐</string>
+    <string name="error_nomarket">无法加载手机应用市场</string>
+    <string name="about_new">New</string>
+    
+    <!-- 首页 -->
+    <string name="index_user_name">人名</string>
+    <string name="index_user_room">包厢</string>
+    <string name="index_user_content">内容</string>
+    <string name="text_fen">分</string>
+    
+    <string name="start_copyright">copyright © 2006–2015  9158.com</string>
+    <string name="company">天鸽互动控股有限公司</string>
+    <string name="version_copyright">copyright © 2008–2015 www.tiange.com</string>
+    <string name="version_all">All Right Reserverd.</string>
+    
+	<!--     对话框资源 -->
+	<string name="no_sd_title">SD卡提示</string>
+	<string name="no_sd_content">您的手机没有SD卡或者SD卡被占用,有些功能不能使用,敬请谅解!</string>
+	<string name="room_tip_title">包厢提示</string>
+	<string name="room_tip_content1">您的包厢已到期,欢迎续费或下次光临!</string>
+	<string name="room_tip_content2">抱歉,您的包厢异常,请重新登录包厢!</string>
+	<string name="room_exit_title">退出包厢提示</string>
+    <string name="room_exit_content">确定退出包厢？</string>
+    <string name="order_after_enterroom">您可以继续点歌啦~</string>
+    <string name="share_to">分享到</string>
+    <string name="share_wx">微信好友</string>
+    <string name="share_wx_pyq">朋友圈</string>
+    <string name="share_sina">新浪微博</string>
+    <string name="share_more">更多</string>
+    <string name="share_webpage_template">【%1$s】（分享来自 KTV手机助手）</string>
+    <string name="share_nosupport_pyq">抱歉,您的微信版本不支持朋友圈,使用微信好友吧~</string>
+    <string name="share_successed">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_cancel">分享取消</string>
+    <string name="share_weibo_cant">抱歉,无法分享到微博</string>
+    <string name="share_weixin_cant">抱歉,无法分享到微信</string>
+    
+    <string name="sorry_emoji">抱歉暂不支持其他表情字符,请使用应用表情</string>
+    <string name="sorry_enter">换行太多啦~</string>
+    
+    <string name="ktv_start">开启KTV之旅</string>
+    
+    <!-- 注册 -->
+    <string name="register_account">账号：</string>
+    <string name="register_pwd">密码：</string>
+    <string name="register_sex">性别：</string>
+    <string name="account_tip">请输入账号</string>
+    <string name="pwd_tip">请输入密码</string>
+    <string name="sex_male">男</string>
+    <string name="sex_female">女</string>
+    <string name="txt_register">注 册</string>
+    <string name="register_tip_ok">恭喜您,注册成功!点击确定,畅享KTV之旅~~</string>
+    
+    <string name="register_zhenze">请输入字母或数字,并以字母开头</string>
+    <string name="register_account_empty">请输入账号</string>
+    <string name="register_account_size_illgel">账号长度不对,5~10位</string>
+    <string name="register_pwd_empty">请输入密码</string>
+    <string name="register_pwd_size_illgel">密码长度至少6位</string>
+    <string name="register_sex_no">请选择性别</string>
+    <string name="singsong_no">暂无演唱歌曲</string>
+    
+    <!-- 红包 -->
+    <string name="text_sendgift">送礼</string>
+    <string name="text_hb">红包</string>
+    <string name="moneybag_redpacket_tips">提示: \n
+        1.发送金额必须大于或等于1000金币。 \n
+        2.发送的是手气红包，用户可以决定红包的个数，以及金币总数，但是每个红包的金币数量随机分配。 \n
+        3.所有在线用户都可参与抢红包。</string>
+    <string name="room_redpacket_tips">提示: \n
+        1.发送金额必须大于或等于120金币。\n
+        2.发送的是手气红包，用户可以决定红包的个数，以及金币总数，但是每个红包的金币数量随机分配。 \n
+        3.本包厢用户可参与抢红包。</string>
+    <string name="personal_redpacket_tips">提示: \n
+        1.单次发送红包超过1000金币会在全网广播!</string>
+    
+    <!-- 唱过的歌 -->
+    <string name="song_totalscore">累计唱歌总分</string>
+    
+    <string name="text_singer">歌手</string>
+    <string name="text_theme">主题</string>
+    <string name="text_newsong">新歌</string>
+    <string name="text_language">语种</string>
+    <string name="text_hb_unit">个</string>
+    <string name="should_bind_room">请先进入包厢</string>
+    <string name="hongbao_send_ok">红包发送成功</string>
+    <string name="hongbao_offline">对方已下线</string>
+    <string name="hongbao_timeout">发送红包超时</string>
+    <string name="hongbao_noin_room">不在包厢无法发送包厢红包</string>
+    <string name="hognbao_vie_timeout">抢红包超时</string>
+    <string name="hongbao_catch">拆红包</string>
+    <string name="hongbao_giveto_us">给大家发红包啦</string>
+    <string name="hongbao_late">太晚了,红包已经被小伙伴瓜分完啦</string>
+    <string name="hongbao_detail">查看领取详情></string>
+    <string name="server_timeout">服务器超时</string>
+    <string name="hongbao_from">发的红包</string>
+    <string name="hongbao_wait_for">等待对方领取</string>
+    <string name="hongbao_is_catched">红包已领</string>
+    <string name="hongbao_fmt_unfinish">已领取%1$d/%2$d个，共%3$d/%4$d金币</string>
+    <string name="hongbao_fmt_finish">%1$d个红包，%2$s被抢完</string>
+    <string name="hongbao_lucky">最佳手气</string>
+    <string name="text_unknow">未知</string>
+    <string name="text_untime">00:00</string>
+    <string name="text_private_chat">私信</string>
+    <string name="text_ktv_hb">K歌红包</string>
+    <string name="text_exchangegift">兑换礼物</string>
+    <string name="scan_parse_fail">扫描的二维码不正确</string>
+    <string name="tip_wrong_scaneg">请选择兑换礼物的二维码</string>
+    <string name="text_room_reconnect">房间连接...</string>
+    <string name="text_enter_room">点此进入房间</string>
+    <string name="name_unknown">匿名</string>
+    <string name="text_toolong">输入文字太多,请分段输入</string>
+    <string name="tip_chat_ofen">手速太快啦</string>
+    <string name="no_weixin">您没有安装微信,请先下载安装</string>
+    <string name="text_localpicture">本地图片</string>
+    <string name="text_takephoto">拍照</string>
+</resources>

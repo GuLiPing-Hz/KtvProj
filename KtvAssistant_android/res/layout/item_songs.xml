@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem" >
+   
+   <LinearLayout 
+       android:id="@+id/arrowlayout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+   	   android:padding="20dp"
+       android:orientation="horizontal">
+       
+       <ImageButton
+	        android:id="@+id/imageButtonDG"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="5dp"
+	        android:paddingBottom="5dp"
+	        android:src="@drawable/btn_songlist_select"
+	        android:contentDescription="@string/contentdes"
+	        android:background="@color/transparent"
+	        />
+   
+   	  <ImageView
+	        android:id="@+id/iv_arrow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="5dp"
+	        android:contentDescription="@string/contentdes"
+	        android:src="@drawable/btn_arrow_bottom" />
+   
+   </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/namelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/arrowlayout" >
+
+        <!-- android:layout_toRightOf="@+id/iv_pingfen" -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="song namefjwlejfalkwejflkawejfljwalejflakwjefkl"
+            android:textColor="@color/songlist_name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="singer name"
+            android:textColor="@color/songlist_singer"
+            android:textSize="13.33sp" />
+
+        <ImageView
+            android:id="@+id/iv_yidian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/contentdes"
+            android:src="@drawable/song_list_tag_selected"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_pingfen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_name"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:src="@drawable/ic_pingfen"
+            android:contentDescription="@string/contentdes"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View 
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:layout_below="@id/arrowlayout"
+       android:background="@color/songlist_divide"
+       />
+    
+    <LinearLayout 
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrowlayout"
+        android:layout_marginTop="-6dp"
+        android:background="@drawable/list_black"
+        android:gravity="center_vertical"
+        android:baselineAligned="false"
+        android:visibility="gone">
+
+        <LinearLayout android:id="@+id/ly_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_diange_sel"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/btn_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contentdes"
+                android:src="@drawable/btn_shoucang" />
+
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#ffffffff"
+                android:text="@string/collect" />
+            
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/ly_top"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_diange_sel"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/btn_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contentdes"
+                android:src="@drawable/btn_zhiding" />
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#ffffffff"
+                android:text="@string/top" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

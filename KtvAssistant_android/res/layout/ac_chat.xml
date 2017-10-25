@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assistant.view.KeyBoardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_menu_switch_bg" >
+
+    <include
+        android:id="@+id/chat_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title" />
+    
+    <FrameLayout 
+        android:id="@+id/chat_content_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_title"
+        android:layout_above="@+id/separate_line"
+        >
+        
+        <android.support.v4.view.ViewPager 
+	        android:id="@+id/view_pager_chat"
+	        android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+	        />
+        
+    </FrameLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_horn_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_title"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:visibility="gone" >
+        <ImageView
+            android:id="@+id/imgViewIconHorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/contentdes"
+            android:src="@drawable/chat_list_icon_speaker"
+            android:scaleType="fitXY"
+            />
+        <TextView 
+            android:id="@+id/textViewHornName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgViewIconHorn"
+            android:layout_toLeftOf="@+id/textViewHornTime"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textSize="@dimen/chat_text_size"
+            android:textColor="@color/chat_btn_text_pressed"
+            />
+        <TextView 
+            android:id="@id/textViewHornTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="@dimen/chat_address_text_size"
+            android:textColor="@color/chat_horn_text_address"
+            />
+        
+        <TextView
+            android:id="@+id/textViewHornContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imgViewIconHorn"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/textViewHornName"
+            android:text=""
+            android:textSize="@dimen/chat_text_size"
+            />
+        <TextView
+            android:id="@+id/textViewHornAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewHornContent"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="@dimen/chat_address_text_size"
+            android:textColor="@color/chat_horn_text_address"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    
+    <assistant.view.PngAnimView 
+        android:id="@+id/pa_more_tip"
+        android:layout_width="29dp"
+        android:layout_height="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_above="@+id/separate_line"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        />
+    
+    <View 
+        android:id="@id/separate_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/ll_bottom_chat"
+        android:background="@color/chat_sperate"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/ll_bottom_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+        
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="4dp"
+	        android:paddingBottom="4dp"
+	        android:background="@color/chat_talk_area"
+	        android:gravity="center_vertical"
+	        android:id="@+id/rl_interactive_chat_bottom"
+	        >
+	        
+            <ImageButton
+		        android:id="@+id/imgBtnHorn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="4dp"
+		        android:scaleType="fitXY"
+		        android:background="@color/transparent"
+		        android:contentDescription="@string/txt_more"
+		        android:src="@drawable/btn_chat_horn"
+		        />
+            
+            <ImageButton   
+	            android:id="@+id/ibtn_small_red_packet"
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgBtnHorn"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+	            android:contentDescription="@string/chat_gift"
+	            android:background="@color/transparent"
+	            android:src="@drawable/btn_small_red_packet" 
+	            />
+            
+            <!-- android:drawableRight="@drawable/btn_chat_face_common" -->
+	        <assistant.view.DrawableClickEditText
+		        android:id="@+id/et_chat"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@id/ibtn_small_red_packet"
+		        android:layout_toLeftOf="@+id/ibtn_chat_send"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/bg_exit_change_nickname"
+		        android:paddingLeft="7dp"
+		        android:paddingTop="7dp"
+		        android:paddingBottom="7dp"
+		        android:paddingRight="30dp"
+		        android:hint="@string/chat_edittext_tip" 
+		        android:imeOptions="actionSend"
+		        android:textSize="@dimen/chat_text_size" 
+		        android:textColorHint="#ffacadb3"
+		        android:enabled="false"
+		        android:singleLine="true" >
+	    	</assistant.view.DrawableClickEditText>
+	    	
+	        <!--  -->
+	        <ImageButton
+	            android:id="@+id/ibtn_chat_face"
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/et_chat"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+	            android:background="@color/transparent"
+	            android:contentDescription="@string/chat_face"
+	            android:src="@drawable/btn_chat_face" />
+	        
+	        <Button 
+	            android:id="@+id/btn_enterroom"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp"
+		        android:layout_toRightOf="@id/ibtn_small_red_packet"
+		        android:layout_toLeftOf="@+id/ibtn_chat_send"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/select_chat_enterroom"
+		        android:contentDescription="@string/contentdes"
+		        android:text="@string/text_enter_room"
+		        android:textColor="@color/gift_exchange_ktv"
+	            />
+	        
+	        <ImageButton 
+	            android:id="@+id/ibtn_chat_send"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:padding="4dp"
+	            android:contentDescription="@string/chat_gift"
+	            android:background="@color/transparent"
+	            android:src="@drawable/selector_sendbtn_chat"
+	            />
+	        
+	        <ImageButton 
+	            android:id="@+id/ibtn_chat_gift"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="4dp"
+	            android:contentDescription="@string/chat_gift"
+	            android:background="@color/transparent"
+	            android:src="@drawable/btn_chat_gift"
+	            android:visibility="gone"
+	            />
+	     </RelativeLayout>
+            
+        <FrameLayout 
+            android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+            >
+            
+            <include 
+                android:id="@+id/rl_face_view"
+			    android:layout_width="match_parent"
+			    android:layout_height="@dimen/face_height" 
+			    layout="@layout/popup_face"
+			    android:visibility="gone"
+                />
+			
+            <include 
+                android:id="@+id/rl_gift_view"
+                android:layout_width="match_parent"
+			    android:layout_height="@dimen/gift_height" 
+			    layout="@layout/pupup_gift"
+			    android:visibility="gone"
+                />
+        </FrameLayout>
+         
+    </LinearLayout>
+    
+</assistant.view.KeyBoardLayout>

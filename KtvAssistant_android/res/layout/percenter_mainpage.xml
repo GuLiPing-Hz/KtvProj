@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedImageView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_menu_switch_bg"
+    android:orientation="vertical" >
+
+    <!-- 导航栏 -->
+
+    <include
+        android:id="@+id/chat_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title" />
+
+    <!-- 个人中心头像 -->
+
+    <include
+        android:id="@+id/pc_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_title"
+        layout="@layout/percenter_userhead" />
+
+    <!-- 导航Tab -->
+
+    <View
+        android:id="@+id/view_line_f"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/pc_content"
+        android:background="@color/chat_menu_switch_separate" />
+
+    <LinearLayout
+        android:id="@+id/menu_pc2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/view_line_f"
+        android:background="@color/chat_menu_switch_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/btn_chat_public"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_pcmain_sysaward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/pc_sysaward"
+                android:textColor="@drawable/color_text_switch_menu"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/chat_menu_switch_separate" />
+
+        <LinearLayout
+            android:id="@+id/btn_chat_private"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_pcmain_giftget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/pc_getgift"
+                android:textColor="@drawable/color_text_switch_menu"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/chat_menu_switch_separate" />
+
+        <LinearLayout
+            android:id="@+id/btn_chat_system"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_pcmain_giftsend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/pc_sendgift"
+                android:textColor="@drawable/color_text_switch_menu"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewSelected"
+        android:layout_width="105dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/menu_pc2"
+        android:background="@color/chat_btn_text_pressed" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/viewSelected"
+        android:background="@color/chat_menu_switch_separate" />
+    
+ 
+    
+    <!-- 分页显示 -->
+  <FrameLayout
+        android:id="@+id/gift_dh_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_line" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pc_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </android.support.v4.view.ViewPager>
+       
+       
+    </FrameLayout>
+ 
+</RelativeLayout>

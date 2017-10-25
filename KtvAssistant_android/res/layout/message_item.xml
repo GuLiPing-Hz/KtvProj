@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_item_message" >
+   
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical" >
+        
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+    	
+        <TextView
+            android:id="@+id/message_title"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="15dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:paddingTop="2dp"
+			android:paddingBottom="2dp"
+			android:layout_marginTop="7dp"
+			android:background="@drawable/message_type"
+        	android:textColor="@color/bg_item_message_type"
+        	android:textSize="12sp" />
+        
+         <TextView
+            android:id="@+id/iv_round"
+            android:layout_width="7.33dip"
+            android:layout_height="7.33dip"
+            android:layout_marginTop="13.5dp"
+            android:layout_toLeftOf="@id/iv_round"
+            android:background="@drawable/bg_circle"/>
+
+        <TextView
+            android:id="@+id/message_date"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentRight="true"
+			android:layout_marginTop="7dp"
+        	android:textColor="@color/bg_item_message_date"
+        	android:textSize="14sp" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+    <TextView
+        android:id="@+id/message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

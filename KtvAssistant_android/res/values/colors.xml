@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="black">#ff000000</color>
+    <color name="blue1">#ff0000ff</color>
+    <color name="blue">#ffccddff</color>
+    <color name="grey">#ff58616d</color>
+    <color name="toasterro">#ff9fd524</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="navpage">#ffe1e8eb</color>
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff88ae00</color>
+    <color name="viewfinder_laser">#ff00ffff</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="text_num_gray">#ff333333</color>
+    <color name="dialog_title_blue">#ff9cccf7</color>
+    <color name="title_level_1">#ff50453d</color>
+    <color name="title_level_1_1">#ffa36b57</color>
+    <color name="title_level_2">#ff867e77</color>
+    <color name="title_level_3">#ffb9b9b9</color>
+    <color name="dark_slate_gray">#ff2f4f4f</color>
+    <color name="bg_default_color">#ececec</color>
+    <color name="gray_1">#ffc0c0c0</color>
+    <color name="gray_2">#ffafafaf</color>
+    <color name="bg_main">#ffffffff</color>
+    <color name="bg_item_gray">#ff433838</color> <!-- 浅灰色背景 -->
+    <color name="bg_item_dark_gray">#ff3d3333</color> <!-- 深灰色背景 -->
+    <color name="lightred">#ffff0066</color>
+    <color name="lightred2">#ffc02d63</color>
+    <!-- xpp   抢榜消息详情 -->
+    <color name="bg_tv_message">#484848</color>
+    <color name="bg_tv_comman">#2b2b2b</color>
+    <color name="bg_tv_score">#f10f4a</color>
+    <color name="bg_tv_btn">#ffffff</color>
+    <color name="bg_view_main">#e1e2e6</color>
+    <color name="bg_tv_hasGet">#d3d3d3</color>
+    <!-- 首页显示 -->
+    <color name="home_itemtitle">#ff666666</color>
+    <color name="home_ktvroomname">#ff8e8e8e</color>
+    <color name="home_itemtext">#ffe4397d</color>
+    <!-- xpp 积分总额 -->
+    <color name="bg_total_score">#e9bb15</color>
+
+    <!-- 登录 -->
+    <color name="bg_third_login_text">#8a8a8a</color>
+    <color name="bg_third_login">#ebecf1</color>
+    <color name="login_btn_text">#ffffff</color>
+
+    <color name="ktvstart_normal">#df85c104</color>
+    <color name="ktvstart_press">#df6bb107</color>
+    <!-- 系统消息 -->
+    <color name="bg_message">#e1e2e6</color>
+    <color name="bg_item_message">#ffffff</color>
+    <color name="bg_item_message_c">#d4d4d4</color>
+    <color name="bg_item_message_type">#ffffff</color>
+    <color name="bg_item_message_date">#888888</color>
+    <color name="bg_item_message_content">#2f2f2f</color>
+    <color name="bg_item_content_read">#acacac</color>
+    <color name="message_transparent">#d4d4d4</color>
+
+    <!-- 侧滑菜单点击颜色 -->
+    <color name="bg_item_selected">#4c000000</color>
+    
+    <!-- 聊天窗口配套颜色 -->
+    <color name="chat_menu_switch_bg">#fff8f8f9</color>
+    <color name="chat_menu_switch_separate">#ffc6c6c7</color>
+    <color name="chat_bottom">#ff2a2a2a</color>
+    <color name="chat_btn_text_common">#ff909090</color>
+    <color name="chat_btn_text_pressed">#ffe4397d</color>
+    <color name="horn_send_preesed">#ffdc2b66</color>
+    <color name="chat_menu_more_item_pressed">#ff3c3f46</color>
+    <color name="chat_switch_normal">#ff5d616a</color>
+    <color name="chat_horn_text_address">#ff8a8e97</color>
+    <color name="chat_bg">#ffe5e5e5</color>
+    <color name="chat_sperate">#ffB3B6B9</color>
+    <color name="chat_system">#ffd5d5d5</color>
+    <color name="chat_face_pressed">#ffebebeb</color>
+    <color name="ktvlist_passed">#ffebebeb</color>
+    <color name="chat_user_separate">#ffbfbfbf</color>
+    <color name="chat_user_id">#ff666666</color>
+    <!-- 对话框背景颜色 -->
+    <color name="bg_dialog">#92000000</color>
+    <!-- 播放控制面板 -->
+    <color name="bg_playc">#e52a2a2a</color>
+    <color name="playc_separate">#33ffffff</color>
+    <!-- 送礼面板 -->
+    <color name="bg_gift">#fff6f6f7</color>
+    <color name="bg_gift_item_pressed">#ffebebeb</color>
+    <!-- 购买金币界面 -->
+    <color name="gold_tip">#ff9c9c9c</color>
+	<!-- 更新版本提示通知 -->
+	<color name="upgrade_later_c">#ffbababa</color>
+	<color name="hognbao_tip">#ffdbdbdb</color>
+	<color name="upgrade_later_p">#ff9e9e9e</color>
+	<color name="notify_title">#ffe6e6e7</color>
+	<color name="notify_tip">#ff999999</color>
+	<!-- 点歌列表 -->
+	<color name="songlist_score">#ffd2365e</color>
+	<color name="songlist_custom_singer">#ffba5009</color>
+	<color name="songlist_name">#ff212121</color>
+	<color name="songlist_singer">#ff636363</color>
+	<color name="songlist_divide">#ffb4b7be</color>
+	<color name="start_copyright">#ff510f4e</color>
+	<color name="about_bg_press">#ffe8e9eb</color>
+	<color name="copyright">#ffb7b7b7</color>
+	<color name="about_font">#ff7a7a7a</color>
+	<color name="singsong">#ff797388</color>
+	<color name="singsong_line">#1effffff</color>
+	<!-- Umeng -->
+	<color name="umeng_fb_color_btn_normal">#ff333333</color>
+    <color name="umeng_fb_color_btn_pressed">#ff1495F7</color>
+    
+    <!-- share -->
+    <color name="share_title">#ffcecece</color>
+    <color name="share_item">#ff808080</color>
+    <color name="hbrecord_gold">#ffff6e00</color>
+    <!-- register -->
+    <color name="register_separate">#ffe0e0e0</color>
+    <color name="total_score">#ffffc600</color>
+    <color name="chat_talk_area">#FFF0F1F5</color>
+    <!-- 红包 -->
+    <color name="hb_class">#ffe64a45</color>
+    <color name="hb_gold">#ffffa200</color>
+    <color name="online_section_title">#ffbbbbbb</color>
+    <color name="hb_select_press">#ff4c4c4c</color>
+    <color name="hb_send_bg">#ffd64551</color>
+    <color name="hb_miss_tip">#ffc2c2c2</color>
+    <color name="hb_error_tip_bg">#ff823026</color>
+    <color name="hb_error_tip_text">#fffebf36</color>
+    <color name="hb_introduction">#fff6c5c4</color>
+    <color name="hb_detail_text">#ffffe13b</color>
+    <color name="gift_exchange_ktv">#ffa8a8a8</color>
+</resources>

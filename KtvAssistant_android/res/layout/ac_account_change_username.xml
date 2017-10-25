@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebecf1"
+    android:orientation="vertical" >
+    
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title_right" />
+    
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:orientation="vertical" 
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        
+        <assistant.view.ShakeEditText
+        	android:id="@+id/edt_username"
+        	android:layout_width="match_parent"
+       	 	android:layout_height="40dip"
+        	android:layout_marginLeft="14dp"
+        	android:layout_marginRight="20dp"
+        	android:layout_marginTop="20dp"
+        	android:layout_marginBottom="20dp"
+        	
+        	android:drawablePadding="5dp"
+        	android:background="@drawable/bg_exit_change_nickname"
+        	android:paddingLeft="5dp"
+        	android:paddingRight="5dp"
+        	android:singleLine="true"
+        	android:textSize="16sp" />
+        <!-- android:drawableRight="@drawable/btn_change_username_clear_edittext" -->
+        <TextView 
+            android:id="@+id/show_tips" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:textSize="16sp" 
+            android:textColor="#ffd35e00"/>
+          
+    </LinearLayout>
+
+</LinearLayout>

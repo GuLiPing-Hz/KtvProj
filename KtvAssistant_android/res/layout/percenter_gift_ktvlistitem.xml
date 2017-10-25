@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/btn_uc_ktvitem"
+    >
+    
+    <!-- android:background="@drawable/btn_uc_ktvitem" -->
+    <TextView
+        android:id="@+id/pc_gift_ktvitem_ktvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pr_gift_ktvitem_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#9c9c9c"
+        android:textSize="18sp" />
+    
+    <ImageView
+        android:id="@+id/iv_gotonext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/list_pic_more"
+        android:contentDescription="@string/pc_detail" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/pr_gift_ktvitem_addr"
+        android:background="@color/chat_menu_switch_separate" />
+
+</RelativeLayout>

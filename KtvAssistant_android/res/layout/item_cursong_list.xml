@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_listitem" >
+
+    <!-- 使用在已点歌曲列表adapter -->
+    <LinearLayout 
+        android:id="@+id/arrowlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+    	android:paddingLeft="20dp"
+    	android:paddingTop="20dp"
+    	android:paddingBottom="20dp"
+    	android:paddingRight="10dp"
+        android:orientation="horizontal">
+        
+        <ImageButton
+	         android:id="@+id/imageButtonTop"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:src="@drawable/bg_songlist_top"
+	         android:background="@color/transparent"
+	         android:contentDescription="@string/contentdes"
+	         />
+    
+    	<ImageView
+	         android:id="@+id/iv_arrow"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="4dp"
+	         android:layout_marginLeft="15dp"
+	         android:src="@drawable/btn_arrow_bottom"
+	         android:contentDescription="@string/contentdes" />
+    
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/namelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/arrowlayout" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="song name"
+            android:textColor="@color/songlist_name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="singer"
+            android:textColor="@color/songlist_singer"
+            android:textSize="13.33sp" />
+        
+        <ImageView 
+            android:id="@+id/imgViewTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/contentdes"
+            android:src="@drawable/song_list_tag_selected"
+            />
+    </RelativeLayout>
+
+    <View 
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:layout_below="@id/arrowlayout"
+       android:background="@color/songlist_divide"
+       />
+    
+    <LinearLayout android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrowlayout"
+        android:layout_marginTop="-6dp"
+        android:background="@drawable/list_black"
+        android:gravity="center_vertical"
+        android:baselineAligned="false"
+        android:visibility="gone">
+
+		<LinearLayout android:id="@+id/ly_order_song"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_diange_sel"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/btn_order_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contentdes"
+                android:src="@drawable/btn_delete" />
+
+            <TextView
+                android:id="@+id/tv_order_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="@string/delete" />
+            
+        </LinearLayout>
+        <LinearLayout android:id="@+id/ly_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_diange_sel"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contentdes"
+                android:src="@drawable/btn_shoucang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="@string/collect" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

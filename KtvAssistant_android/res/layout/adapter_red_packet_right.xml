@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    >
+    
+    <!-- 用于自己的公聊，送礼物 -->
+    <assistant.view.RoundedImageView
+	     android:id="@+id/rimgViewPhoto"
+	     android:layout_width="40dp"
+	     android:layout_height="40dp"
+	     android:layout_alignParentRight="true"
+	     android:scaleType="fitXY"
+	     android:src="@drawable/ic_user"
+	     />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_hongbao"
+        android:layout_width="@dimen/hongbao_width" 
+	    android:layout_height="@dimen/hongbao_height"
+        android:layout_toLeftOf="@id/rimgViewPhoto"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        
+        <View 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/selector_hb_bg_right"
+           />
+       
+       <TextView 
+           android:id="@+id/textViewContent"
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"
+           android:singleLine="true"
+           android:textColor="@color/white"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="38dp"
+           android:textSize="13sp"
+           android:text="@string/moneybag_redpacket_Send_Message" />
+       
+       <TextView 
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"
+           android:layout_below="@id/textViewContent"
+           android:layout_alignLeft="@id/textViewContent"
+           android:singleLine="true"
+           android:textColor="@color/white"
+           android:layout_marginTop="5dp"
+           android:textSize="12sp"
+           android:text="@string/hongbao_get" />
+       
+       <!-- 通配地址，这里显示红包类型 -->
+       <TextView 
+           android:id="@+id/textViewAddress"
+           android:layout_width="wrap_content" 
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="0.5dp"
+           android:layout_marginLeft="10dp"
+           android:singleLine="true"
+           android:textColor="@color/notify_tip"
+           android:textSize="10sp"
+           android:text="大款红包"
+           />
+    </RelativeLayout>
+</RelativeLayout>

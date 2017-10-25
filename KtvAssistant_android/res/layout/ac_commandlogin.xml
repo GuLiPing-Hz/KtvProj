@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include android:id="@+id/ly_title" layout="@layout/ly_title" />
+
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/into_box_text"
+        android:textSize="14sp"
+        android:textColor="#1a1a1a" />
+    
+    <EditText 
+        android:id="@+id/pwdEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="41.33sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:hint="@string/input_command" 
+        android:textSize="16sp"
+        android:background="@drawable/shape"/>
+    
+    <Button
+        android:id="@+id/btn_into_box"
+        android:layout_width="fill_parent"
+        android:layout_height="41.33sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/btn_into_box"
+        android:text="@string/into_box" 
+        android:textSize="16sp"
+        android:textColor="#ffffff"/>
+</LinearLayout>

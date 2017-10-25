@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/interactive_chat_red_packet_choose"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:textColor="@color/chat_bg"
+        android:background="@drawable/selector_bg_hbselect"
+        android:textSize="16sp"
+        android:text="@string/moneybag_redpacket_title"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:textColor="@color/chat_bg"
+        android:background="@drawable/selector_bg_hbselect"
+        android:textSize="16sp"
+        android:text="@string/room_redpacket_title"
+        />
+
+</LinearLayout>

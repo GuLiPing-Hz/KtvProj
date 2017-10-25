@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/chat_user_id"
+        />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/chat_btn_text_pressed"
+        />
+    
+    <TextView 
+        android:id="@+id/textViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/chat_btn_text_pressed"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/tip_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="7dp"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_upgrade_later"
+            android:visibility="visible"
+            />
+        <TextView 
+            android:id="@+id/tip_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_upgrade"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

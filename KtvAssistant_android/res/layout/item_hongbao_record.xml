@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    >
+    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="@color/chat_face_pressed"
+	        />
+	    <View 
+	        android:layout_width="1dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:background="@color/chat_face_pressed"
+	        />
+	    <View 
+	        android:layout_width="1dp"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentRight="true"
+	        android:background="@color/chat_face_pressed"
+	        />
+	        
+	    <TextView 
+	        android:id="@+id/tv_hbrecord_mission"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_marginTop="10dp"
+	        android:textColor="@color/text_num_gray"
+	        android:textSize="16sp"
+	        android:maxLength="32"
+	        android:text="演唱评分歌曲进入入门店演唱店入门店演唱店入门店演唱店门店演唱店"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_hbrecord_gold"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="5dp"
+	        android:drawableLeft="@drawable/gold_ic"
+	        android:drawablePadding="5dp"
+	        android:textColor="@color/hbrecord_gold" 
+	        android:text="100金币"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_hbrecord_time"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignBottom="@id/tv_hbrecord_gold"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/upgrade_later_c"
+	        android:textSize="14sp"
+	        android:text="2012-05-06"
+	        />
+	
+	</RelativeLayout>
+</RelativeLayout>
+

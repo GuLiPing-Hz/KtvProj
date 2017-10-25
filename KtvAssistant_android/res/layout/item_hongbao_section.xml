@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_hongbao_section"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <ImageView 
+        android:id="@+id/iv_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_hongbao_class"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/contentdes"
+        android:src="@drawable/cue_points_ic"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_hongbao_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_red"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textColor="@color/upgrade_later_c"
+        android:textSize="18sp"
+        android:text="新人奖励"
+        />
+    <TextView 
+        android:id="@+id/tv_section_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_hongbao_class"
+        android:layout_alignBottom="@id/tv_hongbao_class"
+        android:singleLine="true"
+        android:textColor="@color/hognbao_tip"
+        android:text="@string/day_hongbao_tip"
+        />
+
+    <ImageView 
+        android:id="@+id/iv_section_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/contentdes"
+        android:src="@drawable/btn_arrow_top"
+        />
+</RelativeLayout>
+</RelativeLayout>

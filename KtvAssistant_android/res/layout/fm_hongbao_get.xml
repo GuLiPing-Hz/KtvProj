@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gift"
+    android:orientation="vertical" >
+    
+	<include 
+        android:id="@+id/include_title"
+        layout="@layout/ly_title" />
+    
+	<FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        >
+        
+        <ListView 
+	        android:id="@+id/lv_hongbao_canget"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="@null"
+	        android:listSelector="@color/transparent"
+	        android:cacheColorHint="@color/transparent"
+	        android:visibility="visible"
+	        android:overScrollMode="never"
+	        />
+        
+        <ProgressBar
+	       android:id="@+id/load_progress"
+	       style="@android:style/Widget.ProgressBar.Large.Inverse"
+	       android:layout_width="35dp"
+	       android:layout_height="35dp"
+	       android:layout_gravity="center"
+      	/>
+    
+	    <TextView
+	        android:id="@+id/tv_emptytip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center|center_vertical"
+	        android:gravity="center"
+	        android:drawablePadding="40dp"
+	        android:drawableTop="@drawable/pic_sorry"
+	        android:text="@string/chat_pc_nodata_msg"
+	        android:textColor="@color/chat_user_separate"
+	        android:textSize="18sp"
+	        android:visibility="gone" 
+	        />
+    </FrameLayout>
+	
+</LinearLayout>

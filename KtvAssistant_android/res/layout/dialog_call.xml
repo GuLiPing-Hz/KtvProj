@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/bg_dialog"
+    >
+
+    <Button
+        android:id="@+id/menu_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_style_alert_dialog_button"
+        android:text="@string/enterroom_by_code"
+        android:textColor="@color/chat_btn_text_pressed"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/menu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_style_alert_dialog_cancel"
+        android:text="@string/topup_cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

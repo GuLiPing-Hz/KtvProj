@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg_score_listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_blue" >
+    
+ 	<TextView
+        android:id="@+id/score_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:padding="15dp"
+        android:textColor="#474747"
+        android:textSize="14sp" />
+    
+    <TextView
+        android:id="@+id/score_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/btn_money1"
+        android:drawablePadding="5dp"
+        android:layout_centerInParent="true"
+        android:textColor="#474747"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+   <TextView
+        android:id="@+id/btn_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:textColor="#ea9111"
+        android:singleLine="true"
+        android:textSize="14sp" />
+    
+
+</RelativeLayout>

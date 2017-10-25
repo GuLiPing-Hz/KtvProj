@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--按下状态 --> 
+    <item android:state_pressed="true" >
+		<shape >
+		    <solid android:color="#e5e6e7" />
+			<padding
+				android:left="10dp"
+				android:top="10dp"
+				android:right="10dp"
+				android:bottom="10dp"
+			/>
+			<corners
+		        android:bottomLeftRadius="6dp"
+		        android:bottomRightRadius="6dp" />
+		</shape>
+	</item>
+	<!--一般状态 --> 
+	<item>
+		<shape>
+			<solid android:color="#ffffff"
+			/>
+			<padding
+				android:left="10dp"
+				android:top="10dp"
+				android:right="10dp"
+				android:bottom="10dp"
+			/>
+			<corners
+		        android:bottomLeftRadius="6dp"
+		        android:bottomRightRadius="6dp" />
+		</shape>
+	</item>
+</selector>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedImageView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="horizontal" >
+
+            <!-- 头像 -->
+
+            <assistant.view.RoundedImageView
+                android:id="@+id/ac_userheadImg"
+                android:layout_width="66.33dp"
+                android:layout_height="66.33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_user"
+                roundedImageView:border_color="@color/white"
+                roundedImageView:border_thickness="2dp" />
+
+            <!-- 摄像头 -->
+
+            <assistant.view.RoundedImageView
+                android:id="@+id/ac_userheadupload"
+                android:layout_width="26.67dip"
+                android:layout_height="26.67dip"
+                android:layout_alignBottom="@id/ac_userheadImg"
+                android:layout_marginLeft="-20dp"
+                android:layout_toRightOf="@id/ac_userheadImg"
+                android:src="@drawable/user_center_face_camera"
+                roundedImageView:border_color="@color/white"
+                roundedImageView:border_thickness="2dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 我的收藏 -->
+
+            <Button
+                android:id="@+id/ac_mysongs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_uc_favorite"
+                android:gravity="center_horizontal|bottom" />
+
+            <!-- 我收藏的歌曲 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pc_mysong"
+                android:textColor="@color/home_itemtitle"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 扫描包厢金币 -->
+
+            <Button
+                android:id="@+id/ac_getgold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_uc_scan"
+                android:gravity="center_horizontal|bottom" />
+            <!-- 扫描包厢金币 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_scan_getgold"
+                android:textColor="@color/home_itemtitle"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+        <!-- 男女头像标识icon_sex2_woman -->
+
+        <TextView
+            android:id="@+id/txt_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/icon_sex2_man"
+            android:drawablePadding="5dp"
+            android:text="@string/nickname"
+            android:textColor="@color/home_itemtext"
+            android:textSize="20sp" />
+        <!--金币数量-->
+
+        <TextView
+            android:id="@+id/txt_uchead_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true" 
+            android:layout_alignBottom="@id/txt_nickname"
+            android:drawableLeft="@drawable/icon_money2"
+            android:drawablePadding="5dp"
+            android:text="@string/pc_msg_gold"
+            android:textColor="@color/home_itemtitle"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</LinearLayout>

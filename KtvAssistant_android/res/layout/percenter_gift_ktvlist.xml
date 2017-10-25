@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundedImageView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chat_menu_switch_bg"
+    android:orientation="vertical" >
+
+    <!-- 导航栏 -->
+
+    <include
+        android:id="@+id/pc_giftktvlist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title" />
+
+    <RelativeLayout
+        android:id="@+id/pc_ktvlist_rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pc_giftktvlist_title"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_uc_ktvitem"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/view_spliter_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/chat_menu_switch_separate" />
+        
+        <ImageView 
+            android:id="@+id/iv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/contentdes"
+            android:src="@drawable/scan_gifte"
+            />
+        
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_spliter_1"
+            android:layout_toRightOf="@id/iv_scan"
+            android:layout_margin="15dp"
+            android:text="@string/scan_exchange_gift"
+            android:textColor="@color/home_itemtitle"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/list_pic_more"
+            android:contentDescription="@string/pc_detail" />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_scan"
+            android:background="@color/chat_menu_switch_separate" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/pc_ktvlist_rl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pc_ktvlist_rl1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_ktvshop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/pc_ts_ktvxz"
+            android:textColor="@color/gift_exchange_ktv"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_ktvshop"
+            android:background="@color/chat_menu_switch_separate" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/pc_ktvlist_listv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:layout_below="@+id/pc_ktvlist_rl2" 
+        android:overScrollMode="never"
+        >
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/fralayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pc_ktvlist_rl2"
+        android:visibility="visible"
+        android:background="@color/white" >
+
+        <ProgressBar
+            android:id="@+id/load_progress"
+            style="@android:style/Widget.ProgressBar.Large.Inverse"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/pc_ltextViewTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="40dp"
+            android:drawableTop="@drawable/pic_sorry"
+            android:gravity="center"
+            android:text="@string/chat_pc_nodata_msg"
+            android:textColor="@color/chat_user_separate"
+            android:visibility="gone"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+</RelativeLayout>

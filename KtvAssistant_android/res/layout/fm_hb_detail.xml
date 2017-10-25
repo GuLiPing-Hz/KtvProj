@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<include 
+        android:id="@+id/include_title"
+        layout="@layout/ly_title_hb" />
+	
+	<RelativeLayout 
+	    android:id="@+id/rl_hb_detal_head"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/include_title"
+	    android:paddingBottom="10dp"
+	    android:background="@color/hb_send_bg"
+	    >
+	    
+	    <assistant.view.RoundedImageView
+	       android:id="@+id/iv_userhead"
+	       android:layout_width="68dp"
+	       android:layout_height="68dp"
+	       android:layout_marginTop="5dp"
+	       android:layout_centerHorizontal="true"
+	       android:scaleType="fitXY"
+	       android:src="@drawable/ic_user"
+	       />
+	    
+	    <TextView 
+	        android:id="@+id/tv_hb_from"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/iv_userhead"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="@color/white"
+	        android:text="小丫发的红包"
+	        android:textSize="15sp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_hb_mark"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_below="@id/tv_hb_from"
+	        android:layout_marginTop="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="@color/hb_introduction"
+	        android:text="@string/moneybag_redpacket_Send_Message"
+	        android:textSize="13sp"
+	        />
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_self_gold"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_hb_mark"
+	        android:layout_marginTop="12dp"
+	        android:layout_centerHorizontal="true"
+	        android:orientation="horizontal"
+	        android:visibility="visible"
+	        >
+	        
+	        <TextView 
+		        android:id="@+id/tv_gold"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/hb_detail_text"
+		        android:text="100"
+		        android:textSize="40sp"
+		        android:layout_marginRight="5dp"
+		        />
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/pc_goldinfo"
+		        android:textColor="@color/hb_detail_text"
+		        />
+	        
+	    </LinearLayout>
+	    
+	</RelativeLayout>
+	
+	<TextView 
+	    android:id="@+id/tv_hb_message"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="5dp"
+	    android:background="@color/bg_gift"
+	    android:layout_below="@id/rl_hb_detal_head"
+	    android:textColor="@color/online_section_title"
+	    />
+	
+	<ListView 
+	    android:id="@+id/lv_hb_detail"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/tv_hb_message"
+	    android:listSelector="@color/transparent"
+	    android:divider="@null"
+	    android:overScrollMode="never"
+	    />
+	
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="home_shadow">80dip</dimen>
+    <dimen name="banner_dot_height">20dip</dimen>
+    
+    <!-- 控制评分歌曲排行榜一级菜单分页 -->
+    <dimen name="gradesong_top_margintop">10dp</dimen>
+    <dimen name="gradesong_top_eachmt">2dp</dimen>
+    <dimen name="gradesong_top_textsize">15sp</dimen>
+    <!-- 播放控制面板高度 -->
+    <dimen name="playc_height">270dp</dimen>
+    <!-- 表情页面高度 -->
+    <dimen name="face_height">256dp</dimen>
+    <!-- 聊天字体通用大小 -->
+    <dimen name="chat_text_size">14sp</dimen>
+    <dimen name="chat_address_text_size">12sp</dimen>
+    <!-- 送礼界面高度 -->
+    <dimen name="gift_height">270dp</dimen>
+    <dimen name="gift_font_size">16sp</dimen>
+    <dimen name="popmenu_width">110.0dip</dimen>
+    <dimen name="popmenu_yoff">5.0dip</dimen>
+    <dimen name="dip2pix">1.0dip</dimen>
+    
+    <dimen name="hongbao_width">180dp</dimen>
+    <dimen name="hongbao_height">70dp</dimen>
+    <!-- 主页字体大小 -->
+    <dimen name="home_text_btn">14sp</dimen>
+    <dimen name="home_text_margin_bottom">1dp</dimen>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title_number" />
+
+    <include android:id="@+id/ly_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_searchbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <View 
+            android:id="@+id/viewTopLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/songlist_divide"
+            />
+        <ListView
+            android:id="@+id/lv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewTopLine"
+            android:listSelector="@color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@drawable/list_line"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true" 
+            android:overScrollMode="never"
+            />
+
+        <assistant.view.PngAnimView 
+            android:id="@+id/ly_waiting"
+	        android:layout_width="140dp"
+	        android:layout_height="140dp"
+	        android:layout_centerInParent="true"
+	        />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/empty_tips"
+            android:textColor="#ff837d73"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/iv_data_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_above="@id/tv_empty"
+            android:background="@drawable/iv_fail"
+            android:layout_centerHorizontal ="true"
+            android:layout_marginBottom="16.67dp"
+            android:visibility="gone" />
+        
+        <assistant.view.LetterListView 
+	    	android:id="@+id/lv_letters"
+			android:layout_width="30dip" 
+			android:layout_height="fill_parent"
+			android:layout_alignParentRight="true" />
+        
+        <include
+            android:id="@+id/ly_overlay"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            layout="@layout/view_overlay" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

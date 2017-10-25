@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@drawable/redpacket_send_type_2"/>
+    <item android:drawable="@drawable/redpacket_send_type_3"/>
+
+</selector>

@@ -1,0 +1,24 @@
+Compiled from "GiftInfo.java"
+public class com.jni.netutil.GiftInfo extends java.lang.Object{
+int id;
+  Signature: I
+java.lang.String name;
+  Signature: Ljava/lang/String;
+java.lang.String image_name;
+  Signature: Ljava/lang/String;
+java.lang.String image_ur;
+  Signature: Ljava/lang/String;
+int cash;
+  Signature: I
+int coin;
+  Signature: I
+java.lang.String unit_name;
+  Signature: Ljava/lang/String;
+int effectId;
+  Signature: I
+int gift_type;
+  Signature: I
+public com.jni.netutil.GiftInfo();
+  Signature: ()V
+}
+

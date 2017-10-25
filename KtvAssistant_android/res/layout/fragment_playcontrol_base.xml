@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/playc_height"
+    android:background="@color/bg_playc">
+    
+	<LinearLayout
+	    android:id="@+id/ll_first"
+	    android:layout_width="280dp"
+	    android:layout_height="73dp"
+	    android:layout_marginTop="20dp"
+	    android:orientation="horizontal"
+	    android:layout_centerHorizontal="true"
+	    >
+ 
+	    <Button
+	        android:id="@+id/btnSingMode"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/btn_playc_singmode"
+	        android:gravity="center_horizontal|bottom"
+	        android:text="@string/playc_singmode"
+	        android:textSize="12sp"
+	        android:textColor="@color/white" />
+
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.2"
+	        android:background="@color/transparent"
+	        />
+
+	    <Button 
+	        android:id="@+id/btn_playc_music_mute"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/btn_playc_mute"
+	        android:gravity="center_horizontal|bottom"
+	        android:text="@string/playc_mute"
+	        android:textSize="12sp"
+	        android:textColor="@color/white"
+	        />
+	    
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.2"
+	        android:background="@color/transparent"
+	        />
+
+	    <Button
+	        android:id="@+id/btnScoreStat"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/btn_playc_scorestat"
+	        android:gravity="center_horizontal|bottom"
+	        android:text="@string/playc_scorestat"
+	        android:textColor="@color/white"
+	        android:textSize="12sp" />
+
+	    <View 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.2"
+	        android:background="@color/transparent"
+	        />
+
+	    <Button
+	        android:id="@+id/btnResing"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@drawable/btn_playc_resing"
+	        android:gravity="center_horizontal|bottom"
+	        android:text="@string/playc_resing"
+	        android:textColor="@color/white"
+	        android:textSize="12sp" />
+
+	</LinearLayout>
+	
+	<View
+	    android:id="@+id/view_separate"
+	    android:layout_below="@id/ll_first"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp" 
+	    android:layout_margin="15dp"
+	    android:background="@color/playc_separate"
+	    />
+    
+	<RelativeLayout 
+	    android:id="@+id/rl_music"
+	    android:layout_width="280dp"
+	    android:layout_height="73dp"
+	    android:layout_below="@id/view_separate"
+	    android:layout_centerHorizontal="true"
+	    >
+	    
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_alignParentLeft="true"
+	        >
+	        
+	        <ImageView 
+		        android:id="@+id/imgViewMusic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="12dp"
+		        android:layout_marginLeft="52dp"
+		        android:src="@drawable/soundctrl_pic_volume"
+		        />
+	        
+	        <Button 
+		        android:id="@+id/btn_playc_music_sub"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/btn_playc_musicsub"
+		        /> 
+		    
+		    <Button 
+		        android:id="@+id/btn_playc_music_add"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/btn_playc_music_sub"
+		        android:layout_marginLeft="14dp"
+		        android:background="@drawable/btn_playc_musicadd"
+		        />
+	    </RelativeLayout>
+	    
+	    <Button 
+	        android:id="@+id/btnPauseOO"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical|right"
+	        android:layout_marginRight="14.5dp"
+	        android:background="@drawable/btn_playc_pauseoo"
+	        android:text="@string/playc_pauseoo"
+	        android:textColor="@color/white"
+	        android:textSize="12sp" />
+	</RelativeLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="280dp"
+	    android:layout_height="73dp"
+	    android:layout_below="@id/rl_music"
+	    android:layout_centerHorizontal="true"
+	    >
+	    
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_alignParentLeft="true"
+	        >
+		    <ImageView 
+		        android:id="@+id/imgViewMic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:layout_marginTop="12dp"
+		        android:layout_marginLeft="52dp"
+		        android:src="@drawable/soundctrl_pic_mic"
+		        />
+	        <Button 
+		        android:id="@+id/btn_playc_mic_sub"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/btn_playc_micsub"
+		        /> 
+		    
+		    <Button 
+		        android:id="@+id/btn_playc_mic_add"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/btn_playc_mic_sub"
+		        android:layout_marginLeft="14dp"
+		        android:background="@drawable/btn_playc_micadd"
+		        />
+	    </RelativeLayout>
+	    
+	    <Button  
+	        android:id="@+id/btnSwitchSong"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal|bottom"
+	        android:background="@drawable/soundctrl_btn_next"
+	        android:textColor="@color/white"
+	        android:textSize="12sp" />
+	</RelativeLayout>
+</RelativeLayout>

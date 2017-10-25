@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<UpdateURL>http://mobile.9158.com/9158ChatRoom.apk</UpdateURL><!--更新升级包地址-->
+	<APKMD5>C0440E529BB151EC703A750E891A9C9D</APKMD5><!--更新升级包hash值 2.3.0-->
+	<RoomListURL>http://mobile.9158.com/Show9158/RoomList.aspx</RoomListURL><!--房间列表地址--> 
+	<RegistURL>http://mobile.9158.com/Show9158/Register.aspx</RegistURL><!--注册页面地址-->
+	<UserInfoURL>http://mobile.9158.com/Show9158/Individual_Setup.aspx</UserInfoURL><!--用户信息页面地址-->
+	<FavoritesRoomURL>http://mobile.9158.com/Show9158/AddToFavorites.aspx</FavoritesRoomURL><!--收藏房间页面地址-->
+	<RechargeURL>http://mobile.9158.com/Pay/PhonePay.aspx</RechargeURL>	<!--充值页面地址-->
+	<ItemConfigURL>http://mimtenroom.9158.com/item/itemconfig.xml</ItemConfigURL>	<!--礼物列表地址-->
+	<ItemPicRootURL>http://mimtenroom.9158.com/item/</ItemPicRootURL>
+	<AndroidItemXmlURL>http://mobile.9158.com/androiditemconfig.xml</AndroidItemXmlURL>
+
+	<LoginServerList><!--登录服务器列表-->
+		<Info>
+			<ID>1</ID>
+			<Name>9158-登录点一</Name>
+			<IP>122.226.86.89</IP>
+			<IP2>60.12.149.29</IP2>
+			<Port>7627</Port>
+		</Info>
+		<Info>
+			<ID>2</ID>
+			<Name>9158-登录点二</Name>
+			<IP>60.191.252.122</IP>
+			<IP2>60.12.149.29</IP2>
+			<Port>7627</Port>
+		</Info>
+		<Info>
+			<ID>3</ID>
+			<Name>9158-登录点三</Name>
+			<IP>58.221.43.26</IP>
+			<IP2>58.221.43.26</IP2>
+			<Port>7627</Port>
+		</Info>
+	</LoginServerList>
+	<TestLoginServerList><!--测试用登录服务器-->
+		<IP>122.227.58.199</IP>	
+		<PORT>7534</PORT>
+	</TestLoginServerList>	
+	<HostYu>testroom1.9158.com</HostYu><!--网络运营商测试-->        
+	<Dianxin>60.191.222.83</Dianxin><!--新 电信-->        
+	<WangTong>221.12.90.235</WangTong><!--新 网通-->  
+	<ItemXMLVer>5</ItemXMLVer>
+	<LatestVer>70</LatestVer><!--最新版本号-->
+	<LowestVer>3</LowestVer><!--最低支持版本号-->
+</Config>

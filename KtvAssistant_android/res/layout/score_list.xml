@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent" 
+    android:background="#ffffff">
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+        	android:id="@+id/score_way"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textSize="13sp" 
+        	android:textColor="#474747"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center">
+        
+        <TextView
+            android:id="@+id/score_value"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:drawableLeft="@drawable/btn_money1"
+        	android:textSize="13sp"
+        	android:textColor="#474747" />
+    
+    </LinearLayout>
+
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center" >
+        
+    	<TextView
+        	android:id="@+id/btn_score"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:drawableRight="@drawable/list_blue"
+        	android:textSize="13sp"
+        	android:clickable="true"
+        	android:textColor="#ea9111"
+        	android:gravity="center_vertical" />
+    	
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="right" >
+        
+    	<ImageView
+        	android:id="@+id/img_right"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"/>
+    	
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AAC23E8F-A8D0-459D-81C6-A1EA2323F346}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>JniNetUtil</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(ProjectName)\</IntDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)obj\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;JNINETUTIL_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;JNINETUTIL_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="com_jni_netutil_CJniUtil.h" />
+    <ClInclude Include="FilterDog.h" />
+    <ClInclude Include="jniloghelp.h" />
+    <ClInclude Include="JniResponse.h" />
+    <ClInclude Include="NetUtil\charset\CharsetCodec.h" />
+    <ClInclude Include="NetUtil\charset\Chinese.h" />
+    <ClInclude Include="NetUtil\charset\Utf.h" />
+    <ClInclude Include="NetUtil\ChatCompatibility.h" />
+    <ClInclude Include="NetUtil\DataDecoderAuth.h" />
+    <ClInclude Include="NetUtil\DataDecoderChannellist.h" />
+    <ClInclude Include="NetUtil\DataDecoderLobby.h" />
+    <ClInclude Include="NetUtil\DataDecoderRoom.h" />
+    <ClInclude Include="NetUtil\DataDecodeUtilty.h" />
+    <ClInclude Include="NetUtil\dbresult.h" />
+    <ClInclude Include="NetUtil\HttpUniformCallBack.h" />
+    <ClInclude Include="NetUtil\localstorage\DataMgr.h" />
+    <ClInclude Include="NetUtil\localstorage\DataType.h" />
+    <ClInclude Include="NetUtil\localstorage\LocalStorage.h" />
+    <ClInclude Include="NetUtil\localstorage\NotifyMsg.h" />
+    <ClInclude Include="NetUtil\localstorage\ServerData.h" />
+    <ClInclude Include="NetUtil\localstorage\UserInfoData.h" />
+    <ClInclude Include="NetUtil\localstorage\XmlFileDef.h" />
+    <ClInclude Include="NetUtil\MessageFilter.h" />
+    <ClInclude Include="NetUtil\NetApp.h" />
+    <ClInclude Include="NetUtil\protocol.h" />
+    <ClInclude Include="NetUtil\RequestBase.h" />
+    <ClInclude Include="NetUtil\ReserveData.h" />
+    <ClInclude Include="NetUtil\ResponseBase.h" />
+    <ClInclude Include="NetUtil\ResultData.h" />
+    <ClInclude Include="NetUtil\ThreadInformer.h" />
+    <ClInclude Include="NetUtil\TMSeqMap.h" />
+    <ClInclude Include="NetUtil\Tunnel.h" />
+    <ClInclude Include="NetUtil\wrap\aes.h" />
+    <ClInclude Include="NetUtil\wrap\CFileMgr.h" />
+    <ClInclude Include="NetUtil\wrap\ClientSocket.h" />
+    <ClInclude Include="NetUtil\wrap\config.h" />
+    <ClInclude Include="NetUtil\wrap\Counter.h" />
+    <ClInclude Include="NetUtil\wrap\crypt.h" />
+    <ClInclude Include="NetUtil\wrap\DataBlock.h" />
+    <ClInclude Include="NetUtil\wrap\DataDecoder.h" />
+    <ClInclude Include="NetUtil\wrap\EventHandler.h" />
+    <ClInclude Include="NetUtil\wrap\event_posix.h" />
+    <ClInclude Include="NetUtil\wrap\event_win.h" />
+    <ClInclude Include="NetUtil\wrap\event_wrapper.h" />
+    <ClInclude Include="NetUtil\wrap\httpcontent.h" />
+    <ClInclude Include="NetUtil\wrap\HttpDownload.h" />
+    <ClInclude Include="NetUtil\wrap\HttpDownloadMgr.h" />
+    <ClInclude Include="NetUtil\wrap\HttpDownloadType.h" />
+    <ClInclude Include="NetUtil\wrap\jniloghelp.h" />
+    <ClInclude Include="NetUtil\wrap\md5.h" />
+    <ClInclude Include="NetUtil\wrap\NonCopyable.h" />
+    <ClInclude Include="NetUtil\wrap\NUtility.h" />
+    <ClInclude Include="NetUtil\wrap\reactor.h" />
+    <ClInclude Include="NetUtil\wrap\RWStream.h" />
+    <ClInclude Include="NetUtil\wrap\SeqMap.h" />
+    <ClInclude Include="NetUtil\wrap\set_thread_name_win.h" />
+    <ClInclude Include="NetUtil\wrap\sleep.h" />
+    <ClInclude Include="NetUtil\wrap\ThreadMgr.h" />
+    <ClInclude Include="NetUtil\wrap\thread_posix.h" />
+    <ClInclude Include="NetUtil\wrap\thread_win.h" />
+    <ClInclude Include="NetUtil\wrap\thread_wrapper.h" />
+    <ClInclude Include="NetUtil\wrap\Timer.h" />
+    <ClInclude Include="NetUtil\wrap\typedefs.h" />
+    <ClInclude Include="NetUtil\xingconfig.h" />
+    <ClInclude Include="NetUtil\XingguangDef.h" />
+    <ClInclude Include="NetUtil\xml\tinystr.h" />
+    <ClInclude Include="NetUtil\xml\tinyxml.h" />
+    <ClInclude Include="NetUtil\zip\crypt.h" />
+    <ClInclude Include="NetUtil\zip\ioapi.h" />
+    <ClInclude Include="NetUtil\zip\unzip.h" />
+    <ClInclude Include="NetUtil\zip\zip.h" />
+    <ClInclude Include="NetUtil\zlib\crc32.h" />
+    <ClInclude Include="NetUtil\zlib\deflate.h" />
+    <ClInclude Include="NetUtil\zlib\gzguts.h" />
+    <ClInclude Include="NetUtil\zlib\inffast.h" />
+    <ClInclude Include="NetUtil\zlib\inffixed.h" />
+    <ClInclude Include="NetUtil\zlib\inflate.h" />
+    <ClInclude Include="NetUtil\zlib\inftrees.h" />
+    <ClInclude Include="NetUtil\zlib\trees.h" />
+    <ClInclude Include="NetUtil\zlib\zconf.h" />
+    <ClInclude Include="NetUtil\zlib\zlib.h" />
+    <ClInclude Include="NetUtil\zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="com_jni_netutil_CJniUtil.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="JniResponse.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="NetUtil\charset\CharsetCodec.cpp" />
+    <ClCompile Include="NetUtil\charset\Chinese.cpp" />
+    <ClCompile Include="NetUtil\charset\Utf.cpp" />
+    <ClCompile Include="NetUtil\ChatCompatibility.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderAuth.cpp" />
+    <ClCompile Include="NetUtil\DataDecoderChannellist.cpp" />
+    <ClCompile Include="NetUtil\DataDecoderLobby.cpp" />
+    <ClCompile Include="NetUtil\DataDecoderLobbyNew.cpp" />
+    <ClCompile Include="NetUtil\DataDecoderLobbyOld.cpp" />
+    <ClCompile Include="NetUtil\DataDecoderRoom.cpp" />
+    <ClCompile Include="NetUtil\DataDecoderRoom2.cpp" />
+    <ClCompile Include="NetUtil\DataDecoderRoom1.cpp" />
+    <ClCompile Include="NetUtil\DataDecodeUtilty.cpp" />
+    <ClCompile Include="NetUtil\dbresult.cpp" />
+    <ClCompile Include="NetUtil\HttpUniformCallBack.cpp" />
+    <ClCompile Include="NetUtil\localstorage\DataMgr.cpp" />
+    <ClCompile Include="NetUtil\localstorage\LocalStorage.cpp" />
+    <ClCompile Include="NetUtil\localstorage\NotifyMsg.cpp" />
+    <ClCompile Include="NetUtil\localstorage\ServerData.cpp" />
+    <ClCompile Include="NetUtil\localstorage\UserInfoData.cpp" />
+    <ClCompile Include="NetUtil\MessageFilter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="NetUtil\NetApp.cpp" />
+    <ClCompile Include="NetUtil\RequestBase.cpp" />
+    <ClCompile Include="NetUtil\ReserveData.cpp" />
+    <ClCompile Include="NetUtil\ThreadInformer.cpp" />
+    <ClCompile Include="NetUtil\TMSeqMap.cpp" />
+    <ClCompile Include="NetUtil\Tunnel.cpp" />
+    <ClCompile Include="NetUtil\wrap\aes.cpp" />
+    <ClCompile Include="NetUtil\wrap\CFileMgr.cpp" />
+    <ClCompile Include="NetUtil\wrap\ClientSocket.cpp" />
+    <ClCompile Include="NetUtil\wrap\Counter.cpp" />
+    <ClCompile Include="NetUtil\wrap\crypt.cpp" />
+    <ClCompile Include="NetUtil\wrap\DataBlock.cpp" />
+    <ClCompile Include="NetUtil\wrap\DataDecoder.cpp" />
+    <ClCompile Include="NetUtil\wrap\event.cpp" />
+    <ClCompile Include="NetUtil\wrap\EventHandler.cpp" />
+    <ClCompile Include="NetUtil\wrap\httpcontent.cpp" />
+    <ClCompile Include="NetUtil\wrap\HttpDownload.cpp" />
+    <ClCompile Include="NetUtil\wrap\HttpDownloadMgr.cpp" />
+    <ClCompile Include="NetUtil\wrap\jniloghelp.cpp" />
+    <ClCompile Include="NetUtil\wrap\md5.cpp" />
+    <ClCompile Include="NetUtil\wrap\NonCopyable.cpp" />
+    <ClCompile Include="NetUtil\wrap\NUtility.cpp" />
+    <ClCompile Include="NetUtil\wrap\reactor.cpp" />
+    <ClCompile Include="NetUtil\wrap\RWStream.cpp" />
+    <ClCompile Include="NetUtil\wrap\SeqMap.cpp" />
+    <ClCompile Include="NetUtil\wrap\sleep.cpp" />
+    <ClCompile Include="NetUtil\wrap\thread.cpp" />
+    <ClCompile Include="NetUtil\wrap\ThreadMgr.cpp" />
+    <ClCompile Include="NetUtil\wrap\Timer.cpp" />
+    <ClCompile Include="NetUtil\xml\tinystr.cpp" />
+    <ClCompile Include="NetUtil\xml\tinyxml.cpp" />
+    <ClCompile Include="NetUtil\xml\tinyxmlerror.cpp" />
+    <ClCompile Include="NetUtil\xml\tinyxmlparser.cpp" />
+    <ClCompile Include="NetUtil\zip\ioapi.c" />
+    <ClCompile Include="NetUtil\zip\unzip.c" />
+    <ClCompile Include="NetUtil\zip\zip.c" />
+    <ClCompile Include="NetUtil\zlib\adler32.c" />
+    <ClCompile Include="NetUtil\zlib\compress.c" />
+    <ClCompile Include="NetUtil\zlib\crc32.c" />
+    <ClCompile Include="NetUtil\zlib\deflate.c" />
+    <ClCompile Include="NetUtil\zlib\gzclose.c" />
+    <ClCompile Include="NetUtil\zlib\gzlib.c" />
+    <ClCompile Include="NetUtil\zlib\gzread.c" />
+    <ClCompile Include="NetUtil\zlib\gzwrite.c" />
+    <ClCompile Include="NetUtil\zlib\infback.c" />
+    <ClCompile Include="NetUtil\zlib\inffast.c" />
+    <ClCompile Include="NetUtil\zlib\inflate.c" />
+    <ClCompile Include="NetUtil\zlib\inftrees.c" />
+    <ClCompile Include="NetUtil\zlib\trees.c" />
+    <ClCompile Include="NetUtil\zlib\uncompr.c" />
+    <ClCompile Include="NetUtil\zlib\zutil.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

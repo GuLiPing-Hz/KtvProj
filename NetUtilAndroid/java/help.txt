@@ -1,0 +1,2 @@
+locale -m
+²é¿´linux ×Ö·û¼¯

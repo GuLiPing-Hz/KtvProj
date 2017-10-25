@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title_number" />
+
+    <include android:id="@+id/ly_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_searchbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true" 
+            android:overScrollMode="never"
+            />
+
+        <assistant.view.PngAnimView 
+            android:id="@+id/ly_waiting"
+	        android:layout_width="140dip"
+	        android:layout_height="140dip"
+	        android:layout_centerInParent="true"
+	        />
+
+        <TextView
+	        android:id="@+id/tv_empty"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:gravity="center"
+	        android:drawablePadding="40dp"
+	        android:drawableTop="@drawable/pic_sorry"
+	        android:text="@string/chat_pc_nodata_msg"
+	        android:textColor="@color/chat_user_separate"
+	        android:textSize="18sp"
+	        android:visibility="gone" 
+	        />
+        
+        <ImageView
+            android:id="@+id/iv_data_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_above="@id/tv_empty"
+            android:background="@drawable/iv_fail"
+            android:layout_centerHorizontal ="true"
+            android:layout_marginBottom="16.67dp"
+            android:visibility="gone" />
+         
+    </RelativeLayout>
+
+</LinearLayout>

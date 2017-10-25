@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/ly_title" />
+
+    <FrameLayout
+        android:id="@+id/fralayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <ListView
+            android:id="@+id/lv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@drawable/list_line"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+            android:listSelector="@color/transparent" 
+            android:overScrollMode="never"
+            />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="40dp"
+            android:drawableTop="@drawable/pic_sorry"
+            android:gravity="center"
+            android:text="@string/empty_collect_tips"
+            android:textColor="@color/chat_user_separate"
+            android:textSize="18sp"
+            android:visibility="gone" />
+        
+        <include
+            android:id="@+id/ly_waiting" 
+            layout="@layout/load_progress_round" />
+    </FrameLayout>
+
+    
+</LinearLayout>

@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="netutil">
+      <UniqueIdentifier>{c268f20a-7fa6-4112-983a-5e5625eaa017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netutil\wrap">
+      <UniqueIdentifier>{bf6a6995-3c6f-413a-b969-8a0b0cccdc10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netutil\zlib">
+      <UniqueIdentifier>{8cc5dee9-10c5-4e60-9ab8-5c9e4d16b1da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netutil\xml">
+      <UniqueIdentifier>{ba82601d-792d-4071-94fa-4a8cc4de09c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netutil\localstorage">
+      <UniqueIdentifier>{7531a611-d51f-4dab-956f-f0aa25adb9da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netutil\charset">
+      <UniqueIdentifier>{15d3bf74-133a-4cb5-b521-c6b1a17e4fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netutil\zip">
+      <UniqueIdentifier>{7e04d712-1075-495f-a79f-543a8042a7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netutil\zzcur">
+      <UniqueIdentifier>{18da8efc-c93b-40fc-af9f-1b2a9d04728f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="com_jni_netutil_CJniUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\crc32.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\deflate.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\gzguts.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\inffast.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\inffixed.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\inflate.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\inftrees.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\trees.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\zconf.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\zlib.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zlib\zutil.h">
+      <Filter>netutil\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\ClientSocket.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\Counter.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\crypt.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\DataBlock.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\DataDecoder.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\event_posix.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\event_win.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\event_wrapper.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\EventHandler.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\NonCopyable.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\NUtility.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\reactor.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\RWStream.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\SeqMap.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\set_thread_name_win.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\sleep.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\thread_posix.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\thread_win.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\thread_wrapper.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\ThreadMgr.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\typedefs.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\config.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="JniResponse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="jniloghelp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\xml\tinystr.h">
+      <Filter>netutil\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\xml\tinyxml.h">
+      <Filter>netutil\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\localstorage\LocalStorage.h">
+      <Filter>netutil\localstorage</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\localstorage\ServerData.h">
+      <Filter>netutil\localstorage</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\charset\Chinese.h">
+      <Filter>netutil\charset</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\charset\Utf.h">
+      <Filter>netutil\charset</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\charset\CharsetCodec.h">
+      <Filter>netutil\charset</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\HttpDownload.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\HttpDownloadMgr.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\localstorage\DataMgr.h">
+      <Filter>netutil\localstorage</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\localstorage\DataType.h">
+      <Filter>netutil\localstorage</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\md5.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\Timer.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zip\ioapi.h">
+      <Filter>netutil\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zip\unzip.h">
+      <Filter>netutil\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zip\zip.h">
+      <Filter>netutil\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\zip\crypt.h">
+      <Filter>netutil\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\XingguangDef.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\DataDecoderAuth.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\DataDecoderChannellist.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\DataDecoderLobby.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\DataDecoderRoom.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\dbresult.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\NetApp.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\RequestBase.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\ReserveData.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\ResponseBase.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\ResultData.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\ThreadInformer.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\TMSeqMap.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\Tunnel.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\xingconfig.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\HttpDownloadType.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\protocol.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\localstorage\XmlFileDef.h">
+      <Filter>netutil\localstorage</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\MessageFilter.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\DataDecodeUtilty.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\localstorage\UserInfoData.h">
+      <Filter>netutil\localstorage</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterDog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\HttpUniformCallBack.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\ChatCompatibility.h">
+      <Filter>netutil\zzcur</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\localstorage\NotifyMsg.h">
+      <Filter>netutil\localstorage</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\CFileMgr.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\aes.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\httpcontent.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+    <ClInclude Include="NetUtil\wrap\jniloghelp.h">
+      <Filter>netutil\wrap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetUtil\zlib\adler32.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\compress.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\crc32.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\deflate.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\gzclose.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\gzlib.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\gzread.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\gzwrite.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\infback.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\inffast.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\inflate.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\inftrees.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\trees.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\uncompr.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zlib\zutil.c">
+      <Filter>netutil\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\ClientSocket.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\Counter.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\crypt.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\DataBlock.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\DataDecoder.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\event.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\EventHandler.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\NonCopyable.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\NUtility.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\reactor.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\RWStream.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\SeqMap.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\sleep.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\thread.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\ThreadMgr.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="com_jni_netutil_CJniUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JniResponse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\xml\tinyxml.cpp">
+      <Filter>netutil\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\xml\tinyxmlerror.cpp">
+      <Filter>netutil\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\xml\tinyxmlparser.cpp">
+      <Filter>netutil\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\xml\tinystr.cpp">
+      <Filter>netutil\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\localstorage\LocalStorage.cpp">
+      <Filter>netutil\localstorage</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\localstorage\ServerData.cpp">
+      <Filter>netutil\localstorage</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\charset\Chinese.cpp">
+      <Filter>netutil\charset</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\charset\Utf.cpp">
+      <Filter>netutil\charset</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\charset\CharsetCodec.cpp">
+      <Filter>netutil\charset</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\HttpDownloadMgr.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\HttpDownload.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\localstorage\DataMgr.cpp">
+      <Filter>netutil\localstorage</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\md5.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\Timer.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zip\ioapi.c">
+      <Filter>netutil\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zip\unzip.c">
+      <Filter>netutil\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\zip\zip.c">
+      <Filter>netutil\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderAuth.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderChannellist.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderLobby.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderLobbyNew.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderLobbyOld.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderRoom.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\dbresult.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\NetApp.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\RequestBase.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\ReserveData.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\ThreadInformer.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\TMSeqMap.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\Tunnel.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\MessageFilter.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecodeUtilty.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\localstorage\UserInfoData.cpp">
+      <Filter>netutil\localstorage</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\HttpUniformCallBack.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\ChatCompatibility.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\localstorage\NotifyMsg.cpp">
+      <Filter>netutil\localstorage</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderRoom1.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\DataDecoderRoom2.cpp">
+      <Filter>netutil\zzcur</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\CFileMgr.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\aes.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\httpcontent.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+    <ClCompile Include="NetUtil\wrap\jniloghelp.cpp">
+      <Filter>netutil\wrap</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

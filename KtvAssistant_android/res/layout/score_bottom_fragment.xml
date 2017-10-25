@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <assistant.view.LoadMoreListView
+            android:id="@+id/ac_scorelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@drawable/list_line"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true" 
+            android:overScrollMode="never"
+            />
+    
+</LinearLayout>

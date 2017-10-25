@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test="http://schemas.android.com/apk/res/tiange.ktv.assistant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout 
+        android:id="@+id/second_start"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/bg_start"
+	    android:visibility="visible"
+        >
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="15dp"
+	        android:layout_gravity="center_horizontal|bottom"
+	        android:color="@color/start_copyright"
+	        android:text="@string/start_copyright" 
+	        />
+    </FrameLayout>
+    
+	<FrameLayout 
+	    android:id="@+id/first_start"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone"
+	    >
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/viewPagerStart"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/textViewKtvstart"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal|bottom"
+		    android:layout_marginBottom="80dp"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:text="@string/ktv_start"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    android:background="@drawable/bg_ktv_start"
+		    android:visibility="invisible" 
+		    />
+	    
+	    <order.show.DotView 
+		    android:id="@+id/dotViewStart"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal|bottom"
+		    android:layout_marginBottom="7dp"
+		    test:dotCount="3"
+		    test:dotNormal="@drawable/point_start2"
+		    test:dotSelected="@drawable/point_start1"
+		    />
+	</FrameLayout>
+</RelativeLayout>

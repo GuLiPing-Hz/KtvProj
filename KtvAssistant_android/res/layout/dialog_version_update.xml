@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       	android:layout_marginLeft="20dp"
+        android:text="@string/newversion_tip"
+        android:textSize="20sp"
+        android:textColor="@color/chat_user_id"
+        />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/chat_btn_text_pressed"
+        />
+    
+    <TextView 
+        android:id="@+id/textViewVersionTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@color/chat_btn_text_pressed"
+        />
+    
+    <ListView 
+        android:id="@+id/listViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:listSelector="@color/transparent"
+        android:divider="@null"
+        android:cacheColorHint="@color/transparent"
+        android:overScrollMode="never"
+        />
+    
+    <TextView 
+        android:id="@+id/textViewForceTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/newversion_force"
+        android:textSize="12sp"
+        android:textColor="@color/chat_btn_text_pressed"
+        android:visibility="gone"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/versionCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="7dp"
+            android:gravity="center"
+            android:text="@string/app_upgrade_nexttime"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_upgrade_later"
+            />
+        <TextView 
+            android:id="@+id/versionUpgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:text="@string/app_upgrade"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_upgrade"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

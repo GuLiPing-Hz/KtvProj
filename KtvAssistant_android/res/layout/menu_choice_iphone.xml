@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/bg_dialog"
+    android:orientation="vertical"
+    android:paddingTop="15dp" >
+    
+    <TextView android:id="@+id/menu_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="请先进入包厢"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+          />
+
+    <Button
+        android:id="@+id/menu_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_style_alert_dialog_button"
+        android:text="@string/enterroom_by_code"
+        android:textColor="@color/chat_btn_text_pressed"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/menu_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_style_alert_dialog_button"
+        android:text="@string/enterroom_by_pwd"
+        android:textColor="@color/chat_btn_text_pressed"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/menu_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_style_alert_dialog_cancel"
+        android:text="@string/topup_cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

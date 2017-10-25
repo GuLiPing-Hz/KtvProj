@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    >
+
+    <!-- 头像 -->
+
+    <assistant.view.RoundCornerImageView
+        android:id="@+id/pc_giftitem_head"
+        android:layout_width="48.67dip"
+        android:layout_height="48.67dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gift_photo_normal_s"
+        android:background="#c6c6c7" />
+
+    <TextView
+        android:id="@+id/pc_giftitem_giftname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="7dp"
+        android:text="@string/pc_giftitem_giftname"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- 第二行 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pc_giftitem_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pc_giftitem_gold"
+            android:textColor="#e4397d"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pc_giftitem_goldinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pc_goldinfo"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pr_gift_ktvitem_giftid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/pc_ktvid"
+            android:textColor="#9c9c9c"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp" >
+
+        <Button
+            android:id="@+id/pc_giftitem_duihuan"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_shape"
+            android:text="@string/pc_giftitem_duihuan"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/pc_giftitem_head"
+        android:background="@color/chat_menu_switch_separate" />
+
+</RelativeLayout>
