@@ -9,30 +9,29 @@ import android.view.View;
 import android.widget.TextView;
 
 /**
- * 加载中Dialog
+ * 加载提示Dialog
  * 
- * @author xm
+ * @author glp
  */
 public class LoadingDialog extends AlertDialog {
 
-    private TextView tips_loading_msg;
-
-    private String message = null;
+    private TextView mUiText;
+    private String mMessage = null;
 
     public LoadingDialog(Context context) {
         super(context);
-        message = getContext().getResources().getString(R.string.msg_load_ing);
+        mMessage = getContext().getResources().getString(R.string.msg_load_ing);
     }
 
     public LoadingDialog(Context context, String message) {
         super(context);
-        this.message = message;
+        this.mMessage = message;
         this.setCancelable(false);
     }
 
     public LoadingDialog(Context context, int theme, String message) {
         super(context, theme);
-        this.message = message;
+        this.mMessage = message;
         this.setCancelable(false);
     }
 
@@ -40,17 +39,14 @@ public class LoadingDialog extends AlertDialog {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.view_tips_loading);
-        tips_loading_msg = (TextView) findViewById(R.id.tips_loading_msg);
-        if(!TextUtils.isEmpty(message))//不是空消息
-        {
-        	tips_loading_msg.setVisibility(View.VISIBLE);
-        	tips_loading_msg.setText(this.message);
-        }
+        mUiText = (TextView) findViewById(R.id.tips_loading_msg);
+        setText(mMessage);
     }
 
     public void setText(String message) {
-        this.message = message;
-        tips_loading_msg.setText(this.message);
+        this.mMessage = message;
+        mUiText.setText(this.mMessage);
+        mUiText.setVisibility(TextUtils.isEmpty(message)?View.GONE:View.VISIBLE);
     }
 
     public void setText(int resId) {
