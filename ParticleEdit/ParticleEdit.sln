@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ParticleEdit", "ParticleEdit\ParticleEdit.vcproj", "{4CBEC7A9-6907-42C3-98BE-B3FA6246CAC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UpgradePsi", "UpgradePsi\UpgradePsi.vcproj", "{22438156-057A-4A2D-8F35-0078841E34E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CBEC7A9-6907-42C3-98BE-B3FA6246CAC3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4CBEC7A9-6907-42C3-98BE-B3FA6246CAC3}.Debug|Win32.Build.0 = Debug|Win32
+		{4CBEC7A9-6907-42C3-98BE-B3FA6246CAC3}.Release|Win32.ActiveCfg = Release|Win32
+		{4CBEC7A9-6907-42C3-98BE-B3FA6246CAC3}.Release|Win32.Build.0 = Release|Win32
+		{22438156-057A-4A2D-8F35-0078841E34E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22438156-057A-4A2D-8F35-0078841E34E8}.Debug|Win32.Build.0 = Debug|Win32
+		{22438156-057A-4A2D-8F35-0078841E34E8}.Release|Win32.ActiveCfg = Release|Win32
+		{22438156-057A-4A2D-8F35-0078841E34E8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

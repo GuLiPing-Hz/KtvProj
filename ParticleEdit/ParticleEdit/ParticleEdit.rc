@@ -1,0 +1,338 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ParticleEdit.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ParticleEdit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ParticleEdit"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ParticleEdit 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) Liping Gu 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_PARTICLEEDIT_DIALOG DIALOGEX 0, 0, 580, 463
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ParticleEdit"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "点发射",IDC_REMINTPOINT,"Button",BS_AUTORADIOBUTTON,183,27,40,10
+    CONTROL         "矩形发射",IDC_REMINTRECT,"Button",BS_AUTORADIOBUTTON,184,48,48,10
+    CONTROL         "椭圆发射",IDC_REMINTCIRCLE,"Button",BS_AUTORADIOBUTTON,184,69,48,10
+    CONTROL         "圆环发射",IDC_REMINTRING,"Button",BS_AUTORADIOBUTTON,184,89,48,10
+    CONTROL         "MASK",IDC_REMINTMASK,"Button",BS_AUTORADIOBUTTON,184,116,32,10
+    LTEXT           "粒子系统时长（秒）",IDC_STATIC,23,39,73,8
+    LTEXT           "粒子发射器",IDC_STATIC,23,54,41,8
+    LTEXT           "单个粒子时长最小值",IDC_STATIC,23,68,73,8
+    LTEXT           "单个粒子时长最大值",IDC_STATIC,23,83,73,8
+    CONTROL         "渐变颜色方案",IDC_RADIOSHADE,"Button",BS_AUTORADIOBUTTON,352,354,64,10
+    CONTROL         "震荡颜色方案",IDC_RADIOOSCILLATE,"Button",BS_AUTORADIOBUTTON,352,373,64,10
+    LTEXT           "粒子起始旋转",IDC_STATIC,212,220,49,8
+    LTEXT           "粒子起始大小",IDC_STATIC,212,161,49,8
+    LTEXT           "颜色混合模式",IDC_STATIC,23,94,49,8
+    LTEXT           "中心X",IDC_STATIC,23,112,21,8
+    LTEXT           "中心Y",IDC_STATIC,23,124,21,8
+    CONTROL         "高亮",IDC_RADIOADD,"Button",BS_AUTORADIOBUTTON,92,94,32,10
+    CONTROL         "柔和",IDC_RADIOBLEND,"Button",BS_AUTORADIOBUTTON,132,94,32,10
+    LTEXT           "方向",IDC_STATIC,18,163,17,8
+    LTEXT           "方向可变",IDC_STATIC,18,179,33,8
+    LTEXT           "开始最小速度",IDC_STATIC,18,201,49,8
+    LTEXT           "开始最大速度",IDC_STATIC,18,215,49,8
+    LTEXT           "最小Y加速度",IDC_STATIC,18,231,45,8
+    LTEXT           "最大Y加速度",IDC_STATIC,18,245,45,8
+    LTEXT           "最小X加速度",IDC_STATIC,18,261,45,8
+    LTEXT           "最大X加速度",IDC_STATIC,18,274,45,8
+    LTEXT           "最小径向加速度",IDC_STATIC,18,288,57,8
+    LTEXT           "最大径向加速度",IDC_STATIC,18,302,57,8
+    LTEXT           "最小切向加速度",IDC_STATIC,18,316,57,8
+    LTEXT           "最大切向加速度",IDC_STATIC,18,330,57,8
+    LTEXT           "说明：方向，扩展角度单位都是角度值",IDC_STATIC,10,444,137,8
+    LTEXT           "X",IDC_STATIC,244,29,8,8
+    LTEXT           "Y",IDC_STATIC,244,43,8,8
+    LTEXT           "Width",IDC_STATIC,244,57,21,8
+    LTEXT           "Height",IDC_STATIC,244,71,25,8
+    LTEXT           "IN_A",IDC_STATIC,244,85,17,8
+    LTEXT           "IN_B",IDC_STATIC,244,99,17,8
+    LTEXT           "OUT_A",IDC_STATIC,244,113,21,8
+    LTEXT           "OUT_B",IDC_STATIC,244,127,21,8
+    LTEXT           "粒子结束大小",IDC_STATIC,212,190,49,8
+    LTEXT           "粒子起始大小可变",IDC_STATIC,212,175,65,8
+    GROUPBOX        "粒子移动",IDC_STATIC,10,146,199,310
+    GROUPBOX        "粒子发射器",IDC_STATIC,177,7,159,137
+    GROUPBOX        "纹理相关",IDC_STATIC,336,7,187,69
+    LTEXT           "粒子结束旋转",IDC_STATIC,212,248,49,8
+    LTEXT           "粒子起始旋转可变",IDC_STATIC,212,234,65,8
+    LTEXT           "粒子起始Alpha",IDC_STATICBALPHA,212,285,53,8
+    LTEXT           "粒子结束Alpha",IDC_STATICEALPHA,212,300,53,8
+    LTEXT           "粒子Alpha可变",IDC_STATICALPHAVAR,212,314,53,8
+    LTEXT           "粒子起始R",IDC_STATICBRED,212,329,37,8
+    LTEXT           "粒子起始G",IDC_STATICBGREEN,212,343,37,8
+    LTEXT           "粒子起始B",IDC_STATICBBLUE,212,358,37,8
+    LTEXT           "粒子结束R",IDC_STATICERED,212,373,37,8
+    LTEXT           "粒子结束G",IDC_STATICEGREEN,212,387,37,8
+    LTEXT           "粒子起始B",IDC_STATICEBLUE,212,401,37,8
+    LTEXT           "粒子颜色可变",IDC_STATIC,212,418,49,8
+    LTEXT           "说明：粒子大小是整数，颜色值，可变值在0到1之间,要获得正常的效果请务必最大值要大于等于最小值",IDC_STATIC,208,438,319,17
+    LTEXT           "纹理目录",IDC_S_TEXTUREFILE_DIR,343,24,159,8
+    LTEXT           "纹理",IDC_STATIC,343,38,17,8
+    LTEXT           "遮罩纹理",IDC_STATIC,343,56,33,8
+    GROUPBOX        "粒子显示",IDC_STATIC,206,146,330,310
+    EDITTEXT        IDC_ESYSLIFETIME,102,36,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EEMISSION,102,50,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELIFEMIN,102,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELIFEMAX,102,78,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECENTERX,102,110,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECENTERY,102,124,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIRECTION,95,163,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ESPREAD,95,179,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ESSPEEDMIN,95,201,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ESSPEEDMAX,95,215,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EGRAVITYMIN,95,231,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EGRAVITYMAX,95,245,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXFORCEMIN,95,260,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXFORCEMAX,95,274,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ERACCELERATIONMIN,95,288,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ERACCELERATIONMAX,95,302,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETACCMIN,95,316,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETACCMAX,95,330,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPSSIZE,296,161,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPESIZE,296,190,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPSIZEVAR,296,175,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPSSPIN,296,220,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPESPIN,296,248,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPSPINVAR,296,234,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPSALPHA,296,285,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPEALPHA,296,300,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPALPHAVAR,296,314,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPSR,296,329,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPSG,296,343,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPSB,296,358,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPER,296,373,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPEG,296,387,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPEB,296,401,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EPCOLORVAR,296,415,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EX,284,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EY,284,43,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EWIDTH,284,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EHEIGHT,284,71,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EINA,284,85,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EINB,284,99,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EOUTA,284,113,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETEXTUREP,383,38,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMASKFILE,383,56,66,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EOUTB,284,127,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BFINDTEXFILE,458,38,50,14
+    PUSHBUTTON      "浏览",IDC_BFINDMASK,457,56,50,14
+    CONTROL         "连续",IDC_CHCONTINUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,100,21,32,10
+    CONTROL         "一次性",IDC_CHECKONCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,21,40,10
+    CONTROL         "水平，垂直",IDC_CHECKDR,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,146,165,56,10
+    CONTROL         "两端",IDC_CHECKTWOEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,146,203,32,10
+    GROUPBOX        "粒子系统参数",IDC_STATIC,10,7,166,137
+    CONTROL         "是否扩散",IDC_CHSPREAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,276,13,48,10
+    LTEXT           "步长Alpha",IDC_STATIC,343,259,37,8
+    LTEXT           "步长R",IDC_STATIC,343,292,21,8
+    LTEXT           "步长G",IDC_STATIC,343,306,21,8
+    LTEXT           "步长rgb可变",IDC_STATIC,343,334,45,8
+    LTEXT           "步长B",IDC_STATIC,343,320,21,8
+    EDITTEXT        IDC_EDITSTEPALPHA,403,259,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSTEPR,403,292,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSTEPG,403,306,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSTEPB,403,320,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSTEPVAR,403,334,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "加载PList文件",IDC_BUTTONLOADPLIST,342,89,62,14
+    LTEXT           "步长Alpha可变",IDC_STATIC,342,276,53,8
+    EDITTEXT        IDC_EDITSTEPALPHAVAR,403,276,40,14,ES_AUTOHSCROLL
+    LTEXT           "起始半径",IDC_STATIC,15,352,33,8
+    LTEXT           "起始半径可变",IDC_STATIC,15,366,49,8
+    LTEXT           "结束半径",IDC_STATIC,15,380,33,8
+    LTEXT           "结束半径可变",IDC_STATIC,15,394,49,8
+    LTEXT           "单位时间旋转",IDC_STATIC,15,408,49,8
+    LTEXT           "旋转可变",IDC_STATIC,15,422,33,8
+    EDITTEXT        IDC_EDITSRADIUS,95,352,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSRADIUSVAR,95,366,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITERADIUS,95,380,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITERADIUSVAR,95,394,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITROTATE,95,408,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITROTATEVAR,95,422,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBORUNMODE,139,223,60,45,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "粒子结束大小可变",IDC_STATIC,212,204,65,8
+    EDITTEXT        IDC_EPSIZEVAR2,296,204,40,14,ES_AUTOHSCROLL
+    LTEXT           "粒子结束旋转可变",IDC_STATIC,212,262,65,8
+    EDITTEXT        IDC_EPSPINVAR2,296,262,40,14,ES_AUTOHSCROLL
+    LTEXT           "对于加载Plist文件的这个功能，并不能完全生成一个相匹配的粒子效果，还需要调整一些属性值",IDC_STATIC,340,109,146,29
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ParticleEdit.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "ParticleEdit.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PARTICLEEDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 573
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 456
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ParticleEdit(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ParticleEdit.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="player">
+</Property><Property Name="解决方案文件" Value="D:\work\vs\ktv_player_src\PlayerS\player.sln">
+</Property><Property Name="用户选项文件" Value="D:\work\vs\ktv_player_src\PlayerS\player.suo">
+</Property><Property Name="Date" Value="2015年4月23日">
+</Property><Property Name="Time" Value="15:05">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="player.sln" Description="文件已成功备份为 D:\work\vs\ktv_player_src\PlayerS\player.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="player.suo" Description="文件已成功备份为 D:\work\vs\ktv_player_src\PlayerS\player.suo.old">
+</Event><Event ErrorLevel="0" Project="DX" Source="DX\DX.vcproj" Description="Converting project file 'D:\work\vs\ktv_player_src\PlayerS\DX\DX.vcproj'.">
+</Event><Event ErrorLevel="1" Project="DX" Source="DX\DX.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="DX" Source="DX\DX.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="DX" Source="DX\DX.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="DX" Source="DX\DX.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="DX" Source="DX\DX.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="DX" Source="DX\DX.vcproj" Description="Attribute 'OptimizeForWindows98' of 'VCLinkerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="DX" Source="DX\DX.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="DX" Source="DX\DX.vcproj" Description="Attribute 'OptimizeForWindows98' of 'VCLinkerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="DX" Source="DX\DX.vcproj" Description="Done converting to new project file 'D:\work\vs\ktv_player_src\PlayerS\DX\DX.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="DX" Source="DX\DX.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="Converting project file 'D:\work\vs\ktv_player_src\PlayerS\SMDLL\SMDLL.vcproj'.">
+</Event><Event ErrorLevel="1" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="Done converting to new project file 'D:\work\vs\ktv_player_src\PlayerS\SMDLL\SMDLL.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="SMDLL" Source="SMDLL\SMDLL.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DXdemoTestSM" Source="DXdemoTestSM\DXdemoTestSM.vcproj" Description="Converting project file 'D:\work\vs\ktv_player_src\PlayerS\DXdemoTestSM\DXdemoTestSM.vcproj'.">
+</Event><Event ErrorLevel="1" Project="DXdemoTestSM" Source="DXdemoTestSM\DXdemoTestSM.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="DXdemoTestSM" Source="DXdemoTestSM\DXdemoTestSM.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="DXdemoTestSM" Source="DXdemoTestSM\DXdemoTestSM.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="DXdemoTestSM" Source="DXdemoTestSM\DXdemoTestSM.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="DXdemoTestSM" Source="DXdemoTestSM\DXdemoTestSM.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="DXdemoTestSM" Source="DXdemoTestSM\DXdemoTestSM.vcproj" Description="Done converting to new project file 'D:\work\vs\ktv_player_src\PlayerS\DXdemoTestSM\DXdemoTestSM.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="DXdemoTestSM" Source="DXdemoTestSM\DXdemoTestSM.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="Converting project file 'D:\work\vs\ktv_player_src\PlayerS\LogSystem\LogSystem.vcproj'.">
+</Event><Event ErrorLevel="1" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="Done converting to new project file 'D:\work\vs\ktv_player_src\PlayerS\LogSystem\LogSystem.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="LogSystem" Source="LogSystem\LogSystem.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="player.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="player.sln" Description="Converted">
+</Event></UpgradeLog>
